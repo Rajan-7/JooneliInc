@@ -1,5 +1,7 @@
 import React from "react";
 import Home from "./home";
+import Navlist from "./nav-items/Navlist";
+import Businesslist from "./nav-items/Businesslist";
 import { Link } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
@@ -13,12 +15,12 @@ const Header = () => {
           muted
           className="animator"
         ></video> */}
-        <img src="/image/background.jpeg" alt="back image" />
+        <img src="/image/background.jpeg" alt="" />
         <div className="center-content"></div>
         <div className="container">
           <div className="logo-container">
             <figure>
-              <img src="/image/jooneli.png" alt="jooneli logo" />
+              <img src="/image/jooneli.png" alt="" />
             </figure>
           </div>
           <nav className="nav-bar">
@@ -27,11 +29,13 @@ const Header = () => {
                 <Link to="/" className="item">
                   About
                 </Link>
+                <Navlist />
               </li>
             </ul>
             <ul>
               <li className="nav-item">
                 <Link to="/">Business</Link>
+                <Businesslist />
               </li>
             </ul>
             <ul>
