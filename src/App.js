@@ -1,11 +1,9 @@
 
-import './App.css';
+import Main from "./components/Jooneli/main";
 
 function App() {
   return (
-    <div className="App">
-     Hello
-    </div>
+    <Main/>
   );
 }
 
