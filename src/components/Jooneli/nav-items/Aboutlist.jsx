@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navlist = () => {
+const Aboutlist = () => {
   return (
     <>
       <ul id="drop-down--about">
@@ -25,4 +25,4 @@ const Navlist = () => {
   );
 };
 
-export default Navlist;
+export default Aboutlist;

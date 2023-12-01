@@ -1,9 +1,5 @@
 import React from "react";
-import Home from "./home";
-import Navlist from "./nav-items/Navlist";
-import Businesslist from "./nav-items/Businesslist";
-import { Link } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
+import Nav from "./nav-items/Nav";
 
 const Header = () => {
   return (
@@ -23,40 +19,7 @@ const Header = () => {
               <img src="/image/jooneli.png" alt="" />
             </figure>
           </div>
-          <nav className="nav-bar">
-            <ul>
-              <li className="nav-item">
-                <Link to="/" className="item">
-                  About
-                </Link>
-                <Navlist />
-              </li>
-            </ul>
-            <ul>
-              <li className="nav-item">
-                <Link to="/">Business</Link>
-                <Businesslist />
-              </li>
-            </ul>
-            <ul>
-              <li className="nav-item">
-                <Link to="/">Media</Link>
-              </li>
-            </ul>
-            <ul>
-              <li className="nav-item">
-                <Link to="/">Career</Link>
-              </li>
-            </ul>
-            <ul>
-              <li className="nav-item">
-                <Link to="/">Contact</Link>
-              </li>
-            </ul>
-          </nav>
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
+          <Nav />
         </div>
       </header>
     </>
