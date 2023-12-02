@@ -318,6 +318,7 @@ body {
   margin-top: 11rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 
   & .photo-info {
     position: relative;
@@ -347,7 +348,7 @@ body {
         padding: 2rem;
         line-height: 2.5rem;
 
-        & .name{
+        & .name {
           margin-bottom: 1rem;
         }
 
@@ -355,10 +356,9 @@ body {
           margin-top: 3rem;
           display: flex;
           justify-content: flex-end;
-          gap:4.5rem;
+          gap: 4.5rem;
           & i {
             cursor: pointer;
-            height: 5rem;
             font-size: 2.4rem;
             font-weight: 100;
             color: var(--text-color);
@@ -384,6 +384,44 @@ body {
         & button:hover {
           background-color: var(--text-color);
           color: red;
+        }
+      }
+    }
+  }
+  & .news {
+    & .news-heading {
+      font-size: 3.6rem;
+      margin-bottom: 3rem;
+    }
+
+    & .news-div--1 {
+      display: flex;
+      gap: 1.5rem;
+
+      & .image-section {
+        display: flex;
+        justify-content: flex-start;
+        & img {
+          height: 10rem;
+          width: 11rem;
+          border-radius: 0.5rem;
+          -webkit-border-radius: 0.5rem;
+          -moz-border-radius: 0.5rem;
+          -ms-border-radius: 0.5rem;
+          -o-border-radius: 0.5rem;
+        }
+      }
+      & .news-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        & .news-section--heading {
+          font-size: 2rem;
+        }
+        & .news-date{
+          font-size: 1.6rem;
+          color: rgba(0,0,0,.4);
         }
       }
     }

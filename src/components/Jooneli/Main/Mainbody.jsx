@@ -101,23 +101,21 @@ const Mainbody = () => {
                 <button>Read More</button>
               </div>
               <div className="forward-backward">
-                
-                  <i class="fa-solid fa-less-than"></i>
-                  <i class="fa-solid fa-greater-than"></i>
-                
+                <i class="fa-solid fa-less-than"></i>
+                <i class="fa-solid fa-greater-than"></i>
               </div>
             </div>
           </div>
         </div>
         <div className="news">
-          <div className="news-heading">Corporate News</div>
+          <h1 className="news-heading">Corporate News</h1>
           <div className="news-div--1">
             <div className="image-section">
-              <img src="" alt="" />
+              <img src="/image/coding.avif" alt="" />
             </div>
             <div className="news-section">
-              <div className="news-heading">Bomb Killed 20 in Indonesia</div>
-              <div className="date">Nov 23 2023</div>
+              <div className="news-section--heading">Bomb Killed 20 in Indonesia during the war against Vietnam</div>
+              <div className="news-date">Nov 23, 2023</div>
             </div>
           </div>
         </div>
