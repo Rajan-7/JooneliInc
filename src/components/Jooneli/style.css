@@ -44,7 +44,7 @@ body {
     -webkit-animation: shower 16s linear infinite;
 
     &::after {
-      content: "Hello Jooneli :)";
+      content: "Hello Jooneli ✌️";
     }
   }
 
@@ -139,6 +139,8 @@ body {
         & li {
           list-style: none;
           & a {
+            font-size: 1.8rem;
+            letter-spacing: .1rem;
             text-decoration: none;
             color: var(--text-color);
           }
@@ -378,8 +380,13 @@ body {
           border: 0.1rem solid #fff;
           color: var(--text-color);
           background: transparent;
-          height: 2.8rem;
-          width: 8rem;
+          height: 3.3rem;
+          width: 8.7rem;
+          border-radius: 0.5rem;
+          -webkit-border-radius: 0.5rem;
+          -moz-border-radius: 0.5rem;
+          -ms-border-radius: 0.5rem;
+          -o-border-radius: 0.5rem;
         }
 
         & button:hover {
@@ -498,8 +505,8 @@ body {
           justify-content: center;
           align-items: center;
           & img {
-            height: 5.4rem;
-            width: 9rem;
+            height: 4.4rem;
+            width: 8.4rem;
             font-size: 1.5rem;
           }
           & .f1 {
