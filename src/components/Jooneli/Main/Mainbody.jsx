@@ -91,10 +91,10 @@ const Mainbody = () => {
               <img src="/image/photo.jpeg" alt="" />
             </Link>
             <div className="overlay">
-              React is a JavaScript library for building user interfaces,
+              "React is a JavaScript library for building user interfaces,
               developed by Facebook. It allows developers to create reusable UI
               components and manage the state of an application efficiently,
-              making it a popular choice for building modern web applications.
+              making it a popular choice for building modern web applications."
               <div className="name">Jooneli</div>
               <div className="info">MD,Ktm</div>
               <div className="action">
@@ -114,9 +114,50 @@ const Mainbody = () => {
               <img src="/image/coding.avif" alt="" />
             </div>
             <div className="news-section">
-              <div className="news-section--heading">Bomb Killed 20 in Indonesia during the war against Vietnam</div>
+              <div className="news-section--heading">
+                Jooneli introduces core values and cultures pillars: Coding as
+                Main
+              </div>
               <div className="news-date">Nov 23, 2023</div>
             </div>
+          </div>
+          <div className="news-div--1 mb-t">
+            <div className="image-section">
+              <img src="/image/meeting.jpeg" alt="" />
+            </div>
+            <div className="news-section">
+              <div className="news-section--heading">
+                Esewa money transfer continues with the “Hamro Digital Desh”
+                initiative, aiming to…
+              </div>
+              <div className="news-date">Sep 18, 2023</div>
+            </div>
+          </div>
+          <div className="news-div--1 mb-t">
+            <div className="image-section">
+              <img src="/image/gathering.jpeg" alt="" />
+            </div>
+            <div className="news-section ">
+              <div className="news-section--heading">
+                Fonepay & NIPL coming up with the cross border QR code-based
+                payment solution..
+              </div>
+              <div className="news-date">Sep 07, 2023</div>
+            </div>
+          </div>
+          <div className="news-div--1 mb-t">
+            <div className="image-section">
+              <img src="/image/esewa.jpeg" alt="" />
+            </div>
+            <div className="news-section">
+              <div className="news-section--heading">
+                Esewa money transfer partner with saudi arabia-based Enjaz payments services...
+              </div>
+              <div className="news-date">Aug 22, 2023</div>
+            </div>
+          </div>
+          <div className="news-button">
+            <button>Read all news</button>
           </div>
         </div>
       </div>

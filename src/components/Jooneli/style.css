@@ -318,7 +318,7 @@ body {
   margin-top: 11rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 4rem;
 
   & .photo-info {
     position: relative;
@@ -374,6 +374,7 @@ body {
         justify-content: flex-end;
 
         & button {
+          cursor: pointer;
           border: 0.1rem solid #fff;
           color: var(--text-color);
           background: transparent;
@@ -417,11 +418,40 @@ body {
         gap: 2rem;
 
         & .news-section--heading {
+          line-height: 1.5;
+          height: 6rem;
+          width: 38.4rem;
           font-size: 2rem;
+          overflow: hidden;
         }
-        & .news-date{
+        & .news-date {
           font-size: 1.6rem;
-          color: rgba(0,0,0,.4);
+          color: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+    & .mb-t {
+      margin-top: 4rem;
+    }
+
+    & .news-button {
+      margin-top: 5.1rem;
+
+      & button {
+        cursor: pointer;
+        height: 5.5rem;
+        width: 17.5rem;
+        font-size: 1.5rem;
+        border: 0.1rem solid red;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+
+        &:hover {
+          background-color: red;
+          color: var(--text-color);
         }
       }
     }
@@ -429,3 +459,116 @@ body {
 }
 
 /* photo-info & news section end */
+
+/* Footer-section start here */
+
+.footer-section {
+  margin-top: 14rem;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  & .footer-container {
+    display: flex;
+    padding: 7rem 22rem 2rem 22rem;
+    gap: 7rem;
+
+    & .compaines-section {
+      display: flex;
+      flex-direction: column;
+      width: 75rem;
+
+      & .compaines-heading {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.6);
+        text-transform: uppercase;
+      }
+      & .mb {
+        margin-bottom: 2rem;
+      }
+      & .companies-logos {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 2rem;
+        & .logo {
+          cursor: pointer;
+          height: 5.4rem;
+          width: 9rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          & img {
+            height: 5.4rem;
+            width: 9rem;
+            font-size: 1.5rem;
+          }
+          & .f1 {
+            height: 4.4rem;
+            width: 4.4rem;
+          }
+          & .f2 {
+            height: 4.4rem;
+            width: 8.4rem;
+          }
+        }
+      }
+
+      & .copyright {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    & .contact-section {
+      & .contact-heading {
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: rgba(0, 0, 0, 0.6);
+
+        text-transform: uppercase;
+      }
+      & .contact-info {
+        margin-top: 2rem;
+        & .li-1 {
+          display: flex;
+          & .li--1 {
+            width: 5.3rem;
+            text-wrap: nowrap;
+          }
+        }
+        & li {
+          font-size: 1.6rem;
+          list-style: none;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.4);
+          text-decoration: none;
+          & a {
+            text-decoration: none;
+          }
+        }
+      }
+      & .media-section {
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 3rem;
+        font-size: 1.8rem;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      & .media {
+        margin-top: 3rem;
+        display: flex;
+        gap: 1.5rem;
+        & .media-logo {
+          & svg {
+            height: 3.2rem;
+            width: 3.2rem;
+            color: #777777;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Footer-section end here */
