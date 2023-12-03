@@ -140,7 +140,7 @@ body {
           list-style: none;
           & a {
             font-size: 1.8rem;
-            letter-spacing: .1rem;
+            letter-spacing: 0.1rem;
             text-decoration: none;
             color: var(--text-color);
           }
@@ -245,15 +245,14 @@ body {
           -moz-transition: all ease-in 0.2s;
           -ms-transition: all ease-in 0.2s;
           -o-transition: all ease-in 0.2s;
-
-          &:hover {
-            position: absolute;
-            height: 3.5rem;
-            padding-left: 1.7rem;
-            margin-left: 2rem;
-            border-left: 0.5rem solid red;
-          }
         }
+      }
+      &:hover .heading {
+        position: absolute;
+        height: 3.5rem;
+        padding-left: 1.7rem;
+        margin-left: 2rem;
+        border-left: 0.5rem solid red;
       }
     }
   }
@@ -268,12 +267,36 @@ body {
       animation: lefttoright 0.3s linear;
       -webkit-animation: lefttoright 0.3s linear infinite;
       position: relative;
+      overflow: hidden;
 
       & .heading {
+        margin-top: -3rem;
         position: absolute;
         top: 85%;
         padding-left: 4rem;
         font-size: 2rem;
+        
+
+        & .sub-heading{
+          font-size: 1.5rem;
+          /* display: none; */
+        }
+      }
+      &:hover .heading {
+        margin-top: -6.5rem;
+        transition: 0.2s ease-in;
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -ms-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+      }
+
+      &:hover .sub-heading{
+        font-size: 1.5rem;
+        padding-left: 4rem;
+        margin-top: -8.5rem;
+        display: block;
+        color: var(--text-color);
       }
     }
 
@@ -346,7 +369,7 @@ body {
         right: 0;
         text-align: left;
         color: var(--text-color);
-        font-size: 2.4rem;
+        font-size: 2rem;
         padding: 2rem;
         line-height: 2.5rem;
 

@@ -65,21 +65,37 @@ const Mainbody = () => {
         </div>
         <div className="right-grid">
           <div className="box1">
-            <img src="/image/mobile11.jpeg" alt="" />
+            <img src="/image/mobile111.jpeg" alt="" />
             <div className="heading">Fintech with the banks</div>
-            <div className="sub-heading"></div>
+            <p className="sub-heading">
+              Banksmart, our mobile banking solutin, search over 10M people
+              through 50+ banks
+            </p>
           </div>
           <div className="box1">
-            <img src="/image/learn.webp" alt="" />
+            <img src="/image/eswa.png" alt="" />
             <div className="heading">Hands-on-learning</div>
+            <p className="sub-heading">
+              With 80K+ agents across Nepal, eSewa reaches out to every part of
+              the country
+            </p>
           </div>
           <div className="box1">
-            <img src="/image/coding.avif" alt="" />
-            <div className="heading">Research and development</div>
+            <img src="/image/remittance.jpeg" alt="" />
+            <div className="heading">Introducing eRemittance</div>
+            <p className="sub-heading">
+              With digital mode of transfers, eSewa money transfer aims to
+              revolutionized the way Nepalese send & receive money
+            </p>
           </div>
           <div className="box1">
-            <img src="/image/fone.jpg" alt="" />
+            <img src="/image/fonee.jpeg" alt="" />
             <div className="heading">Digital Payment</div>
+            <p className="sub-heading">
+              Fonepay connects consumers, banks and businesses into
+              interoperable network to faciliates payments and fund transfer
+              between them
+            </p>
           </div>
         </div>
       </div>
@@ -94,7 +110,7 @@ const Mainbody = () => {
               "React is a JavaScript library for building user interfaces,
               developed by Facebook. It allows developers to create reusable UI
               components and manage the state of an application efficiently,
-              making it a popular choice for building modern web applications."
+              making it a popular choice for building modern web applications...
               <div className="name">Jooneli</div>
               <div className="info">MD,Ktm</div>
               <div className="action">
@@ -151,7 +167,8 @@ const Mainbody = () => {
             </div>
             <div className="news-section">
               <div className="news-section--heading">
-                Esewa money transfer partner with saudi arabia-based Enjaz payments services...
+                Esewa money transfer partner with saudi arabia-based Enjaz
+                payments services...
               </div>
               <div className="news-date">Aug 22, 2023</div>
             </div>
