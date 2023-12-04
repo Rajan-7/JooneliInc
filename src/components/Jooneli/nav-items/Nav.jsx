@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "../home";
-import Aboutlist from "./Aboutlist";
-import Medialist from "./Medialist";
+import Productlist from "./Productlist";
+import Companylist from "./CompanyList";
 import { Link } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
@@ -19,13 +19,13 @@ const Nav = () => {
         <ul>
           <li className="nav-item">
             <Link to="/">Products</Link>
-            <Aboutlist />
+            <Productlist />
           </li>
         </ul>
         <ul>
           <li className="nav-item">
             <Link to="/">Company</Link>
-            <Medialist />
+            <Companylist />
           </li>
         </ul>
         <ul>

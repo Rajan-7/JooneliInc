@@ -1,15 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Medialist = () => {
+const Companylist = () => {
   return (
     <>
       <ul id="drop-down--about">
         <li>
           <Link to="#">About Us</Link>
-        </li>
-        <li>
-          <Link to="#">Our Clients</Link>
         </li>
         <li>
           <Link to="#">Board Of Directors</Link>
@@ -25,4 +22,4 @@ const Medialist = () => {
   );
 };
 
-export default Medialist;
+export default Companylist;

@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
-  faTwitter,
   faLinkedin,
+  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -61,14 +61,18 @@ const Footer = () => {
             <div className="copyright">&copy;Jooneli International Pvt.Ltd</div>
           </div>
           <div className="contact-section">
-            <div className="contact-heading">Contact Us</div>
+            <div className="contact-heading">Contact</div>
             <div className="contact-info">
-              <li>Jooneli International Pvt.Ltd</li>
-              <li>Jooneli Group Tower, Lalitpur</li>
-              <li>Lalitpur,Nepal</li>
-              <li className="li-1">
-                <div className="li--1">Mail to : </div>
-                <Link>jooneli.suppteam@gmail.com</Link>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>Dhobhighat-4, Lalitpur
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>(977) -1-5153449
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope">
+                  <Link>jooneli.acct@gmail.com</Link>
+                </i>
               </li>
             </div>
             <div className="media-section ">Follow Us</div>
@@ -80,7 +84,7 @@ const Footer = () => {
               </div>
               <div className="media-logo">
                 <Link>
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon icon={faInstagram} />
                 </Link>
               </div>
               <div className="media-logo">

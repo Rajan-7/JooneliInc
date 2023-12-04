@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Aboutlist = () => {
+const Productlist = () => {
   return (
     <>
       <ul id="drop-down--about">
@@ -15,4 +15,4 @@ const Aboutlist = () => {
   );
 };
 
-export default Aboutlist;
+export default Productlist;
