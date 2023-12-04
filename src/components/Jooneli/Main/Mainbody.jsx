@@ -127,7 +127,7 @@ const Mainbody = () => {
           <h1 className="news-heading">Corporate News</h1>
           <div className="news-div--1">
             <div className="image-section">
-              <img src="/image/coding.avif" alt="" />
+              <img src="/image/coding.jpeg" alt="" />
             </div>
             <div className="news-section">
               <div className="news-section--heading">

@@ -6,16 +6,19 @@ const Medialist = () => {
     <>
       <ul id="drop-down--about">
         <li>
-          <Link to="#">Corporate News</Link>
+          <Link to="#">About Us</Link>
         </li>
         <li>
-          <Link to="#">Newsletters</Link>
+          <Link to="#">Our Clients</Link>
         </li>
         <li>
-          <Link to="#">Video</Link>
+          <Link to="#">Board Of Directors</Link>
         </li>
         <li>
-          <Link to="#">Tenders</Link>
+          <Link to="#">Management Team</Link>
+        </li>
+        <li>
+          <Link to="#">Careers</Link>
         </li>
       </ul>
     </>

@@ -16,14 +16,25 @@ body {
   --text-color: #fff;
 }
 
+/* nav-background */
+
 /* nav section start here */
 .header {
+  position: relative;
   & video {
     margin: 0;
     height: 60.5rem;
     width: 100vw;
     object-fit: cover;
   }
+  /* & .clicked {
+    position: absolute;
+    top: 0;
+    height: 30rem;
+    width: 100vw;
+    background-color: rgb(37, 34, 34);
+  } */
+
   & img {
     height: 60rem;
     width: 100vw;
@@ -34,7 +45,7 @@ body {
     position: absolute;
     color: var(--text-color);
     left: 50%;
-    top: 40%;
+    top: 55%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -53,6 +64,7 @@ body {
     position: absolute;
     padding: 2rem;
     top: 0%;
+    left: 0%;
     width: 100vw;
     display: flex;
     justify-content: space-around;
@@ -86,32 +98,48 @@ body {
         & .item {
           margin-bottom: 0.6rem;
         }
+        & a {
+          color: rgb(240, 244, 240);
+        }
         & #drop-down--about {
-          position: absolute;
+          position: fixed;
           display: none;
           font-size: 1.6rem;
+
+          & li {
+            & a {
+              cursor: pointer;
+            }
+          }
 
           &:not(li:nth-child(1)) {
             margin-top: 0.8rem;
             text-wrap: nowrap;
+            color: #000;
           }
-
           & li:nth-child(2) {
             margin-top: 2rem;
+            color: #000;
           }
           & li:nth-child(3) {
             margin-top: 2rem;
+            color: #000;
           }
           & li:nth-child(4) {
             margin-top: 2rem;
+            color: #000;
           }
           & li:nth-child(5) {
             margin-top: 2rem;
+            color: #000;
           }
         }
 
         &:hover #drop-down--about {
           display: block;
+          height: 20rem;
+          width: 40rem;
+          color: #000;
         }
 
         & #drop-down--business {
@@ -275,9 +303,8 @@ body {
         top: 85%;
         padding-left: 4rem;
         font-size: 2rem;
-        
 
-        & .sub-heading{
+        & .sub-heading {
           font-size: 1.5rem;
           /* display: none; */
         }
@@ -291,7 +318,7 @@ body {
         -o-transition: 0.2s ease-in;
       }
 
-      &:hover .sub-heading{
+      &:hover .sub-heading {
         font-size: 1.5rem;
         padding-left: 4rem;
         margin-top: -8.5rem;

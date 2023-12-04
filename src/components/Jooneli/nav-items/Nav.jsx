@@ -2,7 +2,6 @@ import React from "react";
 import Home from "../home";
 import Aboutlist from "./Aboutlist";
 import Medialist from "./Medialist";
-import Businesslist from "./Businesslist";
 import { Link } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
@@ -13,36 +12,40 @@ const Nav = () => {
         <ul>
           <li className="nav-item">
             <Link to="/" className="item">
-              About
+              Home
             </Link>
+          </li>
+        </ul>
+        <ul>
+          <li className="nav-item">
+            <Link to="/">Products</Link>
             <Aboutlist />
           </li>
         </ul>
         <ul>
           <li className="nav-item">
-            <Link to="/">Business</Link>
-            <Businesslist />
-          </li>
-        </ul>
-        <ul>
-          <li className="nav-item">
-            <Link to="/">Media</Link>
+            <Link to="/">Company</Link>
             <Medialist />
           </li>
         </ul>
         <ul>
           <li className="nav-item">
-            <Link to="/">Career</Link>
+            <Link to="/">Blog</Link>
           </li>
         </ul>
         <ul>
           <li className="nav-item">
-            <Link to="/">Contact</Link>
+            <Link to="/">Lets talk</Link>
+          </li>
+        </ul>
+        <ul>
+          <li className="nav-item">
+            <Link to="/">Login</Link>
           </li>
         </ul>
       </nav>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </>
   );

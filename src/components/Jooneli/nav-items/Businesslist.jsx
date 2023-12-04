@@ -6,7 +6,7 @@ const Businesslist = () => {
     <>
       <ul id="drop-down--business">
         <li>
-          <Link to="#">Fintech</Link>
+          <Link to="#"></Link>
         </li>
         <li>
           <Link to="#">eUtility</Link>

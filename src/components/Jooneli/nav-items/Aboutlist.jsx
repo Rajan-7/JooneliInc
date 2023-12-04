@@ -1,24 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 const Aboutlist = () => {
   return (
     <>
       <ul id="drop-down--about">
         <li>
-          <Link to="#">The Company</Link>
+          <Link to="#">360 Core Banking system</Link>
         </li>
         <li>
-          <Link to="#">Ecosystem</Link>
-        </li>
-        <li>
-          <Link to="#">Impact</Link>
-        </li>
-        <li>
-          <Link to="#">Milestone</Link>
-        </li>
-        <li>
-          <Link to="#">Leadership</Link>
+          <Link to="#">Jooneli Trading</Link>
         </li>
       </ul>
     </>

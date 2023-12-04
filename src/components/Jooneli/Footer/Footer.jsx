@@ -22,7 +22,7 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="logo">
-                <img src="/image/esewa1.png" alt="" />
+                <img src="/image/fesewa.png" alt="" />
               </div>
               <div className="logo">
                 <img src="/image/fpay.png" alt="" />
