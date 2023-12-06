@@ -27,13 +27,6 @@ body {
     width: 100vw;
     object-fit: cover;
   }
-  /* & .clicked {
-    position: absolute;
-    top: 0;
-    height: 30rem;
-    width: 100vw;
-    background-color: rgb(37, 34, 34);
-  } */
 
   & img {
     height: 60rem;
@@ -629,7 +622,4 @@ body {
 
 /* Footer-section end here */
 /* blog section start */
-.blog {
-  font-size: 15rem;
-}
 /* blog section end */

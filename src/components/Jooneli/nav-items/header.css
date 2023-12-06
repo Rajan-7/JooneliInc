@@ -26,13 +26,6 @@ body {
     width: 100vw;
     object-fit: cover;
   }
-  /* & .clicked {
-        position: absolute;
-        top: 0;
-        height: 30rem;
-        width: 100vw;
-        background-color: rgb(37, 34, 34);
-      } */
 
   & img {
     height: 60rem;
@@ -54,7 +47,7 @@ body {
     -webkit-animation: shower 16s linear infinite;
 
     &::after {
-      content: "Hello Jooneli ✌️";
+      content: "Never Give Up ✌️";
     }
   }
 
@@ -62,8 +55,8 @@ body {
     margin-top: 2rem;
     position: absolute;
     padding: 2rem;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     width: 100vw;
     display: flex;
     justify-content: space-around;
@@ -82,6 +75,7 @@ body {
     }
 
     & .nav-bar {
+      margin-left: -12rem;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -100,77 +94,82 @@ body {
         & a {
           color: rgb(240, 244, 240);
         }
-        & #drop-down--about {
-          position: fixed;
-          display: none;
-          font-size: 1.6rem;
-
-          & li {
-            & a {
-              cursor: pointer;
-            }
-          }
-
-          &:not(li:nth-child(1)) {
-            margin-top: 0.8rem;
-            text-wrap: nowrap;
-            color: #000;
-          }
-          & li:nth-child(2) {
-            margin-top: 2rem;
-            color: #000;
-          }
-          & li:nth-child(3) {
-            margin-top: 2rem;
-            color: #000;
-          }
-          & li:nth-child(4) {
-            margin-top: 2rem;
-            color: #000;
-          }
-          & li:nth-child(5) {
-            margin-top: 2rem;
-            color: #000;
-          }
-        }
-
-        &:hover #drop-down--about {
-          display: block;
-          height: 20rem;
-          width: 40rem;
-          color: #000;
-        }
-
-        & #drop-down--business {
-          position: absolute;
-          display: none;
-          left: -370%;
-          top: 10;
-          font-size: 1.6rem;
-
-          &:not(li:nth-child(1)) {
-            margin-top: 0.8rem;
-            text-wrap: nowrap;
-          }
-        }
-        &:hover #drop-down--business {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(4, 1fr);
-          column-gap: 14rem;
-          row-gap: 2rem;
-        }
       }
 
       & ul {
         & li {
           list-style: none;
-          & a {
-            font-size: 1.8rem;
-            letter-spacing: 0.1rem;
-            text-decoration: none;
-            color: var(--text-color);
+        }
+      }
+
+      & .display-list {
+        display: inline-block;
+        position: relative;
+
+        & .display-btn {
+          cursor: pointer;
+          font-weight: 500;
+          border: none;
+          background-color: #000;
+          color: var(--text-color);
+          font-size: 1.8rem;
+
+          &:hover {
+            color: red;
           }
+        }
+
+        & .drop-down--product {
+          display: none;
+          position: absolute;
+          left: 0%;
+          z-index: 1;
+          min-width: 25rem;
+          background-color: #000;
+          border-radius: 0.5rem;
+          -webkit-border-radius: 0.5rem;
+          -moz-border-radius: 0.5rem;
+          -ms-border-radius: 0.5rem;
+          -o-border-radius: 0.5rem;
+
+          & .drop {
+            margin: 1rem auto;
+            text-decoration: none;
+            display: flex;
+            &:hover {
+              color: rgba(255, 255, 255, 0.5);
+            }
+          }
+        }
+
+        &:hover .drop-down--product {
+          display: block;
+        }
+        & .drop-down--business {
+          display: none;
+          position: absolute;
+          left: 0%;
+          z-index: 1;
+          min-width: 25rem;
+          background-color: #000;
+          border-radius: 0.5rem;
+          -webkit-border-radius: 0.5rem;
+          -moz-border-radius: 0.5rem;
+          -ms-border-radius: 0.5rem;
+          -o-border-radius: 0.5rem;
+
+          & .drop {
+            margin: 1rem auto;
+            text-decoration: none;
+            display: flex;
+            &:hover {
+              color: rgba(255, 255, 255, 0.5);
+            }
+          }
+        }
+
+        &:hover .drop-down--business {
+          display: block;
         }
       }
     }

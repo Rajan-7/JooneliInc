@@ -104,7 +104,7 @@ const Mainbody = () => {
           <div className="img-container">
             <Link>
               {" "}
-              <img src="/image/coding.jpeg" alt="" />
+              <img src="/image/photo.jpeg" alt="" />
             </Link>
             <div className="overlay">
               "React is a JavaScript library for building user interfaces,
