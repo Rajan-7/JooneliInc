@@ -70,9 +70,8 @@ const Footer = () => {
                 <i class="fa-solid fa-phone"></i>(977) -1-5153449
               </li>
               <li>
-                <i class="fa-solid fa-envelope">
-                  <Link>jooneli.acct@gmail.com</Link>
-                </i>
+                <i class="fa-solid fa-envelope"></i>
+                <Link>jooneli.acct@gmail.com</Link>
               </li>
             </div>
             <div className="media-section ">Follow Us</div>

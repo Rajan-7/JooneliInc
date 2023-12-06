@@ -1,9 +1,13 @@
+import { RouterProvider } from "react-router-dom";
+import router from "./Route";
+import './style.css'
 
-import Main from "./components/Jooneli/main";
 
 function App() {
   return (
-    <Main/>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 

@@ -1,9 +1,7 @@
 import React from "react";
-import Home from "../home";
 import Productlist from "./Productlist";
 import Companylist from "./CompanyList";
 import { Link } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -30,7 +28,7 @@ const Nav = () => {
         </ul>
         <ul>
           <li className="nav-item">
-            <Link to="/">Blog</Link>
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
         <ul>
@@ -44,9 +42,6 @@ const Nav = () => {
           </li>
         </ul>
       </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
     </>
   );
 };
