@@ -30,7 +30,7 @@ const Nav = () => {
           <div className="nav-item display-list">
             <button className="display-btn">Company</button>
             <div className="drop-down--business">
-              <Link to="/blog" className="drop">
+              <Link to="/about" className="drop">
                 About Us
               </Link>
               <Link to="/blog" className="drop">
