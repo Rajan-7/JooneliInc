@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import "./header.css";
 import "./blog.css";
 
 const Blog = () => {
@@ -13,7 +12,7 @@ const Blog = () => {
           <div className="blog-heading">Latest blog of our website</div>
           <div className="blog-contents">
             <div className="blog-1">
-              <img src="/image/blogpic.webp" alt="" />
+              <img src="/image/risk.jpeg" alt="" />
               <div className="content-heading">Overcoming Risk</div>
               <p>
                 By implementing robust cybersecurity measures, regular

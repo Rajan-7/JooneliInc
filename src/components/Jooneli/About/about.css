@@ -1,31 +1,28 @@
-/* main part  */
+/* * main part  */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
 }
-
 body {
   font-family: "Urbanist";
 }
-
 :root {
   --text-color: #fff;
 }
 
 /* ? about section start here */
 .about-section {
-  margin-top: 11rem;
+  padding-top: 11rem;
   & .about-section--1 {
     display: grid;
     margin: 0rem 16rem;
     padding: 4rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(2, minmax(250px));
     column-gap: 2rem;
     row-gap: 2rem;
@@ -63,12 +60,12 @@ body {
       & .main-heading {
         font-weight: 600;
         font-size: 4rem;
-        padding: 0rem 1rem 1rem 0rem;
+        padding: 0rem 1rem 2rem 0rem;
         & .color-1 {
-          color: green;
+          color: #45b34a;
         }
         & .color-2 {
-          color: green;
+          color: #45b34a;
         }
       }
       & .content-1 {
@@ -90,6 +87,7 @@ body {
       display: flex;
       gap: 1rem;
       & .icon {
+        color: #45b34a;
         font-size: 4rem;
       }
       & .contents {
@@ -111,6 +109,7 @@ body {
       display: flex;
       gap: 1rem;
       & .icon {
+        color: #45b34a;
         font-size: 4rem;
       }
       & .contents {
@@ -152,7 +151,7 @@ body {
           content: "";
           width: 4rem;
           margin: 0 1rem;
-          border-top: 0.2rem solid rgb(16, 141, 66);
+          border-top: 0.2rem solid #45b34a;
           transform: translateY(-0.5rem);
           -webkit-transform: translateY(-0.5rem);
           -moz-transform: translateY(-0.5rem);
@@ -161,12 +160,14 @@ body {
         }
       }
       & .main-header {
+        font-weight: 600;
         font-size: 4rem;
         & .color-3 {
           color: green;
         }
       }
       & .header-content {
+        color: rgba(0, 0, 0, 0.6);
         font-size: 1.6rem;
         width: 55%;
         text-align: center;
@@ -208,9 +209,12 @@ body {
 
         & .contents {
           & .heading {
+            font-weight: 500;
             font-size: 1.9rem;
+            letter-spacing: 0.1rem;
           }
           & .details {
+            color: rgba(0, 0, 0, 0.6);
             font-size: 1.6rem;
             line-height: 1.5;
             word-spacing: 1.5;

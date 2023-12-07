@@ -213,14 +213,15 @@ body {
     position: relative;
     width: 50vw;
     text-align: right;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 
-    & .img-container {
+    &.img-container {
       position: relative;
+      cursor: pointer;
       & img {
         height: 70rem;
         width: 70%;
@@ -243,6 +244,7 @@ body {
 
         & .forward-backward {
           margin-top: 3rem;
+          margin-left: 2rem;
           display: flex;
           justify-content: flex-end;
           gap: 4.5rem;

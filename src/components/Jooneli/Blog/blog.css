@@ -40,7 +40,7 @@ body {
       & .blog-1 {
         height: 54rem;
         width: 40rem;
-        background-color: #96EFFF;
+        background-color: rgba(0,0,0,.1);
         & img {
           height: 70%;
           width: 100%;
