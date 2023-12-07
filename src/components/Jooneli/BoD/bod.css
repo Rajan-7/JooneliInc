@@ -15,7 +15,7 @@ body {
   --text-color: #fff;
 }
 
-/* Blog section start here */
+/* ? Bod section start here */
 .blog-section {
   margin-top: 10rem;
   & .blog-container {
@@ -35,12 +35,27 @@ body {
       justify-content: center;
       gap: 2rem;
       & .blog-1 {
-        height: 54rem;
+        height: 60rem;
         width: 40rem;
-        background-color: rgba(0,0,0,.1);
+        /*background-color: rgba(0,0,0,.1);
+          */
+        background-color: #96efff;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        -webkit-border-radius: 1rem;
         & img {
           height: 70%;
           width: 100%;
+          border-top-right-radius: 1rem;
+          border-top-left-radius: 1rem;
+        }
+        & .title {
+          font-size: 1.6rem;
+          padding-left: 2rem;
+          padding-top: 1rem;
         }
 
         & .content-heading {
@@ -48,9 +63,10 @@ body {
           font-size: 2.2rem;
         }
         & p {
-          text-align: left;
+          text-align: justify;
           font-size: 2rem;
-          padding: 1rem 0rem 0rem 2rem;
+          padding: 1rem 1rem 0rem 2rem;
+          font-style: italic;
         }
       }
     }
