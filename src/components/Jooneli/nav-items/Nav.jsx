@@ -36,7 +36,7 @@ const Nav = () => {
               <Link to="/bod" className="drop">
                 Boards of Directors
               </Link>
-              <Link to="/blog" className="drop">
+              <Link to="/manageteam" className="drop">
                 Management Team
               </Link>
               <Link to="/blog" className="drop">

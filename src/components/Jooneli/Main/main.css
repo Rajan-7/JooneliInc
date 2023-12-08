@@ -222,10 +222,22 @@ body {
     &.img-container {
       position: relative;
       cursor: pointer;
-      & img {
-        height: 70rem;
-        width: 70%;
-        object-fit: cover;
+      border-radius: 0.5rem;
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      -ms-border-radius: 0.5rem;
+      -o-border-radius: 0.5rem;
+      & a {
+        & img {
+          height: 70rem;
+          width: 70%;
+          object-fit: cover;
+          border-radius: 1rem;
+          -webkit-border-radius: 1rem;
+          -moz-border-radius: 1rem;
+          -ms-border-radius: 1rem;
+          -o-border-radius: 1rem;
+        }
       }
       & .overlay {
         width: 70%;

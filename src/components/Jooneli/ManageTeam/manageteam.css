@@ -1,0 +1,149 @@
+/* main part  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Urbanist";
+}
+:root {
+  --text-color: #fff;
+}
+
+/* ? management-section start here */
+
+.management-section {
+  margin: 8rem 16rem 0rem 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  & .management-team--heading {
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  & .management-team--content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    & .developer-section {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      & .developer-heading {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        text-align: center;
+        &::after,
+        &::before {
+          display: inline-block;
+          content: "";
+          width: 2rem;
+          margin: 0 1rem;
+          border-top: 0.2rem solid #b34549;
+          transform: translateY(-0.7rem);
+          -webkit-transform: translateY(-0.7rem);
+          -moz-transform: translateY(-0.7rem);
+          -ms-transform: translateY(-0.7rem);
+          -o-transform: translateY(-0.7rem);
+}
+      }
+
+      & .developer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 2rem;
+
+        & .developer-info {
+          display: flex;
+          gap: 2rem;
+          & .logo-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & .logo {
+              & img {
+                height: 15rem;
+                width: 15rem;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+              }
+            }
+            & .social-icon {
+              display: flex;
+              justify-content: center;
+              align-self: center;
+              gap: 0.5rem;
+              & a {
+                font-size: 2rem;
+                &:hover{
+                  color: #6db9ef;
+                }
+              }
+            }
+
+            & .rgb-design {
+              margin-top: 0.5rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 0.5rem;
+              & .size {
+                height: 1rem;
+                width: 1rem;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                background-color: black;
+              }
+              & .red {
+                background-color: red;
+              }
+              & .green {
+                background-color: green;
+              }
+              & .blue {
+                background-color: blue;
+              }
+            }
+          }
+
+          & .info-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            & .info-heading {
+              font-size: 2rem;
+              color: #0766AD;
+            }
+            & .info-sub--heading {
+              font-size: 1.8rem;
+              color:rgba(0,0,0,.8);
+            }
+            & p{
+              font-size: 1.6rem;
+              text-align: justify;
+              color:rgba(0,0,0,.6);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ? management-section end here */

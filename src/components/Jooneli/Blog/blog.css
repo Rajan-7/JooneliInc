@@ -28,6 +28,9 @@ body {
       width: 100%;
       padding: 3rem;
       text-align: center;
+      & .color-1{
+        color:#2D9596;
+      }
     }
     & .blog-contents {
       cursor: pointer;
@@ -37,10 +40,17 @@ body {
       & .blog-1 {
         height: 54rem;
         width: 40rem;
-        background-color: rgba(0,0,0,.1);
+        border-radius: 1rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
         & img {
           height: 70%;
           width: 100%;
+          border-top-right-radius: 1rem;
+          border-top-left-radius: 1rem;
         }
 
         & .content-heading {
