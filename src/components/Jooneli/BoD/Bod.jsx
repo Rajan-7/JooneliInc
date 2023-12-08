@@ -1,50 +1,91 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 import "./bod.css";
 
 const Bod = () => {
   return (
     <>
       <Header />
-      <div className="blog-section">
-        <div className="blog-container">
-          <div className="blog-heading">Our Board of Directors</div>
-          <div className="blog-contents">
-            <div className="blog-1">
-              <img src="/image/photo.jpeg" alt="" />
-              <div className="content-heading">Jhon Fredrick</div>
-              <div className="title">CEO, XY Institute</div>
-              <p>
-                "Jooneli is one of the best IT company of Nepal. I'll recommend
-                everyone to choose Jooneli for effective & reliable solution."
-              </p>
+      <div className="bod-section">
+        <div className="bod-heading--section">Our <span className="color">Board Of dir</span>ectors</div>
+        <div className="bod-content--section">
+          <div className="content-section">
+            <div className="logo-info">
+              <div className="logo">
+                <img src="/image/photo.jpeg" alt="" />
+              </div>
+              <div className="social-icon">
+                <Link>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+                <Link>
+                  <FontAwesomeIcon icon={faGoogle} />
+                </Link>
+              </div>
             </div>
-            <div className="blog-1">
-              <img src="/image/photo2.jpeg" alt="" />
-              <div className="content-heading">Henry Davis</div>
-              <div className="title">Managing Director, XY Company</div>
+            <div className="dir-info">
+              <div className="main-heading">Muktinath</div>
+              <div className="sub-heading">Managing Director,Jooneli</div>
               <p>
-                "Jooneli is one of the best IT company of Nepal. I'll recommend
-                everyone to choose Jooneli for effective & reliable solution."
-              </p>
-            </div>
-            <div className="blog-1">
-              <img src="/image/photo3.png" alt="" />
-              <div className="content-heading">Jhon Fredrick</div>
-              <div className="title">CEO, XY Institute</div>
-              <p>
-                "Jooneli is one of the best IT company of Nepal. I'll recommend
-                everyone to choose Jooneli for effective & reliable solution."
+                A simple sentence, according to the Cambridge Dictionary, is “a
+                sentence that has only one verb.” The Collins Dictionary defines
+                a simple sentence as “a sentence consisting of a single main
+                clause.”
               </p>
             </div>
           </div>
-          <div className="blog-action">
-            <div className="action">
-              <i class="fa-solid fa-square-caret-right fa-rotate-180"></i>
+          <div className="content-section">
+            <div className="logo-info">
+              <div className="logo">
+                <img src="/image/elon.jpeg" alt="" />
+              </div>
+              <div className="social-icon">
+                <Link>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+                <Link>
+                  <FontAwesomeIcon icon={faGoogle} />
+                </Link>
+              </div>
             </div>
-            <div className="action">
-              <i class="fa-solid fa-square-caret-right"></i>
+            <div className="dir-info">
+              <div className="main-heading">Elon Musk</div>
+              <div className="sub-heading">Director,Jooneli</div>
+              <p>
+                A simple sentence, according to the Cambridge Dictionary, is “a
+                sentence that has only one verb.” The Collins Dictionary defines
+                a simple sentence as “a sentence consisting of a single main
+                clause.”
+              </p>
+            </div>
+          </div>
+          <div className="content-section">
+            <div className="logo-info">
+              <div className="logo">
+                <img src="/image/billgate.webp" alt="" />
+              </div>
+              <div className="social-icon">
+                <Link>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+                <Link>
+                  <FontAwesomeIcon icon={faGoogle} />
+                </Link>
+              </div>
+            </div>
+            <div className="dir-info">
+              <div className="main-heading">Bill Gate</div>
+              <div className="sub-heading">Senior Manager,Jooneli</div>
+              <p>
+                A simple sentence, according to the Cambridge Dictionary, is “a
+                sentence that has only one verb.” The Collins Dictionary defines
+                a simple sentence as “a sentence consisting of a single main
+                clause.”
+              </p>
             </div>
           </div>
         </div>

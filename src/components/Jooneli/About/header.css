@@ -1,0 +1,179 @@
+/* ? main part */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Urbanist";
+}
+
+:root {
+  --text-color: #fff;
+}
+
+/* nav section start here */
+.header {
+  position: relative;
+  & video {
+    margin: 0;
+    height: 60.5rem;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  & img {
+    height: 60rem;
+    width: 100vw;
+  }
+
+  & .center-content {
+    font-size: 2.4rem;
+    position: absolute;
+    color: var(--text-color);
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: shower 16s linear infinite;
+    -webkit-animation: shower 16s linear infinite;
+
+    &::after {
+      content: "Never Give Up ✌️";
+    }
+  }
+
+  & .container {
+    margin-top: 2rem;
+    position: absolute;
+    padding: 2rem;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & .logo-container {
+      height: 10rem;
+      width: 30rem;
+      display: flex;
+      justify-content: center;
+      & img {
+        height: 10rem;
+        width: 10rem;
+        cursor: pointer;
+      }
+    }
+
+    & .nav-bar {
+      margin-left: -12rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 6rem;
+      font-size: 1.8rem;
+
+      & .nav-item a:hover {
+        color: red;
+      }
+
+      & .nav-item {
+        position: relative;
+        & .item {
+          margin-bottom: 0.6rem;
+        }
+        & a {
+          color: rgb(240, 244, 240);
+        }
+      }
+
+      & ul {
+        & li {
+          list-style: none;
+        }
+      }
+
+      & .display-list {
+        display: inline-block;
+        position: relative;
+
+        & .display-btn {
+          cursor: pointer;
+          font-weight: 500;
+          border: none;
+          background-color: #000;
+          color: var(--text-color);
+          font-size: 1.8rem;
+
+          &:hover {
+            color: red;
+          }
+        }
+
+        & .drop-down--product {
+          display: none;
+          position: absolute;
+          left: 0%;
+          z-index: 1;
+          min-width: 25rem;
+          background-color: #000;
+          border-radius: 0.5rem;
+          -webkit-border-radius: 0.5rem;
+          -moz-border-radius: 0.5rem;
+          -ms-border-radius: 0.5rem;
+          -o-border-radius: 0.5rem;
+
+          & .drop {
+            margin: 1rem auto;
+            text-decoration: none;
+            display: flex;
+            &:hover {
+              color: rgba(255, 255, 255, 0.5);
+            }
+          }
+        }
+
+        &:hover .drop-down--product {
+          display: block;
+        }
+        & .drop-down--business {
+          display: none;
+          position: absolute;
+          left: 0%;
+          z-index: 1;
+          min-width: 25rem;
+          background-color: #000;
+          border-radius: 0.5rem;
+          -webkit-border-radius: 0.5rem;
+          -moz-border-radius: 0.5rem;
+          -ms-border-radius: 0.5rem;
+          -o-border-radius: 0.5rem;
+
+          & .drop {
+            margin: 1rem auto;
+            text-decoration: none;
+            display: flex;
+            &:hover {
+              color: rgba(255, 255, 255, 0.5);
+            }
+          }
+        }
+
+        &:hover .drop-down--business {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* nav/header section end here */
