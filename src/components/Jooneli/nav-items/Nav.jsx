@@ -39,7 +39,7 @@ const Nav = () => {
               <Link to="/manageteam" className="drop">
                 Management Team
               </Link>
-              <Link to="/blog" className="drop">
+              <Link to="/career" className="drop">
                 Careers
               </Link>
             </div>
