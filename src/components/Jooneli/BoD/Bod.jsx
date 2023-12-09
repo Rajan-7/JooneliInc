@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Header/Header";
+import BodHeader from "./BodHeader";
 import Footer from "../Footer/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
@@ -9,7 +9,7 @@ import "./bod.css";
 const Bod = () => {
   return (
     <>
-      <Header />
+      <BodHeader />
       <div className="bod-section">
         <div className="bod-heading--section">Our <span className="color">Board Of dir</span>ectors</div>
         <div className="bod-content--section">

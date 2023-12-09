@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../Header/Header";
+import BlogHeader from "./BlogHeader";
 import Footer from "../Footer/Footer";
 import "./blog.css";
 
 const Blog = () => {
   return (
     <>
-      <Header />
+      <BlogHeader />
       <div className="blog-section">
         <div className="blog-container">
           <div className="blog-heading">
