@@ -15,10 +15,13 @@ body {
 
 :root {
   --text-color: #fff;
+  --center-content--color:rgba(255,255,255,.6);
 }
 
-/* nav section start here */
+/* aboutsection header start here */
 .header {
+  /* height: 40rem;
+  width: 100vw; */
   position: relative;
   & video {
     margin: 0;
@@ -27,17 +30,18 @@ body {
     object-fit: cover;
   }
 
-  & img {
-    height: 60rem;
+  & .about-img {
+    height: 40rem;
     width: 100vw;
   }
 
-  & .center-content {
-    font-size: 2.4rem;
-    position: absolute;
-    color: var(--text-color);
-    left: 50%;
+  & .about-content {
     top: 55%;
+    left: 50%;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: absolute;
+    color: var(--center-content--color);
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -47,7 +51,10 @@ body {
     -webkit-animation: shower 16s linear infinite;
 
     &::after {
-      content: "Never Give Up ✌️";
+      content: "\201D";
+    }
+    &::before {
+      content: "\201C";
     }
   }
 
@@ -176,4 +183,4 @@ body {
   }
 }
 
-/* nav/header section end here */
+/* aboutsection header  end here */

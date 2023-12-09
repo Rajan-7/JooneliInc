@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../Header/Header";
+import AboutHeader from "./AboutHeader";
 import Footer from "../Footer/Footer";
 import "./about.css";
 
 const About = () => {
   return (
     <>
-      <Header />
+      <AboutHeader />
       <div className="about-section">
         <div className="about-section--1">
           <div className="sub-section--1">
