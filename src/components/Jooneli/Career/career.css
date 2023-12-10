@@ -1,0 +1,92 @@
+/* main part  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Urbanist";
+}
+:root {
+  --text-color: #fff;
+  --font-color: #3081d0;
+}
+
+/* ? career section start here */
+.career-section {
+  margin: 8rem 16rem 0rem 16rem;
+  & .career-heading--section {
+    text-align: center;
+    margin-bottom: 6rem;
+    & .main-heading {
+      font-size: 3.2rem;
+      padding: 1rem;
+    }
+    & .main-details {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
+
+  & .career-main--section {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+    gap: 3rem;
+    margin-bottom: 6rem;
+
+    & .content-container {
+      display: flex;
+      gap: 1.2rem;
+      & .logo {
+        & i {
+          font-size: 4rem;
+          color: var(--font-color);
+        }
+      }
+      & .content-details {
+        & .content-heading {
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+        & .content-details {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  & .career-job--section {
+    display: flex;
+    flex-direction: column;
+
+    & .heading {
+      font-size: 3.2rem;
+      text-align: center;
+    }
+    & .job-container {
+      display: flex;
+      margin-top: 2.4rem;
+      & .job-container--one {
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        & .job-heading{
+            font-size: 2.8rem;
+        }
+        & .job-details{
+            font-size: 1.6rem;
+            text-align: center;
+        }
+      }
+    }
+  }
+}
+/* ? career section end here */
