@@ -14,6 +14,9 @@ body {
 :root {
   --text-color: #fff;
   --font-color: #3081d0;
+  --main-heading--color: #263671;
+  --sub-content--color: rgba(0, 0, 0, 0.7);
+  --job-heading--color:#7c6576;
 }
 
 /* ? career section start here */
@@ -24,11 +27,14 @@ body {
     margin-bottom: 6rem;
     & .main-heading {
       font-size: 3.2rem;
+      color: var(--main-heading--color);
       padding: 1rem;
+      text-transform: capitalize;
     }
     & .main-details {
       font-size: 1.6rem;
       text-align: center;
+      color: var(--sub-content--color);
     }
   }
 
@@ -50,11 +56,17 @@ body {
       }
       & .content-details {
         & .content-heading {
+          padding-bottom: 0.5rem;
           font-size: 1.8rem;
           font-weight: 400;
+          text-transform: capitalize;
+          color: var(--sub-content--color);
         }
         & .content-details {
           font-size: 1.6rem;
+          text-align: justify;
+          word-spacing: 1.5;
+          color: var(--sub-content--color);
         }
       }
     }
@@ -67,10 +79,13 @@ body {
     & .heading {
       font-size: 3.2rem;
       text-align: center;
+      color: var(--main-heading--color);
+      text-transform: capitalize;
     }
     & .job-container {
       display: flex;
       margin-top: 2.4rem;
+      gap: 4rem;
       & .job-container--one {
         height: 20rem;
         display: flex;
@@ -78,12 +93,14 @@ body {
         justify-content: center;
         align-items: center;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        & .job-heading{
-            font-size: 2.8rem;
+        & .job-heading {
+          font-size: 2.8rem;
+          color: var(--job-heading--color);
         }
-        & .job-details{
-            font-size: 1.6rem;
-            text-align: center;
+        & .job-details {
+          font-size: 1.6rem;
+          text-align: center;
+          color:var(--sub-content--color);
         }
       }
     }

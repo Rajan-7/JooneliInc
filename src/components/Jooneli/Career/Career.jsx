@@ -28,82 +28,81 @@ const Career = () => {
               <div className="content-details">
                 We are obsessed with constantly developing our competencies.
                 Hence, we determine the training needs for our people from the
-                performance review that we conduct bi- yearly.{" "}
+                performance review that we conduct bi- yearly.
               </div>
             </div>
           </div>
           <div className="content-container">
             <div className="logo">
-              <i class="fa-solid fa-book-open-reader"></i>
+              <i class="fa-solid fa-people-roof"></i>
             </div>
             <div className="content-details">
               <div className="content-heading">
-                Training,Learning & Development
+                Generous parental & personal leaves
               </div>
               <div className="content-details">
-                We are obsessed with constantly developing our competencies.
-                Hence, we determine the training needs for our people from the
-                performance review that we conduct bi- yearly.{" "}
+                We provide parental and personal leaves while still being paid
+                your usual salary. We provide 12 business days off as annual
+                paid holidays.
               </div>
             </div>
           </div>
           <div className="content-container">
             <div className="logo">
-              <i class="fa-solid fa-book-open-reader"></i>
+              <i class="fa-solid fa-shield-halved"></i>
             </div>
             <div className="content-details">
               <div className="content-heading">
-                Training,Learning & Development
+                Social security & financial bonuses
               </div>
               <div className="content-details">
-                We are obsessed with constantly developing our competencies.
-                Hence, we determine the training needs for our people from the
-                performance review that we conduct bi- yearly.{" "}
+                SSF is a contribution-based social security scheme, the employee
+                contributes 10 % and the employer adds 20% of the basic salary
+                per month( 30% of the basic salary of the employee) every month.
               </div>
             </div>
           </div>
           <div className="content-container">
             <div className="logo">
-              <i class="fa-solid fa-book-open-reader"></i>
+              <i class="fa-solid fa-people-group"></i>
             </div>
             <div className="content-details">
-              <div className="content-heading">
-                Training,Learning & Development
-              </div>
+              <div className="content-heading">Employee social gathering</div>
               <div className="content-details">
-                We are obsessed with constantly developing our competencies.
-                Hence, we determine the training needs for our people from the
-                performance review that we conduct bi- yearly.{" "}
+                Work relationships are incredibly important to employee
+                well-being. As humans, we crave contact and connection with
+                other people. It’s important for employers to understand just
+                how important social connections in the workplace really are.
               </div>
             </div>
           </div>
           <div className="content-container">
             <div className="logo">
-              <i class="fa-solid fa-book-open-reader"></i>
+              <i class="fa-solid fa-bowl-food"></i>
+              {/* <i class="fa-solid fa-utensils"></i> */}
             </div>
             <div className="content-details">
               <div className="content-heading">
-                Training,Learning & Development
+                Healthy Food & Refreshment Program
               </div>
               <div className="content-details">
-                We are obsessed with constantly developing our competencies.
-                Hence, we determine the training needs for our people from the
-                performance review that we conduct bi- yearly.{" "}
+                When a workplace can help employees to make wise food choices,
+                as part of a workplace health program, it can influence the
+                person’s long-term health and wellness.
               </div>
             </div>
           </div>
           <div className="content-container">
             <div className="logo">
-              <i class="fa-solid fa-book-open-reader"></i>
+              <i class="fa-solid fa-house-laptop"></i>
             </div>
             <div className="content-details">
-              <div className="content-heading">
-                Training,Learning & Development
-              </div>
+              <div className="content-heading">Distributed Remote Work</div>
               <div className="content-details">
-                We are obsessed with constantly developing our competencies.
-                Hence, we determine the training needs for our people from the
-                performance review that we conduct bi- yearly.{" "}
+                Remote work is a discipline for the individual worker, but
+                distributed work is a discipline for the entire organization. We
+                all employees work in separate locations and communicate via
+                online platforms.
               </div>
             </div>
           </div>
@@ -112,9 +111,7 @@ const Career = () => {
           <div className="heading">Current Job Openings</div>
           <div className="job-container">
             <div className="job-container--one">
-              <div className="job-heading">
-                Mobile Developer(Flutter/React Native)
-              </div>
+              <div className="job-heading">Mobile Developer</div>
               <div className="job-details">
                 We are looking for an experienced Mobile developer who is well
                 adopted to best practices around software engineering.Who
@@ -123,14 +120,11 @@ const Career = () => {
               </div>
             </div>
             <div className="job-container--one">
-              <div className="job-heading">
-                Mobile Developer(Flutter/React Native)
-              </div>
+              <div className="job-heading">Software Designer</div>
               <div className="job-details">
-                We are looking for an experienced Mobile developer who is well
-                adopted to best practices around software engineering.Who
-                understand the business values of the work they put in & adopt
-                the new environment.
+                We are looking for an experienced designer who is well adopted
+                to best practices around software engineering. Who creates and
+                design the user interface & experience of software application.
               </div>
             </div>
           </div>

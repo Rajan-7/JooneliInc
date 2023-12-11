@@ -18,10 +18,10 @@ const Nav = () => {
             <button className="display-btn">Product</button>
             <div className="drop-down--product">
               <Link to="/blog" className="drop">
-                Happy client in the world
+                360 Core Banking System
               </Link>
               <Link to="/blog" className="drop">
-                Quality
+                Jooneli Trading
               </Link>
             </div>
           </div>
@@ -32,6 +32,9 @@ const Nav = () => {
             <div className="drop-down--business">
               <Link to="/about" className="drop">
                 About Us
+              </Link>
+              <Link to="/about" className="drop">
+                Our Clients
               </Link>
               <Link to="/bod" className="drop">
                 Boards of Directors

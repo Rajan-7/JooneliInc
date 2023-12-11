@@ -120,6 +120,7 @@ body {
         }
 
         & .drop-down--product {
+          font-size: 1.7rem;
           display: none;
           position: absolute;
           left: 0%;
@@ -147,6 +148,7 @@ body {
         }
         & .drop-down--business {
           display: none;
+          font-size: 1.7rem;
           position: absolute;
           left: 0%;
           z-index: 1;
