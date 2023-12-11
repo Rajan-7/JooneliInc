@@ -1,0 +1,178 @@
+/* main part  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto";
+}
+:root {
+  --text-color: #fff;
+  --font-color: #3081d0;
+  --main-heading--color: #263671;
+  --sub-content--color: rgba(0, 0, 0, 0.5);
+  --job-heading--color: #7c6576;
+}
+
+/* ? client section start here */
+
+.client-section {
+  margin: 8rem 16rem 0rem 16rem;
+  & .client-list--section {
+    margin-bottom: 6rem;
+    & .client-list--heading {
+      text-align: center;
+      font-size: 4rem;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+
+    & .client-container {
+      display: grid;
+      grid-template-columns: repeat(3, 2fr);
+      gap: 2rem;
+
+      & .client {
+        & .logo {
+          & img {
+            height: 12rem;
+            width: 20rem;
+          }
+        }
+        & .client-details {
+          & .client-name {
+            font-size: 2rem;
+            color: rgba(0, 0, 0, 0.8);
+          }
+          & .client-description {
+            font-size: 1.6rem;
+            color: rgba(0, 0, 0, 0.5);
+            text-align: justify;
+            letter-spacing: 0.04rem;
+            /* line-height: 1.8rem; */
+          }
+        }
+      }
+    }
+  }
+
+  & .client-response--section {
+    & .client-response--heading {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 4rem;
+      margin-bottom: 6rem;
+
+      & .main-heading {
+        text-align: right;
+        display: flex;
+
+        & .heading-details {
+          & .sub-heading {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            &::before {
+              display: inline-block;
+              content: "";
+              width: 3rem;
+              border-top: 0.2rem solid green;
+              margin: 0rem 1rem;
+              transform: translateY(-0.5rem);
+              -webkit-transform: translateY(-0.5rem);
+              -moz-transform: translateY(-0.5rem);
+              -ms-transform: translateY(-0.5rem);
+              -o-transform: translateY(-0.5rem);
+            }
+          }
+
+          & .heading {
+            font-size: 4.5rem;
+            & .color {
+              color: #65b741;
+            }
+          }
+        }
+        & .heading-effect {
+          height: 7rem;
+          width: 0.3rem;
+          background-color: #65b741;
+          transform: translateY(3.5rem);
+          -webkit-transform: translateY(3.5rem);
+          -moz-transform: translateY(3.5rem);
+          -ms-transform: translateY(3.5rem);
+          -o-transform: translateY(3.5rem);
+          margin-left: 5rem;
+        }
+      }
+
+      & .main-details {
+        font-size: 1.6rem;
+        width: 80%;
+        text-align: justify;
+        letter-spacing: 0.05rem;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    & .client-response--details {
+      display: flex;
+      gap: 4rem;
+
+      & .response-details--box {
+        border-top-right-radius: 4.5rem;
+        border-top-left-radius: 4.5rem;
+        border-bottom-left-radius: 4.5rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        & .comment {
+          padding: 4rem 4rem 0rem 4rem;
+          font-size: 1.6rem;
+          font-style: italic;
+          color: rgba(0, 0, 0, 0.5);
+        }
+        & .responser {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 2rem;
+          margin-top: 2rem;
+          padding: 0rem 0rem 1rem 4rem;
+          position: relative;
+
+          & .logo {
+            & img {
+              height: 6rem;
+              width: 6rem;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+            }
+          }
+
+          & .logo-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            & .name {
+              font-size: 1.8rem;
+            }
+            & .designation {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ? client section end here */

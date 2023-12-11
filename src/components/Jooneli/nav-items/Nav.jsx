@@ -33,7 +33,7 @@ const Nav = () => {
               <Link to="/about" className="drop">
                 About Us
               </Link>
-              <Link to="/about" className="drop">
+              <Link to="/client" className="drop">
                 Our Clients
               </Link>
               <Link to="/bod" className="drop">

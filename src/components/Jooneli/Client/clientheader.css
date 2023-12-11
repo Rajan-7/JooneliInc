@@ -10,7 +10,7 @@
   }
   
   body {
-    font-family: "Roboto";
+    font-family: "Urbanist";
   }
   
   :root {
@@ -35,7 +35,7 @@
       width: 100vw;
     }
   
-    & .career-content {
+    & .client-content {
       top: 55%;
       left: 50%;
       /* text-transform: uppercase; */
