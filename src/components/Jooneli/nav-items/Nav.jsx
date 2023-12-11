@@ -17,7 +17,7 @@ const Nav = () => {
           <div className="nav-item display-list">
             <button className="display-btn">Product</button>
             <div className="drop-down--product">
-              <Link to="/blog" className="drop">
+              <Link to="/bank" className="drop">
                 360 Core Banking System
               </Link>
               <Link to="/blog" className="drop">

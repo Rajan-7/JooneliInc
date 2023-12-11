@@ -6,6 +6,7 @@ import Bod from "./components/Jooneli/BoD/Bod";
 import Client from "./components/Jooneli/Client/Client";
 import Career from "./components/Jooneli/Career/Career";
 import ManageTeam from "./components/Jooneli/ManageTeam/ManageTeam";
+import Banking from "./components/Jooneli/Banking/Banking";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
   {
     path:"client",
     element:<Client/>
+  }
+  ,
+  {
+    path:"bank",
+    element:<Banking/>
   }
 ]);
 
