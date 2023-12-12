@@ -7,6 +7,7 @@ import Client from "./components/Jooneli/Client/Client";
 import Career from "./components/Jooneli/Career/Career";
 import ManageTeam from "./components/Jooneli/ManageTeam/ManageTeam";
 import Banking from "./components/Jooneli/Banking/Banking";
+import Trading from "./components/Jooneli/Trading/Trading";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path:"bank",
     element:<Banking/>
+  },
+  {
+    path:"trading",
+    element:<Trading/>
   }
 ]);
 

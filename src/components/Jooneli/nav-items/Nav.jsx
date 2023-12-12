@@ -20,7 +20,7 @@ const Nav = () => {
               <Link to="/bank" className="drop">
                 360 Core Banking System
               </Link>
-              <Link to="/blog" className="drop">
+              <Link to="/trading" className="drop">
                 Jooneli Trading
               </Link>
             </div>
