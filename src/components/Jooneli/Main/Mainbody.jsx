@@ -73,7 +73,7 @@ const Mainbody = () => {
             </p>
           </div>
           <div className="box1">
-            <img src="/image/eswa.png" alt="" />
+            <img src="/image/eswa1.png" alt="" />
             <div className="heading">Hands-on-learning</div>
             <p className="sub-heading">
               With 80K+ agents across Nepal, eSewa reaches out to every part of

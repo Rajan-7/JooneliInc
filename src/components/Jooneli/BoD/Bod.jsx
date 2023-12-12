@@ -11,7 +11,7 @@ const Bod = () => {
     <>
       <BodHeader />
       <div className="bod-section">
-        <div className="bod-heading--section">Our <span className="color">Board Of dir</span>ectors</div>
+        <div className="bod-heading--section">Our Board Of directors</div>
         <div className="bod-content--section">
           <div className="content-section">
             <div className="logo-info">
