@@ -8,7 +8,7 @@ const BlogHeader = () => {
     <>
       <header className="header">
         <img className="about-img" src="/image/background.jpeg" alt="" />
-        <div className="blog-content ">Inspire. Explore. Share. </div>
+        <div className="blog-content "> Inspire. Explore. Share. </div>
         <div className="container">
           <div className="logo-container">
             <figure>

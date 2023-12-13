@@ -8,7 +8,7 @@ const BankHeader = () => {
     <>
       <header className="header">
         <img className="about-img" src="/image/background.jpeg" alt="" />
-        <div className="bank-content ">Efficiency Unleashed, Securely </div>
+        <div className="bank-content "> Efficiency Unleashed, Securely </div>
         <div className="container">
           <div className="logo-container">
             <figure>

@@ -1,14 +1,14 @@
 import React from "react";
 import Nav from "../nav-items/Nav";
 import { Link } from "react-router-dom";
-import "./mtheader.css"
+import "./tradingheader.css"
 
 const TradingHeader = () => {
   return (
     <>
       <header className="header">
         <img className="about-img" src="/image/background.jpeg" alt="" />
-        <div className="trade-content ">Trade With Us </div>
+        <div className="trade-content "> Trade With Us </div>
         <div className="container">
           <div className="logo-container">
             <figure>

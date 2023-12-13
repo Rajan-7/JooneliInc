@@ -8,7 +8,7 @@ const BodHeader = () => {
     <>
       <header className="header">
         <img className="about-img" src="/image/background.jpeg" alt="" />
-        <div className="mt-content ">Strategic Minds Unite </div>
+        <div className="mt-content "> Strategic Minds Unite </div>
         <div className="container">
           <div className="logo-container">
             <figure>
