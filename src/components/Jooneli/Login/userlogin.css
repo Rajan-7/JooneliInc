@@ -79,6 +79,7 @@ body {
     & .login-button {
       padding: 0rem 2rem 1rem 2rem;
       & .btn {
+        cursor: pointer;
         font-size: 1.6rem;
         color: var(--text-color);
         border: none;
@@ -143,6 +144,7 @@ body {
     & .register-button {
       padding: 0rem 2rem 1rem 2rem;
       & .btn {
+        cursor: pointer;
         border: none;
         width: 100%;
         height: 4rem;
@@ -164,3 +166,66 @@ body {
 }
 
 /* ? user-register section end here */
+
+/* ? Forgetpass section start */
+
+.forget-password--section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: hsl(0,0%,90%); */
+
+  & .forget-container {
+    height: 25rem;
+    width: 40rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+
+    & .heading {
+      font-size: 2.4rem;
+      text-align: center;
+      padding: 2rem 0rem;
+    }
+    & .resetemail {
+      margin: 0rem 2rem;
+      & p {
+        padding-bottom: 0.5rem;
+        font-size: 1.6rem;
+      }
+      & input {
+        height: 4rem;
+        width: 100%;
+
+        &::placeholder {
+          font-size: 1.6rem;
+          padding-left: 0.4rem;
+        }
+      }
+    }
+    & .reset-button {
+      padding: 2rem 2rem;
+      & .btn {
+        font-size: 1.6rem;
+        cursor: pointer;
+        color: white;
+        background-color: #d91e2e;
+        border: none;
+        width: 100%;
+        height: 4rem;
+        border-radius: 1.5rem;
+        -webkit-border-radius: 1.5rem;
+        -moz-border-radius: 1.5rem;
+        -ms-border-radius: 1.5rem;
+        -o-border-radius: 1.5rem;
+      }
+    }
+  }
+}
+
+/* ? Forgetpass section end */
