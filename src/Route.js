@@ -9,6 +9,9 @@ import ManageTeam from "./components/Jooneli/ManageTeam/ManageTeam";
 import Banking from "./components/Jooneli/Banking/Banking";
 import Trading from "./components/Jooneli/Trading/Trading";
 import Talk from "./components/Jooneli/LetsTalk/Talk";
+import UserLogin from "./components/Jooneli/Login/UserLogin";
+import ForgetPass from "./components/Jooneli/Login/ForgetPass";
+import SignIn from "./components/Jooneli/Login/SignIn";
 
 const router = createBrowserRouter([
   {
@@ -51,7 +54,20 @@ const router = createBrowserRouter([
   {
     path:"talk",
     element:<Talk/>
+  },
+  {
+    path:'login',
+    element:<UserLogin/>
+  },
+  {
+    path:'forgetpass',
+    element:<ForgetPass/>
+  },
+  {
+    path:'signin',
+    element:<SignIn/>
   }
+
 ]);
 
 export default router;

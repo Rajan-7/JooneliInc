@@ -60,7 +60,7 @@ const Nav = () => {
         </ul>
         <ul>
           <li className="nav-item">
-            <Link to="/">Login</Link>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       </nav>
