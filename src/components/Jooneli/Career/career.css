@@ -1,4 +1,4 @@
-/* main part  */
+/* ? main part  */
 
 * {
   margin: 0;
@@ -17,6 +17,7 @@ body {
   --main-heading--color: #263671;
   --sub-content--color: rgba(0, 0, 0, 0.7);
   --job-heading--color:#7c6576;
+  --box-shadow--color:rgba(0, 0, 0, 0.16);
 }
 
 /* ? career section start here */
@@ -92,7 +93,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        box-shadow: var(--box-shadow--color) 0px 1px 4px;
         & .job-heading {
           font-size: 2.8rem;
           color: var(--job-heading--color);

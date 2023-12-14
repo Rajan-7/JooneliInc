@@ -1,4 +1,4 @@
-/* main part  */
+/* ? main part  */
 
 * {
   margin: 0;
@@ -16,13 +16,18 @@ body {
 
 :root {
   --text-color: #fff;
+  --footer-background: rgba(0, 0, 0, 0.05);
+  --companies-heading--color: rgba(0, 0, 0, 0.6);
+  --sub-content--color: rgba(0, 0, 0, 0.6);
+  --copyright-color: rgba(0, 0, 0, 0.5);
+  --media-icon--color: #777;
 }
 
 /* Footer-section start here */
 
 .footer-section {
   margin-top: 14rem;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: var(--footer-background);
 
   & .footer-container {
     display: flex;
@@ -37,7 +42,7 @@ body {
       & .compaines-heading {
         font-size: 1.8rem;
         font-weight: 600;
-        color: rgba(0, 0, 0, 0.6);
+        color: var(--companies-heading--color);
         text-transform: uppercase;
       }
       & .mb {
@@ -74,7 +79,7 @@ body {
       & .copyright {
         margin-top: 4rem;
         font-size: 1.5rem;
-        color: rgba(0, 0, 0, 0.5);
+        color: var(--copyright-color);
       }
     }
 
@@ -82,7 +87,7 @@ body {
       & .contact-heading {
         font-weight: 600;
         font-size: 1.8rem;
-        color: rgba(0, 0, 0, 0.6);
+        color: var(--sub-content--color);
 
         text-transform: uppercase;
       }
@@ -93,7 +98,7 @@ body {
           font-size: 1.6rem;
           list-style: none;
           font-weight: 500;
-          color: rgba(0, 0, 0, 0.4);
+          color: var(--copyright-color);
 
           & i {
             margin-right: 0.5rem;
@@ -108,7 +113,7 @@ body {
         font-weight: 600;
         margin-top: 3rem;
         font-size: 1.8rem;
-        color: rgba(0, 0, 0, 0.6);
+        color: var(--companies-heading--color);
       }
       & .media {
         margin-top: 3rem;
@@ -118,7 +123,7 @@ body {
           & svg {
             height: 3.2rem;
             width: 3.2rem;
-            color: #777777;
+            color: var(--media-icon--color);
           }
         }
       }

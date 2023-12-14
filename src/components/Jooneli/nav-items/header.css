@@ -10,11 +10,13 @@ html {
 }
 
 body {
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
   --text-color: #fff;
+  --red-color: #9a031e;
+  --drop-list-hover--color: rgba(255, 255, 255, 0.5);
 }
 
 /* nav section start here */
@@ -47,9 +49,6 @@ body {
   }
 
   & .center-content {
-    &:hover .hover-effect--background {
-      display: block;
-    }
     font-size: 2.4rem;
     position: absolute;
     color: var(--text-color);
@@ -100,7 +99,7 @@ body {
       font-size: 1.8rem;
 
       & .nav-item a:hover {
-        color: red;
+        color: var(--red-color);
       }
 
       & .nav-item {
@@ -109,7 +108,7 @@ body {
           margin-bottom: 0.6rem;
         }
         & a {
-          color: rgb(240, 244, 240);
+          color: var(--text-color);
         }
       }
 
@@ -143,12 +142,11 @@ body {
           cursor: pointer;
           font-weight: 400;
           border: none;
-          background-color: yellow;
           color: var(--text-color);
           font-size: 1.7rem;
 
           &:hover {
-            color: red;
+            color: var(--red-color);
           }
         }
 
@@ -171,7 +169,7 @@ body {
             text-decoration: none;
             display: flex;
             &:hover {
-              color: rgba(255, 255, 255, 0.5);
+              color: var(--drop-list-hover--color);
             }
           }
         }
@@ -197,7 +195,7 @@ body {
             text-decoration: none;
             display: flex;
             &:hover {
-              color: rgba(255, 255, 255, 0.5);
+              color: var(--drop-list-hover--color);
             }
           }
         }
@@ -209,9 +207,5 @@ body {
     }
   }
 }
-
-
-
-
 
 /* nav/header section end here */

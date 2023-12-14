@@ -40,7 +40,7 @@ const Bod = () => {
           <div className="content-section">
             <div className="logo-info">
               <div className="logo">
-                <img src="/image/elon.jpeg" alt="" />
+                <img src="/image/bod1.jpeg" alt="" />
               </div>
               <div className="social-icon">
                 <Link>
@@ -52,7 +52,7 @@ const Bod = () => {
               </div>
             </div>
             <div className="dir-info">
-              <div className="main-heading">Elon Musk</div>
+              <div className="main-heading">Henry Stark</div>
               <div className="sub-heading">Director,Jooneli</div>
               <p>
                 "Life is a transformative journey where each step, whether in
@@ -64,7 +64,7 @@ const Bod = () => {
           <div className="content-section">
             <div className="logo-info">
               <div className="logo">
-                <img src="/image/billgate.webp" alt="" />
+                <img src="/image/bod2.png" alt="" />
               </div>
               <div className="social-icon">
                 <Link>
@@ -76,7 +76,7 @@ const Bod = () => {
               </div>
             </div>
             <div className="dir-info">
-              <div className="main-heading">Bill Gate</div>
+              <div className="main-heading">Bill Harson</div>
               <div className="sub-heading">Senior Manager,Jooneli</div>
               <p>
                 "A company's journey is a continuous pursuit of growth and

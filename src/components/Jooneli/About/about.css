@@ -1,4 +1,4 @@
-/* * main part  */
+/* ? main part  */
 
 * {
   margin: 0;
@@ -13,6 +13,16 @@ body {
 }
 :root {
   --text-color: #fff;
+  --font-color:#B31312;
+  --text-color: #fff;
+  --red-color: #9a031e;
+  --green-color: #304d30;
+  --blue-color: #4cb9e7;
+  --main-color: #0c0d13;
+  --hover-color: #6db9ef;
+  --border-color: #b34549;
+  --green-color:#45b34a;
+  --sub-content--color:rgba(0, 0, 0, 0.6);
 }
 
 /* ? about section start here */
@@ -48,7 +58,7 @@ body {
           display: inline-block;
           content: "";
           width: 4rem;
-          border-top: 0.2rem solid red;
+          border-top: 0.2rem solid var(--border-color);
           margin: 0 1rem;
           transform: translateY(-0.5rem);
           -webkit-transform: translateY(-0.5rem);
@@ -60,23 +70,26 @@ body {
       & .main-heading {
         font-weight: 600;
         font-size: 4rem;
+        width: 90%;
         padding: 0rem 1rem 2rem 0rem;
-        & .color-1 {
+        /* & .color-1 {
           color: #45b34a;
+          color:var(--font-color);
         }
         & .color-2 {
           color: #45b34a;
-        }
+          color:var(--font-color);
+        } */
       }
       & .content-1 {
-        color: rgba(0, 0, 0, 0.6);
+        color: var(--sub-content--color);
         font-size: 1.6rem;
         line-height: 1.5;
         word-spacing: 1.5;
         text-align: justify;
       }
       & .content-2 {
-        color: rgba(0, 0, 0, 0.6);
+        color: var(--sub-content--color);
         line-height: 1.5;
         word-spacing: 1.5;
         font-size: 1.6rem;
@@ -87,7 +100,8 @@ body {
       display: flex;
       gap: 1rem;
       & .icon {
-        color: #45b34a;
+        /* color: #45b34a; */
+        color: var(--font-color);
         font-size: 4rem;
       }
       & .contents {
@@ -97,7 +111,7 @@ body {
           font-size: 1.9rem;
         }
         & .details {
-          color: rgba(0, 0, 0, 0.6);
+          color: var(--sub-content--color);
           font-size: 1.6rem;
           text-align: justify;
           line-height: 1.5;
@@ -109,7 +123,8 @@ body {
       display: flex;
       gap: 1rem;
       & .icon {
-        color: #45b34a;
+        /* color: #45b34a; */
+        color:var(--font-color);
         font-size: 4rem;
       }
       & .contents {
@@ -118,7 +133,7 @@ body {
           font-size: 1.9rem;
         }
         & .details {
-          color: rgba(0, 0, 0, 0.6);
+          color: var(--sub-content--color);
           font-size: 1.6rem;
           text-align: justify;
           line-height: 1.5;
@@ -144,14 +159,14 @@ body {
       & .sub-header {
         font-size: 1.6rem;
         text-transform: uppercase;
-        color: rgba(0, 0, 0, 0.6);
+        color: var(--sub-content--color);
         &::after,
         &::before {
           display: inline-block;
           content: "";
           width: 4rem;
           margin: 0 1rem;
-          border-top: 0.2rem solid #45b34a;
+          border-top: 0.2rem solid var(--border-color);
           transform: translateY(-0.5rem);
           -webkit-transform: translateY(-0.5rem);
           -moz-transform: translateY(-0.5rem);
@@ -163,7 +178,8 @@ body {
         font-weight: 600;
         font-size: 4rem;
         & .color-3 {
-          color: green;
+          /* color: green; */
+          color:var(--font-color);
         }
       }
       & .header-content {
@@ -194,7 +210,7 @@ body {
             align-items: center;
             width: 5rem;
             height: 25%;
-            border: 0.2rem solid #45b34a;
+            border: 0.2rem solid var(--border-color);
             border-radius: 1rem;
             -webkit-border-radius: 1rem;
             -moz-border-radius: 1rem;
@@ -202,7 +218,7 @@ body {
             -o-border-radius: 1rem;
             & i {
               font-size: 2rem;
-              color: green;
+              color: var(--font-color)
             }
           }
         }

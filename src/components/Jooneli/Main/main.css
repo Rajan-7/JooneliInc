@@ -14,10 +14,13 @@ body {
 
 :root {
   --text-color: #fff;
+  --side-flex-bgcolor:#1b1f25;
+  --red-color: #9a031e;
+  --news-date--color:rgba(0, 0, 0, 0.4);
 }
 
 /* ? main body start here */
-/* main section start here */
+
 .main {
   width: 100vw;
   margin-top: 7rem;
@@ -73,12 +76,11 @@ body {
 
   & .side-flex {
     width: 33.33%;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: #1b1f25;
+    background-color: var(--side-flex-bgcolor);
 
     & .flex-1 {
       display: flex;
@@ -117,7 +119,7 @@ body {
         height: 3.5rem;
         padding-left: 1.7rem;
         margin-left: 2rem;
-        border-left: 0.5rem solid red;
+        border-left: 0.5rem solid var(--red-color);
       }
     }
   }
@@ -278,7 +280,7 @@ body {
 
         & button {
           cursor: pointer;
-          border: 0.1rem solid #fff;
+          border: 0.1rem solid var(--text-color);
           color: var(--text-color);
           background: transparent;
           height: 3.3rem;
@@ -292,7 +294,7 @@ body {
 
         & button:hover {
           background-color: var(--text-color);
-          color: red;
+          color: var(--red-color);
         }
       }
     }
@@ -334,7 +336,7 @@ body {
         }
         & .news-date {
           font-size: 1.6rem;
-          color: rgba(0, 0, 0, 0.4);
+          color: var(--news-date--color);
         }
       }
     }
@@ -350,7 +352,7 @@ body {
         height: 5.5rem;
         width: 17.5rem;
         font-size: 1.5rem;
-        border: 0.1rem solid red;
+        border: 0.1rem solid var(--red-color);
         border-radius: 0.5rem;
         -webkit-border-radius: 0.5rem;
         -moz-border-radius: 0.5rem;
@@ -358,7 +360,7 @@ body {
         -o-border-radius: 0.5rem;
 
         &:hover {
-          background-color: red;
+          background-color: var(--red-color);
           color: var(--text-color);
         }
       }

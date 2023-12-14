@@ -20,6 +20,7 @@ body {
   --heading-color: #dc2f2f;
   --bg-color: rgba(0, 0, 0, 0.5);
   --bg-color-2: rgba(0, 0, 0, 0.6);
+  --main-color: #0c0d13;
 }
 
 /* ? trading section start here */
@@ -51,7 +52,7 @@ body {
       text-align: center;
       padding-bottom: 1.5rem;
       & .color {
-        color: #000;
+        color: var(--main-color);
         font-size: 3rem;
         font-weight: 600;
       }
@@ -104,7 +105,7 @@ body {
       text-align: center;
       padding-bottom: 0.5rem;
       & .color {
-        color: #000;
+        color: var(--main-color);
         font-size: 3rem;
         font-weight: 600;
       }
@@ -143,7 +144,7 @@ body {
           position: relative;
           width: 100%;
           text-align: center;
-          color: #fff;
+          color: var(--text-color);
           margin-top: -21rem;
           & h5 {
             font-size: 2rem;
@@ -156,7 +157,7 @@ body {
           left: 0;
           height: 100%;
           width: 100%;
-          color: #fff;
+          color: var(--text-color);
           display: flex;
           flex-direction: column;
           justify-content: center;

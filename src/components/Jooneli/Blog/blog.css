@@ -1,4 +1,4 @@
-/* main part  */
+/* ? main part  */
 
 * {
   margin: 0;
@@ -13,6 +13,9 @@ body {
 }
 :root {
   --text-color: #fff;
+  --blog-heading: #508d69;
+  --blog-background--color: rgba(0, 0, 0, 0.1);
+  --icon-color: #4d96ff;
 }
 
 /* Blog section start here */
@@ -28,8 +31,8 @@ body {
       width: 100%;
       padding: 3rem;
       text-align: center;
-      & .color-1{
-        color:#2D9596;
+      & .color-1 {
+        color: var(--blog-heading);
       }
     }
     & .blog-contents {
@@ -41,7 +44,7 @@ body {
         height: 50rem;
         width: 40rem;
         border-radius: 1rem;
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: var(--blog-background--color);
         -webkit-border-radius: 1rem;
         -moz-border-radius: 1rem;
         -ms-border-radius: 1rem;
@@ -72,7 +75,7 @@ body {
 
       & .fa-solid {
         font-size: 4rem;
-        color: #3081d0;
+        color: var(--icon-color);
       }
     }
   }

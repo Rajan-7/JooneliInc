@@ -94,7 +94,7 @@ const Client = () => {
               <div className="heading-details">
                 <div className="sub-heading">Testomonials</div>
                 <div className="heading">
-                  What Our <span className="color">Trustworthy</span> Clients
+                  What Our <span className="clr">Trustworthy</span> Clients
                   Say
                 </div>
               </div>

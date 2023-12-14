@@ -16,11 +16,11 @@ body {
   --text-color: #fff;
 }
 
-/* nav-background */
 
-/* nav section start here */
 
-/* nav section start here */
+
+
+/* ? nav section start here */
 .header {
   position: relative;
   & video {
@@ -29,6 +29,20 @@ body {
     width: 100vw;
     object-fit: cover;
   }
+
+  /* & .hover-effect--background{
+    height: 27rem;
+    width: 100vw;
+    top:0;
+    left: 0;
+    position: absolute;
+    background: rgb(175, 145, 145);
+    display: none;
+  }
+
+  &:hover .hover-effect--background{
+    display: block;
+  } */
 
   & img {
     height: 60rem;
@@ -86,7 +100,7 @@ body {
       font-size: 1.8rem;
 
       & .nav-item a:hover {
-        color: red;
+        color: var(--red-color);
       }
 
       & .nav-item {
@@ -95,15 +109,29 @@ body {
           margin-bottom: 0.6rem;
         }
         & a {
-          color: rgb(240, 244, 240);
+          text-decoration: none;
+          color: var(--text-color);
         }
       }
 
       & ul {
         & li {
           list-style: none;
-          & a{
+        }
+      }
+
+      & .navigate-link {
+        & .display-list {
+          & .display-btn {
+            font-size: 1.8rem;
             text-decoration: none;
+            background-color: transparent;
+          }
+          & .drop-down--product {
+            background-color: transparent;
+          }
+          & .drop-down--business {
+            background-color: transparent;
           }
         }
       }
@@ -114,24 +142,24 @@ body {
 
         & .display-btn {
           cursor: pointer;
-          font-weight: 300;
+          font-weight: 400;
           border: none;
-          background-color: #000;
           color: var(--text-color);
           font-size: 1.7rem;
 
           &:hover {
-            color: red;
+            color: var(--red-color);
           }
         }
 
         & .drop-down--product {
+          font-size: 1.7rem;
           display: none;
           position: absolute;
           left: 0%;
           z-index: 1;
           min-width: 25rem;
-          background-color: #000;
+          background-color: transparent;
           border-radius: 0.5rem;
           -webkit-border-radius: 0.5rem;
           -moz-border-radius: 0.5rem;
@@ -143,7 +171,7 @@ body {
             text-decoration: none;
             display: flex;
             &:hover {
-              color: rgba(255, 255, 255, 0.5);
+              color: var(--drop-list-hover--color);
             }
           }
         }
@@ -153,11 +181,11 @@ body {
         }
         & .drop-down--business {
           display: none;
+          font-size: 1.7rem;
           position: absolute;
           left: 0%;
           z-index: 1;
           min-width: 25rem;
-          background-color: #000;
           border-radius: 0.5rem;
           -webkit-border-radius: 0.5rem;
           -moz-border-radius: 0.5rem;
@@ -169,7 +197,7 @@ body {
             text-decoration: none;
             display: flex;
             &:hover {
-              color: rgba(255, 255, 255, 0.5);
+              color: var(--drop-list-hover--color);
             }
           }
         }
@@ -182,9 +210,8 @@ body {
   }
 }
 
-/* nav/header section end here */
+/* ? nav/header section end here */
 
-/* nav/header section end here */
 
 /* ? main body start here */
 /* main section start here */
@@ -525,7 +552,7 @@ body {
 /* photo-info & news section end */
 /* ? main body end here */
 
-/* Footer-section start here */
+/* ? Footer-section start here */
 
 .footer-section {
   margin-top: 14rem;
@@ -633,6 +660,5 @@ body {
   }
 }
 
-/* Footer-section end here */
-/* blog section start */
-/* blog section end */
+/* ? Footer-section end here */
+

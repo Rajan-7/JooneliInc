@@ -1,4 +1,4 @@
-/* main part  */
+/* ? main part  */
 
 * {
   margin: 0;
@@ -17,6 +17,8 @@ body {
   --main-heading--color: #263671;
   --sub-content--color: rgba(0, 0, 0, 0.5);
   --job-heading--color: #7c6576;
+  --testomonials-style--color: #45b34a;
+  --client-name--color: rgba(0, 0, 0, 0.8);
 }
 
 /* ? client section start here */
@@ -36,6 +38,7 @@ body {
       display: grid;
       grid-template-columns: repeat(3, 2fr);
       gap: 2rem;
+      padding: 0rem 2.5rem;
 
       & .client {
         & .logo {
@@ -47,14 +50,13 @@ body {
         & .client-details {
           & .client-name {
             font-size: 2rem;
-            color: rgba(0, 0, 0, 0.8);
+            color: var(--client-name--color);
           }
           & .client-description {
             font-size: 1.6rem;
-            color: rgba(0, 0, 0, 0.5);
+            color: var(--sub-content--color);
             text-align: justify;
             letter-spacing: 0.04rem;
-            /* line-height: 1.8rem; */
           }
         }
       }
@@ -80,7 +82,7 @@ body {
               display: inline-block;
               content: "";
               width: 3rem;
-              border-top: 0.2rem solid green;
+              border-top: 0.2rem solid var(--green-color);
               margin: 0rem 1rem;
               transform: translateY(-0.5rem);
               -webkit-transform: translateY(-0.5rem);
@@ -92,15 +94,15 @@ body {
 
           & .heading {
             font-size: 4.5rem;
-            & .color {
-              color: #65b741;
+            & .clr {
+              color: var(--testomonials-style--color);
             }
           }
         }
         & .heading-effect {
           height: 7rem;
           width: 0.3rem;
-          background-color: #65b741;
+          background-color: var(--green-color);
           transform: translateY(3.5rem);
           -webkit-transform: translateY(3.5rem);
           -moz-transform: translateY(3.5rem);
@@ -115,7 +117,7 @@ body {
         width: 80%;
         text-align: justify;
         letter-spacing: 0.05rem;
-        color: rgba(0, 0, 0, 0.5);
+        color: var(--sub-content--color);
       }
     }
 
@@ -133,7 +135,7 @@ body {
           padding: 4rem 4rem 0rem 4rem;
           font-size: 1.6rem;
           font-style: italic;
-          color: rgba(0, 0, 0, 0.5);
+          color: var(--sub-content--color);
         }
         & .responser {
           display: flex;

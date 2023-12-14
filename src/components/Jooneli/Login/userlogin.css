@@ -16,6 +16,8 @@ body {
 :root {
   --text-color: #fff;
   --bg-color: #d91e2e;
+  --section-bg--color: hsl(0, 0%, 87%);
+  --form-container--color: hsl(0, 0%, 97%);
 }
 
 /* ? userLogin section start */
@@ -26,12 +28,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(0,0%,87%);
+  background-color: var(--section-bg--color);
 
   & .form-container {
     height: 33rem;
     width: 32rem;
-  background-color: hsl(0,0%,97%);
+    background-color: var(--form-container--color);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
       rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 1.5rem;
@@ -113,12 +115,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(0,0%,87%);
+  background-color: var(--section-bg--color);
 
   & .form-container {
     height: 41rem;
     width: 32rem;
-    background-color: hsl(0,0%,97%);
+    background-color: var(--form-container--color);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
       rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 1.5rem;
@@ -142,14 +144,13 @@ body {
         &::placeholder {
           font-size: 1.5rem;
         }
-       
       }
       & input[type="text"] {
-        padding-left: .5rem;
+        padding-left: 0.5rem;
         font-size: 1.6rem;
       }
-      & input[type="password"]{
-        padding-left: .5rem;
+      & input[type="password"] {
+        padding-left: 0.5rem;
         font-size: 1.6rem;
       }
     }
@@ -186,11 +187,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: hsl(0,0%,90%); */
+  background-color: var(--section-bg--color);
 
   & .forget-container {
     height: 25rem;
     width: 40rem;
+    background-color: var(--form-container--color);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
       rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 1.5rem;
@@ -218,9 +220,9 @@ body {
           font-size: 1.6rem;
         }
       }
-      & input[type="text"]{
-         padding-left: .5rem;
-         font-size: 1.6rem;
+      & input[type="text"] {
+        padding-left: 0.5rem;
+        font-size: 1.6rem;
       }
     }
     & .reset-button {
@@ -228,7 +230,7 @@ body {
       & .btn {
         font-size: 1.6rem;
         cursor: pointer;
-        color: white;
+        color: var(--text-color);
         background-color: #d91e2e;
         border: none;
         width: 100%;
