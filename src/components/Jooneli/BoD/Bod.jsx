@@ -31,10 +31,9 @@ const Bod = () => {
               <div className="main-heading">Muktinath</div>
               <div className="sub-heading">Managing Director,Jooneli</div>
               <p>
-                A simple sentence, according to the Cambridge Dictionary, is “a
-                sentence that has only one verb.” The Collins Dictionary defines
-                a simple sentence as “a sentence consisting of a single main
-                clause.”
+                "The journey of fallen people is a testament to resilience,
+                marked by the strength to rise from adversity, learn from
+                setbacks, and rebuild a new narrative of redemption."
               </p>
             </div>
           </div>
@@ -56,10 +55,9 @@ const Bod = () => {
               <div className="main-heading">Elon Musk</div>
               <div className="sub-heading">Director,Jooneli</div>
               <p>
-                A simple sentence, according to the Cambridge Dictionary, is “a
-                sentence that has only one verb.” The Collins Dictionary defines
-                a simple sentence as “a sentence consisting of a single main
-                clause.”
+                "Life is a transformative journey where each step, whether in
+                joy or hardship, contributes to the ever-evolving tapestry of
+                our existence."
               </p>
             </div>
           </div>
@@ -81,10 +79,9 @@ const Bod = () => {
               <div className="main-heading">Bill Gate</div>
               <div className="sub-heading">Senior Manager,Jooneli</div>
               <p>
-                A simple sentence, according to the Cambridge Dictionary, is “a
-                sentence that has only one verb.” The Collins Dictionary defines
-                a simple sentence as “a sentence consisting of a single main
-                clause.”
+                "A company's journey is a continuous pursuit of growth and
+                adaptation, navigating through challenges and milestones to
+                carve its unique path toward success."
               </p>
             </div>
           </div>

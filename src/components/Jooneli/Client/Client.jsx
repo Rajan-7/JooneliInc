@@ -110,13 +110,12 @@ const Client = () => {
           <div className="client-response--details">
             <div className="response-details--box">
               <div className="comment">
-                &#x201c;
-                  Jooneli is one of the best IT company of Nepal promoting
-                  effective & relevant digital services to their clients. They
-                  provide follow up services even after the completion of
-                  projects. They also values your time & mainly focus on
-                  providing the required solutions for the problems.
-                  &#x201d;
+                &#x201c; Jooneli is one of the best IT company of Nepal
+                promoting effective & relevant digital services to their
+                clients. They provide follow up services even after the
+                completion of projects. They also values your time & mainly
+                focus on providing the required solutions for the issues.
+                &#x201d;
               </div>
               <div className="responser">
                 <div className="logo">
@@ -130,19 +129,20 @@ const Client = () => {
             </div>
             <div className="response-details--box">
               <div className="comment">
-              &#x201c;Jooneli is one of the best IT company of Nepal promoting
-                effective & relevant digital services to their clients. They
-                provide follow up services even after the completion of
-                projects. They also values your time & mainly focus on providing
-                the required solutions for the problems.&#x201d;
+                &#x201c;They exceeded my expectations with their
+                exceptional expertise, delivering innovative solutions that
+                streamlined our operations and significantly enhanced our
+                technological capabilities. Their dedicated team's
+                professionalism and commitment to customer satisfaction truly
+                set them apart in the industry.&#x201d;
               </div>
               <div className="responser">
                 <div className="logo">
-                  <img src="/image/team5.jpeg" alt="" />
+                  <img src="/image/team4.webp" alt="" />
                 </div>
                 <div className="logo-details">
-                  <div className="name">Henry Howard</div>
-                  <div className="designation">CEO,Fooder Company</div>
+                  <div className="name">Richard Stark</div>
+                  <div className="designation">CEO,Globe Bank</div>
                 </div>
               </div>
             </div>

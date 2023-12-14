@@ -13,6 +13,7 @@ const Header = () => {
           className="animator"
         ></video> */}
         <img src="/image/background.jpeg" alt="" />
+        <div className="hover-effect--background "></div>
         <div className="center-content "></div>
         <div className="container">
           <div className="logo-container">

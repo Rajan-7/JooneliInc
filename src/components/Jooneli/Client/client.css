@@ -40,8 +40,8 @@ body {
       & .client {
         & .logo {
           & img {
-            height: 12rem;
-            width: 20rem;
+            height: 6rem;
+            width: 14rem;
           }
         }
         & .client-details {

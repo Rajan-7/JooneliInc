@@ -26,10 +26,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: hsl(0,0%,87%);
 
   & .form-container {
     height: 33rem;
     width: 32rem;
+  background-color: hsl(0,0%,97%);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
       rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 1.5rem;
@@ -111,10 +113,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: hsl(0,0%,87%);
 
   & .form-container {
     height: 41rem;
     width: 32rem;
+    background-color: hsl(0,0%,97%);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
       rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 1.5rem;
@@ -137,8 +141,16 @@ body {
         outline: none;
         &::placeholder {
           font-size: 1.5rem;
-          padding-left: 0.4rem;
         }
+       
+      }
+      & input[type="text"] {
+        padding-left: .5rem;
+        font-size: 1.6rem;
+      }
+      & input[type="password"]{
+        padding-left: .5rem;
+        font-size: 1.6rem;
       }
     }
     & .register-button {
@@ -204,8 +216,11 @@ body {
 
         &::placeholder {
           font-size: 1.6rem;
-          padding-left: 0.4rem;
         }
+      }
+      & input[type="text"]{
+         padding-left: .5rem;
+         font-size: 1.6rem;
       }
     }
     & .reset-button {

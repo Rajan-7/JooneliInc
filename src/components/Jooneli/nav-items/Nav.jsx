@@ -7,7 +7,7 @@ const Nav = () => {
     <>
       <nav className="nav-bar">
         <ul>
-          <li className="nav-item" >
+          <li className="nav-item">
             <Link to="/" className="item">
               Home
             </Link>
@@ -15,7 +15,7 @@ const Nav = () => {
         </ul>
         <ul className="navigate-link">
           <div className="nav-item display-list">
-            <button className="display-btn">Product</button>
+            <Link className="display-btn">Product</Link>
             <div className="drop-down--product">
               <Link to="/bank" className="drop">
                 360 Core Banking System
@@ -28,7 +28,7 @@ const Nav = () => {
         </ul>
         <ul className="navigate-link">
           <div className="nav-item display-list">
-            <button className="display-btn">Company</button>
+            <Link className="display-btn">Company</Link>
             <div className="drop-down--business">
               <Link to="/about" className="drop">
                 About Us
@@ -49,7 +49,7 @@ const Nav = () => {
           </div>
         </ul>
         <ul>
-          <li className="nav-item" >
+          <li className="nav-item">
             <Link to="/blog">Blog</Link>
           </li>
         </ul>

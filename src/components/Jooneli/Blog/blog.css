@@ -38,7 +38,7 @@ body {
       justify-content: center;
       gap: 2rem;
       & .blog-1 {
-        height: 54rem;
+        height: 50rem;
         width: 40rem;
         border-radius: 1rem;
         background-color: rgba(0, 0, 0, 0.1);
@@ -47,7 +47,7 @@ body {
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
         & img {
-          height: 70%;
+          height: 60%;
           width: 100%;
           border-top-right-radius: 1rem;
           border-top-left-radius: 1rem;

@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto",sans-serif;
 }
 
 :root {
@@ -27,12 +27,29 @@ body {
     object-fit: cover;
   }
 
+  /* & .hover-effect--background{
+    height: 27rem;
+    width: 100vw;
+    top:0;
+    left: 0;
+    position: absolute;
+    background: rgb(175, 145, 145);
+    display: none;
+  }
+
+  &:hover .hover-effect--background{
+    display: block;
+  } */
+
   & img {
     height: 60rem;
     width: 100vw;
   }
 
   & .center-content {
+    &:hover .hover-effect--background {
+      display: block;
+    }
     font-size: 2.4rem;
     position: absolute;
     color: var(--text-color);
@@ -47,7 +64,7 @@ body {
     -webkit-animation: shower 16s linear infinite;
 
     &::after {
-      content: "Never Give Up ✌️";
+      content: "We are Jooneli ✌️";
     }
   }
 
@@ -102,6 +119,22 @@ body {
         }
       }
 
+      & .navigate-link {
+        & .display-list {
+          & .display-btn {
+            font-size: 1.8rem;
+            text-decoration: none;
+            background-color: transparent;
+          }
+          & .drop-down--product {
+            background-color: transparent;
+          }
+          & .drop-down--business {
+            background-color: transparent;
+          }
+        }
+      }
+
       & .display-list {
         display: inline-block;
         position: relative;
@@ -110,7 +143,7 @@ body {
           cursor: pointer;
           font-weight: 400;
           border: none;
-          background-color: #000;
+          background-color: yellow;
           color: var(--text-color);
           font-size: 1.7rem;
 
@@ -126,7 +159,7 @@ body {
           left: 0%;
           z-index: 1;
           min-width: 25rem;
-          background-color: #000;
+          background-color: transparent;
           border-radius: 0.5rem;
           -webkit-border-radius: 0.5rem;
           -moz-border-radius: 0.5rem;
@@ -153,7 +186,6 @@ body {
           left: 0%;
           z-index: 1;
           min-width: 25rem;
-          background-color: #000;
           border-radius: 0.5rem;
           -webkit-border-radius: 0.5rem;
           -moz-border-radius: 0.5rem;
@@ -177,5 +209,9 @@ body {
     }
   }
 }
+
+
+
+
 
 /* nav/header section end here */

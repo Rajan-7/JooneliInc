@@ -15,6 +15,7 @@ const SignIn = () => {
               autoComplete="off"
               id="username"
               name="username"
+              required
             />
           </div>
           <div className="register-container">
@@ -24,15 +25,17 @@ const SignIn = () => {
               autoComplete="off"
               id="email"
               name="email"
+              required
             />
           </div>
           <div className="register-container">
             <input
-              type="number"
+              type="text"
               placeholder="Contact number"
               autoComplete="off"
               id="contact"
               name="contact"
+              required
             />
           </div>
           <div className="register-container">
@@ -42,6 +45,7 @@ const SignIn = () => {
               autoComplete="off"
               id="password"
               name="password"
+              required
             />
           </div>
           <div className="register-container">
@@ -51,6 +55,7 @@ const SignIn = () => {
               autoComplete="off"
               id="confirmpassword"
               name="confirmpassword"
+              required
             />
           </div>
 
