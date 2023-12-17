@@ -19,7 +19,7 @@ body {
   --drop-list-hover--color: rgba(255, 255, 255, 0.5);
 }
 
-/* ? bankingHeader start here */
+/* ? bodHeader start here */
 .header {
   position: relative;
   & video {
@@ -198,4 +198,4 @@ body {
   }
 }
 
-/* ? bankingHeader end here */
+/* ? bodHeader end here */

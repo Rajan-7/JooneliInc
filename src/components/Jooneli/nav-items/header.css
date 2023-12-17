@@ -20,35 +20,44 @@ body {
 }
 
 /* nav section start here */
-.header {
-  position: relative;
-  & video {
+.hover-effect-background {
+  /* position: absolute; */
+  height: 27rem;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: block;
+  background: rgb(175, 145, 145);
+  /* display: none; */
+}
+/* .header { */
+  /* & video {
     margin: 0;
     height: 60.5rem;
     width: 100vw;
     object-fit: cover;
-  }
+  } */
 
   /* & .hover-effect--background{
-    height: 27rem;
+    height: 20rem;
     width: 100vw;
     top:0;
     left: 0;
     position: absolute;
-    background: rgb(175, 145, 145);
+    background: rgb(166, 32, 32);
     display: none;
-  }
+  } */
 
-  &:hover .hover-effect--background{
+  /* &:hover .hover-effect--background{
     display: block;
   } */
 
-  & img {
+  /* & img {
     height: 60rem;
     width: 100vw;
-  }
+  } */
 
-  & .center-content {
+  /* & .center-content {
     font-size: 2.4rem;
     position: absolute;
     color: var(--text-color);
@@ -65,11 +74,30 @@ body {
     &::after {
       content: "We are Jooneli ✌️";
     }
-  }
 
-  & .container {
+  } */
+
+  /* & .center-content {
+    position: relative;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1.8rem;
+
+    & img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+  } */
+
+  /* & .container {
+    position: fixed;
     margin-top: 2rem;
-    position: absolute;
+
     padding: 2rem;
     top: 0;
     left: 0;
@@ -82,6 +110,7 @@ body {
       height: 10rem;
       width: 30rem;
       display: flex;
+      z-index: 1;
       justify-content: center;
       & img {
         height: 10rem;
@@ -108,6 +137,7 @@ body {
           margin-bottom: 0.6rem;
         }
         & a {
+          text-decoration: none;
           color: var(--text-color);
         }
       }
@@ -205,7 +235,161 @@ body {
         }
       }
     }
-  }
-}
+  } */
+/* } */
 
 /* nav/header section end here */
+
+/* .hover-effect-background {
+  position: fixed;
+  height: 27rem;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgb(175, 145, 145);
+  /* display: none; */
+/* } */
+
+.header .center-content { */
+  position: relative;
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 1.8rem;
+}
+
+.header .center-content img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.header .container {
+  position: fixed;
+  margin-top: 2rem;
+  padding: 2rem;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .container .logo-container {
+  height: 10rem;
+  width: 30rem;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+}
+
+.header .container .logo-container img {
+  height: 10rem;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.header .container .nav-bar {
+  margin-left: -12rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6rem;
+  font-size: 1.8rem;
+}
+
+.header .container .nav-bar .nav-item a:hover {
+  color: var(--red-color);
+}
+
+.header .container .nav-bar .nav-item .item {
+  margin-bottom: 0.6rem;
+}
+
+.header .container .nav-bar .nav-item a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header .container .nav-bar ul li {
+  list-style: none;
+}
+
+.header .container .nav-bar .navigate-link .display-list .display-btn {
+  font-size: 1.8rem;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.header .container .nav-bar .navigate-link .display-list .drop-down--product,
+.header .container .nav-bar .navigate-link .display-list .drop-down--business {
+  background-color: transparent;
+}
+
+.header .container .nav-bar .navigate-link .display-list .drop-down--product .drop,
+.header .container .nav-bar .navigate-link .display-list .drop-down--business .drop {
+  margin: 1rem auto;
+  text-decoration: none;
+  display: flex;
+}
+
+.header .container .nav-bar .navigate-link .display-list .drop-down--product:hover {
+  display: block;
+}
+
+.header .container .nav-bar .navigate-link .display-list .drop-down--business:hover {
+  display: block;
+}
+
+.header .container .nav-bar .display-list {
+  display: inline-block;
+  position: relative;
+}
+
+.header .container .nav-bar .display-list .display-btn {
+  cursor: pointer;
+  font-weight: 400;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.7rem;
+}
+
+.header .container .nav-bar .display-list .display-btn:hover {
+  color: var(--red-color);
+}
+
+.header .container .nav-bar .display-list .drop-down--product,
+.header .container .nav-bar .display-list .drop-down--business {
+  font-size: 1.7rem;
+  display: none;
+  position: absolute;
+  left: 0%;
+  z-index: 1;
+  min-width: 25rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+}
+
+.header .container .nav-bar .display-list .drop-down--product .drop,
+.header .container .nav-bar .display-list .drop-down--business .drop {
+  margin: 1rem auto;
+  text-decoration: none;
+  display: flex;
+}
+
+.header .container .nav-bar .display-list:hover .drop-down--product {
+  display: block;
+}
+
+.header .container .nav-bar .display-list:hover .drop-down--business {
+  display: block;
+}
+
+.display-list a{
+  z-index: 2;
+}
+ */
