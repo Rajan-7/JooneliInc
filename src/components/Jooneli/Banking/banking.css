@@ -16,7 +16,7 @@ body {
   --text-color: #fff;
   --sub-content--color: rgba(0, 0, 0, 0.6);
   --feature-color: rgba(0, 0, 0, 0.7);
-  --font-color: #c21010;
+  --font-icon--color: #c21010;
   --heading-color: #dc2f2f;
   --bg-color: rgba(0, 0, 0, 0.5);
   --bg-color-2: rgba(0, 0, 0, 0.6);
@@ -26,12 +26,12 @@ body {
 /* ? Banking section start here */
 
 .bank-section {
-  margin: 8rem 16rem 0rem 16rem;
+  margin: 28rem 16rem 0rem 16rem;
 
   & .bank-heading--section {
     margin-bottom: 6rem;
     & .bank-system--heading {
-      font-size: 4rem;
+      font-size: 3.2rem;
       text-align: center;
       padding-bottom: 0.8rem;
       & .color-1 {
@@ -74,7 +74,7 @@ body {
           color: var(--feature-color);
           & i {
             padding-right: 0.5rem;
-            color: var(--font-color);
+            color: var(--font-icon--color);
             font-size: 1.8rem;
           }
         }
@@ -93,7 +93,7 @@ body {
           & i {
             font-size: 1.8rem;
             padding-right: 0.5rem;
-            color: var(--font-color);
+            color: var(--font-icon--color);
           }
         }
       }
@@ -119,12 +119,13 @@ body {
     }
 
     & .box-content {
+      /* position: relative; */
       display: grid;
       grid-template-columns: repeat(3, 2fr);
       grid-template-rows: repeat(3, 2fr);
       margin-bottom: 4rem;
       & .content-one {
-        position: relative;
+        position:relative ;
         height: 25rem;
 
         & .image-img {
@@ -133,7 +134,7 @@ body {
         }
 
         &::before {
-          position: absolute;
+          position:absolute;
           top: 0;
           left: 0;
           width: 100%;
@@ -206,7 +207,7 @@ body {
           & i {
             font-size: 1.8rem;
             padding-right: 0.5rem;
-            color: var(--font-color);
+            color: var(--font-icon--color);
           }
         }
       }
@@ -256,7 +257,7 @@ body {
         & .details-one {
           & i {
             font-size: 5rem;
-            color: var(--font-color);
+            color: var(--font-icon--color);
           }
           & .heading {
             padding: 0.5rem;

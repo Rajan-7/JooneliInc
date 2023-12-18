@@ -24,7 +24,7 @@ body {
 /* ? client section start here */
 
 .client-section {
-  margin: 8rem 16rem 0rem 16rem;
+  margin: 28rem 16rem 0rem 16rem;
   & .client-list--section {
     margin-bottom: 6rem;
     & .client-list--heading {

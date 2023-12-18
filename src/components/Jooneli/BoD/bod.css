@@ -23,8 +23,8 @@ body {
 .bod-section {
   display: flex;
   flex-direction: column;
-  padding-top: 8rem;
-  margin-top: 4rem;
+  padding-top: 2rem;
+  margin-top: 28rem;
   gap: 6rem;
   & .bod-heading--section {
     font-size: 4rem;

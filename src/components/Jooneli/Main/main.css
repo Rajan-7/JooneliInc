@@ -14,9 +14,9 @@ body {
 
 :root {
   --text-color: #fff;
-  --side-flex-bgcolor:#1b1f25;
+  --side-flex-bgcolor: #1b1f25;
   --red-color: #9a031e;
-  --news-date--color:rgba(0, 0, 0, 0.4);
+  --news-date--color: rgba(0, 0, 0, 0.4);
 }
 
 /* ? main body start here */
@@ -55,7 +55,7 @@ body {
 
     & .heading {
       font-size: 2.4rem;
-      font-weight: bold;
+      /* font-weight: bold; */
       text-align: center;
     }
 

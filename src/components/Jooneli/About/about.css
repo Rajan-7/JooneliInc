@@ -13,7 +13,7 @@ body {
 }
 :root {
   --text-color: #fff;
-  --font-color:#B31312;
+  --font-icon--color:#B31312;
   --text-color: #fff;
   --red-color: #9a031e;
   --green-color: #304d30;
@@ -27,7 +27,7 @@ body {
 
 /* ? about section start here */
 .about-section {
-  padding-top: 11rem;
+  margin-top: 28rem;
   & .about-section--1 {
     display: grid;
     margin: 0rem 16rem;
@@ -70,7 +70,7 @@ body {
       & .main-heading {
         font-weight: 600;
         font-size: 4rem;
-        width: 90%;
+        width: 100%;
         padding: 0rem 1rem 2rem 0rem;
         /* & .color-1 {
           color: #45b34a;
@@ -101,7 +101,7 @@ body {
       gap: 1rem;
       & .icon {
         /* color: #45b34a; */
-        color: var(--font-color);
+        color: var(--font-icon--color);
         font-size: 4rem;
       }
       & .contents {
@@ -124,7 +124,7 @@ body {
       gap: 1rem;
       & .icon {
         /* color: #45b34a; */
-        color:var(--font-color);
+        color:var(--font-icon--color);
         font-size: 4rem;
       }
       & .contents {
@@ -179,7 +179,7 @@ body {
         font-size: 4rem;
         & .color-3 {
           /* color: green; */
-          color:var(--font-color);
+          color:var(--font-icon--color);
         }
       }
       & .header-content {
@@ -218,7 +218,7 @@ body {
             -o-border-radius: 1rem;
             & i {
               font-size: 2rem;
-              color: var(--font-color)
+              color: var(--font-icon--color)
             }
           }
         }

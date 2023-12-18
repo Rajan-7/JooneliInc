@@ -1,15 +1,15 @@
 import React from "react";
-import ManageTeamHeader from './ManageTeamheader';
 import Footer from "../Footer/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import "./manageteam.css";
+import MtHeader from "./ManageTeamheader";
 
 const ManageTeam = () => {
   return (
     <div>
-      <ManageTeamHeader />
+      <MtHeader />
       <div className="management-section">
         <div className="management-team--heading">Our Management Teams</div>
         <div className="management-team--content">

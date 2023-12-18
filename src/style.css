@@ -1,3 +1,4 @@
+/* ?main part */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto",sans-serif;
 }
 
 :root {
@@ -17,21 +18,7 @@ body {
 }
 
 /* ? nav section start here */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-html {
-  font-size: 62.5%;
-}
-body {
-  font-family: "Roboto", sans-serif;
-}
-:root {
-  --font-color: #fff;
-}
 
 /*? Header section start */
 .header-section{
@@ -48,15 +35,15 @@ body {
 
 .header-section .center-content {
   position: absolute;
-  height: 60rem;
+  height: 61.5rem;
   width: 100%;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: red;
-  font-size: 2.4rem;
+  color: rgb(237, 226, 226);
+  font-size: 1.8rem;
 }
 
 .header-section .center-content img {
@@ -78,7 +65,7 @@ body {
 
 .nav-container .nav-bars ul li a {
   text-decoration: none;
-  color: var(--font-color);
+  color: var(--text-color);
 
   &:hover {
     color: red;
@@ -93,6 +80,7 @@ body {
   align-items: center;
   gap: 5.2rem;
   z-index: 2;
+  /* color:#fff; */
 }
 
 .nav-container .nav-bars .hover-effectors {
@@ -100,17 +88,17 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5.2rem;
-  margin: 0rem 2rem;
+  margin: 0rem 0rem;
 }
 
 .display-product a,
 .display-company a {
-  color: var(--font-color);
+  color: var(--text-color);
   text-decoration: none;
 }
 
 .display-product {
-  color: var(--font-color);
+  color: var(--text-color);
   display: inline-block;
   position: relative;
   &:hover {
@@ -122,6 +110,7 @@ body {
   display: none;
   position: absolute;
   min-width: 25rem;
+  padding: 1rem 0rem;
 
   & a {
     display: flex;
@@ -136,7 +125,7 @@ body {
 }
 
 .display-company {
-  color: var(--font-color);
+  color: var(--text-color);
   /* display: inline-block; */
   position: relative;
   &:hover {
@@ -148,6 +137,7 @@ body {
   display: none;
   position: absolute;
   min-width: 25rem;
+  padding: 1rem 0rem;
 
   & a {
     display: flex;
@@ -192,7 +182,7 @@ body {
 /* main section start here */
 .main {
   width: 100vw;
-  margin-top: 48rem;
+  margin-top: 52rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,7 +214,7 @@ body {
 
     & .heading {
       font-size: 2.4rem;
-      font-weight: bold;
+      /* font-weight: bold; */
       text-align: center;
     }
 

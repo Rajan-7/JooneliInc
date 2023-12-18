@@ -24,7 +24,7 @@ body {
 /* ? management-section start here */
 
 .management-section {
-  margin: 8rem 16rem 0rem 16rem;
+  margin: 28rem 16rem 0rem 16rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;

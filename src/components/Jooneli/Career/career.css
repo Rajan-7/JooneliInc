@@ -13,7 +13,7 @@ body {
 }
 :root {
   --text-color: #fff;
-  --font-color: #3081d0;
+  --font-icon--color: #3081d0;
   --main-heading--color: #263671;
   --sub-content--color: rgba(0, 0, 0, 0.7);
   --job-heading--color:#7c6576;
@@ -22,7 +22,7 @@ body {
 
 /* ? career section start here */
 .career-section {
-  margin: 8rem 16rem 0rem 16rem;
+  margin: 28rem 16rem 0rem 16rem;
   & .career-heading--section {
     text-align: center;
     margin-bottom: 6rem;
@@ -44,6 +44,7 @@ body {
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(3, 2fr);
     gap: 3rem;
+    padding: 0rem 2rem;
     margin-bottom: 6rem;
 
     & .content-container {
@@ -52,7 +53,7 @@ body {
       & .logo {
         & i {
           font-size: 4rem;
-          color: var(--font-color);
+          color: var(--font-icon--color);
         }
       }
       & .content-details {

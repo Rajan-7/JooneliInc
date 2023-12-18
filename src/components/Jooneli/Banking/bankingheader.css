@@ -8,194 +8,166 @@
 html {
   font-size: 62.5%;
 }
-
 body {
   font-family: "Roboto", sans-serif;
 }
-
 :root {
-  --text-color: #fff;
-  --red-color: #9a031e;
-  --drop-list-hover--color: rgba(255, 255, 255, 0.5);
+  --font-color: #fff;
+  --center-content--color: rgba(255, 255, 255, 0.5);
 }
 
-/* ? bankingHeader start here */
-.header {
+/*? Header section start */
+
+.header-section .nav-container {
+  /* position:fixed; */
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.header-section .center-content--bank {
+  position: absolute;
+  height: 40rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--center-content--color);
+  font-size: 1.4rem;
+
+  &::after {
+    content: "\201D";
+  }
+  &::before {
+    content: "\201C";
+  }
+}
+
+.header-section .center-content--bank img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.logo-section {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container .nav-bars ul li {
+  list-style: none;
+}
+
+.nav-container .nav-bars ul li a {
+  text-decoration: none;
+  color: var(--font-color);
+
+  &:hover {
+    color: red;
+  }
+}
+
+.nav-container .nav-bars {
   position: relative;
-  & video {
-    margin: 0;
-    height: 60.5rem;
-    width: 100vw;
-    object-fit: cover;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.2rem;
+  z-index: 2;
+}
+
+.nav-container .nav-bars .hover-effectors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.2rem;
+  margin: 0rem 2rem;
+}
+
+.display-product a,
+.display-company a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.display-product {
+  color: var(--font-color);
+  display: inline-block;
+  position: relative;
+  &:hover {
+    color: red;
   }
+}
 
-  & .about-img {
-    height: 40rem;
-    width: 100vw;
-  }
+.drop-down--product {
+  display: none;
+  position: absolute;
+  min-width: 25rem;
 
-  & .bank-content {
-    font-size: 1.4rem;
-    position: absolute;
-    color: var(--text-color);
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    animation: shower 16s linear infinite;
-    -webkit-animation: shower 16s linear infinite;
-
-    &::after{
-      content: "\201D";
-    }
-    &::before{
-      content: "\201c";
-    }
-
-  }
-
-  & .container {
-    margin-top: 2rem;
-    position: absolute;
-    padding: 2rem;
-    top: 0;
-    left: 0;
-    width: 100vw;
+  & a {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    & .logo-container {
-      height: 10rem;
-      width: 30rem;
-      display: flex;
-      justify-content: center;
-      & img {
-        height: 10rem;
-        width: 10rem;
-        cursor: pointer;
-      }
-    }
-
-    & .nav-bar {
-      margin-left: -12rem;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 6rem;
-      font-size: 1.8rem;
-
-      & .nav-item a:hover {
-        color: var(--red-color);
-      }
-
-      & .nav-item {
-        position: relative;
-        & .item {
-          margin-bottom: 0.6rem;
-        }
-        & a {
-          color: var(--text-color);
-        }
-      }
-
-      & ul {
-        & li {
-          list-style: none;
-        }
-      }
-
-      & .navigate-link {
-        & .display-list {
-          & .display-btn {
-            font-size: 1.8rem;
-            text-decoration: none;
-            background-color: transparent;
-          }
-          & .drop-down--product {
-            background-color: transparent;
-          }
-          & .drop-down--business {
-            background-color: transparent;
-          }
-        }
-      }
-
-      & .display-list {
-        display: inline-block;
-        position: relative;
-
-        & .display-btn {
-          cursor: pointer;
-          font-weight: 400;
-          border: none;
-          color: var(--text-color);
-          font-size: 1.7rem;
-
-          &:hover {
-            color: var(--red-color);
-          }
-        }
-
-        & .drop-down--product {
-          font-size: 1.7rem;
-          display: none;
-          position: absolute;
-          left: 0%;
-          z-index: 1;
-          min-width: 25rem;
-          background-color: transparent;
-          border-radius: 0.5rem;
-          -webkit-border-radius: 0.5rem;
-          -moz-border-radius: 0.5rem;
-          -ms-border-radius: 0.5rem;
-          -o-border-radius: 0.5rem;
-
-          & .drop {
-            margin: 1rem auto;
-            text-decoration: none;
-            display: flex;
-            &:hover {
-              color: var(--drop-list-hover--color);
-            }
-          }
-        }
-
-        &:hover .drop-down--product {
-          display: block;
-        }
-        & .drop-down--business {
-          display: none;
-          font-size: 1.7rem;
-          position: absolute;
-          left: 0%;
-          z-index: 1;
-          min-width: 25rem;
-          border-radius: 0.5rem;
-          -webkit-border-radius: 0.5rem;
-          -moz-border-radius: 0.5rem;
-          -ms-border-radius: 0.5rem;
-          -o-border-radius: 0.5rem;
-
-          & .drop {
-            margin: 1rem auto;
-            text-decoration: none;
-            display: flex;
-            &:hover {
-              color: var(--drop-list-hover--color);
-            }
-          }
-        }
-
-        &:hover .drop-down--business {
-          display: block;
-        }
-      }
+    &:hover {
+      color: rgba(255, 255, 255, 0.5);
     }
   }
 }
 
-/* ? bankingHeader end here */
+.display-product:hover .drop-down--product {
+  display: block;
+}
+
+.display-company {
+  color: var(--font-color);
+  /* display: inline-block; */
+  position: relative;
+  &:hover {
+    color: red;
+  }
+}
+
+.drop-down--company {
+  display: none;
+  position: absolute;
+  min-width: 25rem;
+
+  & a {
+    display: flex;
+    &:hover {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.display-company:hover .drop-down--company {
+  display: block;
+}
+
+.hover-effect--background {
+  position: absolute;
+  /* z-index: -3; */
+  height: 27rem;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: #4cb9e7;
+  /* display: none; */
+}
+
+.none {
+  height: 0rem;
+  width: 0rem;
+  display: none;
+}
+
+.logo-section img {
+  height: 13rem;
+  width: 12rem;
+}
+
+/* Header section end */

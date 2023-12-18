@@ -16,7 +16,7 @@ body {
   --text-color: #fff;
   --sub-content--color: rgba(0, 0, 0, 0.6);
   --feature-color: rgba(0, 0, 0, 0.7);
-  --font-color: #c21010;
+  --font-icon--color: #c21010;
   --heading-color: #dc2f2f;
   --bg-color: rgba(0, 0, 0, 0.5);
   --bg-color-2: rgba(0, 0, 0, 0.6);
@@ -26,12 +26,12 @@ body {
 /* ? trading section start here */
 
 .trading-section {
-  margin: 8rem 16rem 0rem 16rem;
+  margin: 28rem 16rem 0rem 16rem;
 
   & .bank-heading--section {
     margin-bottom: 6rem;
     & .bank-system--heading {
-      font-size: 4rem;
+      font-size: 3.2rem;
       text-align: center;
       padding-bottom: 0.8rem;
       & .color-1 {
@@ -42,6 +42,7 @@ body {
       font-size: 1.6rem;
       color: var(--sub-content--color);
       text-align: center;
+      padding: 0rem 2rem;
     }
   }
 
@@ -73,7 +74,7 @@ body {
           color: var(--feature-color);
           & i {
             padding-right: 0.5rem;
-            color: var(--font-color);
+            color: var(--font-icon--color);
             font-size: 1.8rem;
           }
         }
@@ -91,7 +92,7 @@ body {
           & i {
             font-size: 1.8rem;
             padding-right: 0.5rem;
-            color: var(--font-color);
+            color: var(--font-icon--color);
           }
         }
       }
@@ -114,7 +115,7 @@ body {
       font-size: 1.6rem;
       color: var(--sub-content--color);
       text-align: center;
-      padding-bottom: 4rem;
+      padding:0rem 2rem 4rem 2rem;
     }
 
     & .box-content {

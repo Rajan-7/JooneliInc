@@ -1,12 +1,12 @@
 import React from "react";
-import BankHeader from "./BankingHeader";
+import BankingHeader from './BankingHeader'
 import Footer from "../Footer/Footer";
 import "./banking.css";
 
 const Banking = () => {
   return (
     <>
-      <BankHeader />
+      <BankingHeader />
       <div className="bank-section">
         <div className="bank-heading--section">
           <div className="bank-system--heading">360 Core Banking System</div>

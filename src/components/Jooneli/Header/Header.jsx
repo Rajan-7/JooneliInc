@@ -14,7 +14,9 @@ const Header = () => {
               <img src="/image/jooneli.png" alt="Brand Logo" />
             </Link>
           </div>
-          <div className={` ${ show ? "hover-effect--background" : "none"}`}></div>
+          <div
+            className={` ${show ? "hover-effect--background" : "none"}`}
+          ></div>
           <div className="nav-bars">
             <ul>
               <li>
@@ -33,8 +35,8 @@ const Header = () => {
               >
                 Product
                 <div className="drop-down--product">
-                  <Link to="/home">360 Core Banking System</Link>
-                  <Link to="/home">Jooneli Trading</Link>
+                  <Link to="/bank">360 Core Banking System</Link>
+                  <Link to="/trading">Jooneli Trading</Link>
                 </div>
               </div>
               <div
@@ -44,21 +46,34 @@ const Header = () => {
               >
                 Company
                 <div className="drop-down--company">
-                  <Link to="/">360 Core Banking System</Link>
-                  <Link to="/">Banking System</Link>
+                  <Link to="/about">About Us</Link>
+                  <Link to="/client">Our Clients</Link>
+                  <Link to="/bod">Boards Of Directors</Link>
+                  <Link to="/manageteam">Management Team</Link>
+                  <Link to="/career">Careers</Link>
                 </div>
               </div>
             </div>
             <ul>
               <li>
-                <Link to="/">Blog</Link>
+                <Link to="/blog">Blog</Link>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <Link to="/talk">Lets Talk</Link>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <Link to="/login">Login</Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="center-content">
           <img src="/image/background.jpeg" alt="Background Content" />
-          We are Human
+          We are Jooneli ✌️
         </div>
       </header>
     </>
