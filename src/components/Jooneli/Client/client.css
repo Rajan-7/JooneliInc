@@ -17,7 +17,7 @@ body {
   --main-heading--color: #263671;
   --sub-content--color: rgba(0, 0, 0, 0.5);
   --job-heading--color: #7c6576;
-  --testomonials-style--color: #45b34a;
+  --testomonials-style--color: #B31312;
   --client-name--color: rgba(0, 0, 0, 0.8);
 }
 
@@ -93,6 +93,7 @@ body {
           }
 
           & .heading {
+            font-weight: 400;
             font-size: 4.5rem;
             & .clr {
               color: var(--testomonials-style--color);

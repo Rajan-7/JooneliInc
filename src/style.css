@@ -10,19 +10,29 @@ html {
 }
 
 body {
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
   --text-color: #fff;
+  --side-flex-bgcolor: #1b1f25;
+  --red-color: #9a031e;
+  --news-date--color: rgba(0, 0, 0, 0.4);
+  --footer-background: rgba(0, 0, 0, 0.05);
+  --companies-heading--color: rgba(0, 0, 0, 0.6);
+  --sub-content--color: rgba(0, 0, 0, 0.6);
+  --copyright-color: rgba(0, 0, 0, 0.5);
+  --media-icon--color: #777;
 }
 
 /* ? nav section start here */
 
-
 /*? Header section start */
-.header-section{
-  margin-bottom: 0rem;
+
+.header-sectionl {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 .header-section .nav-container {
@@ -35,7 +45,7 @@ body {
 
 .header-section .center-content {
   position: absolute;
-  height: 61.5rem;
+  height: 39rem;
   width: 100%;
   top: 0;
   left: 0;
@@ -46,11 +56,18 @@ body {
   font-size: 1.8rem;
 }
 
-.header-section .center-content img {
+/* .header-section .center-content img {
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: -1;
+} */
+
+.header-section .center-content video {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -2;
 }
 
 .logo-section {
@@ -101,10 +118,11 @@ body {
   color: var(--text-color);
   display: inline-block;
   position: relative;
-  &:hover {
+  &:hover{
     color: red;
   }
 }
+
 
 .drop-down--product {
   display: none;
@@ -158,8 +176,10 @@ body {
   width: 100vw;
   top: 0;
   left: 0;
-  background-color: #4CB9E7;
-  /* display: none; */
+  background-color: rgba(0, 0, 0, 0.5);
+  &:hover {
+    background-color: transparent;
+  }
 }
 
 .none {
@@ -174,7 +194,6 @@ body {
 }
 
 /* Header section end */
-
 
 /* ? nav/header section end here */
 
@@ -196,6 +215,7 @@ body {
     align-items: center;
     font-size: 3.8rem;
     text-align: center;
+    line-height: 1.5;
   }
 
   & .main-content {
@@ -279,7 +299,7 @@ body {
         height: 3.5rem;
         padding-left: 1.7rem;
         margin-left: 2rem;
-        border-left: 0.5rem solid red;
+        border-left: 0.5rem solid var(--red-color);
       }
     }
   }
@@ -440,7 +460,7 @@ body {
 
         & button:hover {
           background-color: var(--text-color);
-          color: red;
+          color: var(--red-color);
         }
       }
     }
@@ -498,7 +518,7 @@ body {
         height: 5.5rem;
         width: 17.5rem;
         font-size: 1.5rem;
-        border: 0.1rem solid red;
+        border: 0.1rem solid var(--red-color);
         border-radius: 0.5rem;
         -webkit-border-radius: 0.5rem;
         -moz-border-radius: 0.5rem;
@@ -506,7 +526,7 @@ body {
         -o-border-radius: 0.5rem;
 
         &:hover {
-          background-color: red;
+          background-color: var(--red-color);
           color: var(--text-color);
         }
       }
@@ -617,7 +637,7 @@ body {
           & svg {
             height: 3.2rem;
             width: 3.2rem;
-            color: #777777;
+            color: var(--media-icon--color);
           }
         }
       }

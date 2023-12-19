@@ -29,7 +29,7 @@ const Header = () => {
               onMouseLeave={() => setShow(false)}
             >
               <div
-                className="display-product"
+                className="display-product display-product-hover"
                 // onMouseOver={() => setShow(true)}
                 // onMouseLeave={() => setShow(false)}
               >
@@ -72,8 +72,8 @@ const Header = () => {
           </div>
         </div>
         <div className="center-content">
-          <img src="/image/background.jpeg" alt="Background Content" />
-          We are Jooneli ✌️
+          <video src="/video/head.mp4" alt="Background Content" autoPlay muted loop/>
+          {/* We are Jooneli ✌️ */}
         </div>
       </header>
     </>

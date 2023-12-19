@@ -55,7 +55,7 @@ body {
       & .color {
         color: var(--main-color);
         font-size: 3rem;
-        font-weight: 600;
+        font-weight: 500;
       }
     }
     & .offerings-list {
@@ -108,7 +108,7 @@ body {
       & .color {
         color: var(--main-color);
         font-size: 3rem;
-        font-weight: 600;
+        font-weight: 500;
       }
     }
     & .details {
@@ -222,7 +222,7 @@ body {
       & span {
         color: var(--main-color);
         font-size: 3rem;
-        font-weight: 600;
+        font-weight: 500;
       }
     }
     & .bank-lower--details {

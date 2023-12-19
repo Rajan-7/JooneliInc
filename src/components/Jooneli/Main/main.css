@@ -37,6 +37,7 @@ body {
     align-items: center;
     font-size: 3.8rem;
     text-align: center;
+    line-height: 2.5rem;
   }
 
   & .main-content {
