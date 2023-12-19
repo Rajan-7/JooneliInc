@@ -73,7 +73,7 @@ const MtHeader = () => {
         </div>
         <div className="center-content--mt">
           <img src="/image/background.jpeg" alt="Background Content" />
-          We are Human
+          Lead. Inspire. Achieve
         </div>
       </header>
     </>

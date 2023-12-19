@@ -19,20 +19,16 @@ const About = () => {
               <span className="color-2">IT solutions</span>
             </div>
             <p className="content-1">
-              Jooneli inspire banking systems by introducing transformative
-              technologies such as digital channels, artificial intelligence,
-              and blockchain, enhancing efficiency, security, and customer
-              experience. Through innovations like data analytics and fintech
-              collaborations, they empower banks to adapt, evolve, and stay
-              competitive in a rapidly changing financial landscape.
-            </p>
-            <p className="content-2">
-              The landscape of software applications is dynamic, with developers
-              utilizing agile methodologies and iterative practices to respond
-              swiftly to user feedback and market demands. Collaboration among
-              cross-functional teams, including developers, designers, quality
-              assurance specialists, and project managers, is essential for the
-              successful creation and maintenance of these applications.
+              Jooneli Inc Pvt. Ltd. is an nepali software company that develops
+              and provides the Jooneli Software suite. Our flagship product, 360
+              Core Banking Software and Jooneli Trading is a comprehensive
+              business management software used for accounting, inventory
+              management, financial reporting, payroll processing, tax
+              management, and more. Jooneli Inc caters to businesses across
+              various company and has a significant presence. Jooneli Inc have a
+              network of authorized partners who offer implementation, training,
+              and support services. Jooneli Inc allows multi-user access to
+              data, enabling collaboration.
             </p>
           </div>
           <div className="sub-section--3">
@@ -42,28 +38,26 @@ const About = () => {
             <div className="contents">
               <div className="heading">Our Mission</div>
               <p className="details">
-                We directly approach our goal and prove to be best with our
-                clients by evaluating their resources in the best possible way.
-                We are in the developing stage but never showcase it as our
-                limitations. Our business empowers you and your company in the
-                right manner so that there is a long-term relationship between
-                clients, employees, and other stakeholders.
+                Our mission is to develop, produce, and sell software products
+                that meet the needs of our customers, while creating our values.
+                Ultimately, the mission of our company is to provide software
+                products that are reliable, effective, and easy to use, while
+                also creating value for customers, employees.
               </p>
             </div>
           </div>
           <div className="sub-section--4">
             <div className="icon">
-              <i class="fa-regular fa-eye"></i>
+              <i class="fa-solid fa-handshake"></i>
             </div>
             <div className="contents">
-              <div className="heading">Our Vision</div>
+              <div className="heading">Our Values</div>
               <p className="details">
-                Our effort is endless to make Softbenz Infosys a systematic and
-                qualitative company in the IT sector. Every business requires
-                digital identification in today’s era. Digital marketing is not
-                a luxury but a necessity for your brand identification. Website
-                is the most reliable tool for digital marketing which is even
-                suggested by legal authorities in the case of Nepal.
+                We strive to provide excellent customer service and support, and
+                continuously improve our products based on customer feedback. We
+                believe in constant innovation and improvement and operate with
+                the highest levels of integrity and ethics. We believe that
+                teamwork is essential to their success.
               </p>
             </div>
           </div>

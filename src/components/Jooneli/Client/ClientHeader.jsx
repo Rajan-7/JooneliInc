@@ -73,7 +73,7 @@ const ClientHeader = () => {
         </div>
         <div className="center-content--client">
           <img src="/image/background.jpeg" alt="Background Content" />
-          We are Human
+          Partner. Succeed. Celebrate
         </div>
       </header>
     </>

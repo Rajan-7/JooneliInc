@@ -73,7 +73,7 @@ const CareerHeader = () => {
         </div>
         <div className="center-content--career">
           <img src="/image/background.jpeg" alt="Background Content" />
-          We are Human
+          Join. Grow. Succeed
         </div>
       </header>
     </>

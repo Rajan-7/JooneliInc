@@ -14,7 +14,7 @@ const Blog = () => {
           </div>
           <div className="blog-contents">
             <div className="blog-1">
-              <img src="/image/risk2.jpg" alt="" />
+              <img src="/image/lowrsk.png" alt="" />
               <div className="content-heading">Overcoming Risk</div>
               <p>
                 By implementing robust cybersecurity measures, regular
@@ -23,7 +23,7 @@ const Blog = () => {
               </p>
             </div>
             <div className="blog-1">
-              <img src="/image/cWc2.avif" alt="" />
+              <img src="/image/cWc2.png" alt="" />
               <div className="content-heading">Connecting with clients</div>
               <p>
                 Incorporating through personalized communication through
@@ -32,7 +32,7 @@ const Blog = () => {
               </p>
             </div>
             <div className="blog-1">
-              <img src="/image/c&c2.webp" alt="" />
+              <img src="/image/cc.png" alt="" />
 
               <div className="content-heading">
                 Collaboration & communication

@@ -32,6 +32,7 @@ body {
       font-size: 4rem;
       text-transform: capitalize;
       font-weight: 500;
+      padding: 4rem;
     }
 
     & .client-container {

@@ -73,7 +73,7 @@ const BlogHeader = () => {
         </div>
         <div className="center-content--blog">
           <img src="/image/background.jpeg" alt="Background Content" />
-          We are Human
+          Empower. Transform. Thrive
         </div>
       </header>
     </>

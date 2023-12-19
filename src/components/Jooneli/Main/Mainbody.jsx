@@ -16,8 +16,8 @@ const Mainbody = () => {
             </div>
             <div className="heading">About Us</div>
             <p>
-              An IT company is an organization specializing in information
-              technology services, encompassing a wide ran
+              Empowering innovation through cutting-edge technology, our IT
+              company is dedicated to providing unparalleled solutions
             </p>
           </div>
           <div className="main-content--1">
@@ -26,8 +26,9 @@ const Mainbody = () => {
             </div>
             <div className="heading">Milestones</div>
             <p>
-              An IT company is an organization specializing in information
-              technology services, encompassing a wide range
+              With a journey marked by relentless dedication and technological
+              prowess, our milestones reflect a history of transformative
+              achievements.
             </p>
           </div>
           <div className="main-content--1">
@@ -36,8 +37,9 @@ const Mainbody = () => {
             </div>
             <div className="heading">Leadership</div>
             <p>
-              An IT company is an organization specializing in information
-              technology services, encompassing a wide ran
+              At the helm of our IT company, visionary leaders blend expertise
+              and passion, steering the team with a shared commitment to
+              innovation.
             </p>
           </div>
         </div>

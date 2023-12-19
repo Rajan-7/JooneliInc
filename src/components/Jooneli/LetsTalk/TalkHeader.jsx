@@ -73,7 +73,7 @@ const TalkHeader = () => {
         </div>
         <div className="center-content--talk">
           <img src="/image/background.jpeg" alt="Background Content" />
-          We are Human
+          Connect. Collaborate. Communicate
         </div>
       </header>
     </>
