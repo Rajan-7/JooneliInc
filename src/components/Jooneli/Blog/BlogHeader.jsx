@@ -11,7 +11,7 @@ const BlogHeader = () => {
         <div className="nav-container">
           <div className="logo-section">
             <Link to="/">
-              <img src="/image/jooneli.png" alt="Brand Logo" />
+              <img src="/image/joonlogo.png" alt="Brand Logo" />
             </Link>
           </div>
           <div

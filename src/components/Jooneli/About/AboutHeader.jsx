@@ -11,7 +11,7 @@ const Header = () => {
         <div className="nav-container">
           <div className="logo-section">
             <Link to="/">
-              <img src="/image/jooneli.png" alt="Brand Logo" />
+              <img src="/image/joonlogo.png" alt="Brand Logo" />
             </Link>
           </div>
           <div
@@ -73,7 +73,7 @@ const Header = () => {
         </div>
         <div className="center-content--about">
           <img src="/image/background.jpeg" alt="Background Content" />
-           Empowering Dreams Together 
+          Empowering Dreams Together
         </div>
       </header>
     </>

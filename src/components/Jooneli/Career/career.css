@@ -18,11 +18,12 @@ body {
   --sub-content--color: rgba(0, 0, 0, 0.7);
   --job-heading--color:#7c6576;
   --box-shadow--color:rgba(0, 0, 0, 0.16);
+  --joon-main-color:#ec180d;
 }
 
 /* ? career section start here */
 .career-section {
-  margin: 28rem 16rem 0rem 16rem;
+  margin: 36rem 16rem 0rem 16rem;
   & .career-heading--section {
     text-align: center;
     margin-bottom: 6rem;
@@ -53,7 +54,7 @@ body {
       & .logo {
         & i {
           font-size: 4rem;
-          color: var(--font-icon--color);
+          color: var(--joon-main-color);
         }
       }
       & .content-details {
@@ -101,7 +102,8 @@ body {
         }
         & .job-details {
           font-size: 1.6rem;
-          text-align: center;
+          padding: 0rem 2rem;
+          text-align: justify;
           color:var(--sub-content--color);
         }
       }

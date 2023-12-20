@@ -19,15 +19,16 @@ body {
   --main-color: #0c0d13;
   --hover-color: #6db9ef;
   --border-color: #b34549;
+  --font-icon-color: #b6babe;
 }
 
 /* ? management-section start here */
 
 .management-section {
-  margin: 28rem 16rem 0rem 16rem;
+  margin: 36rem 16rem 0rem 16rem;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3.5rem;
 
   & .management-team--heading {
     text-transform: capitalize;
@@ -95,9 +96,7 @@ body {
               & a {
                 cursor: pointer;
                 font-size: 2rem;
-                &:hover {
-                  color: var(--hover-color);
-                }
+                color: var(--font-icon-color);
               }
             }
 
@@ -138,7 +137,7 @@ body {
             }
             & .info-sub--heading {
               font-size: 1.8rem;
-              color: var(--main-color);
+              color: var(--font-icon-color);
             }
             & p {
               font-size: 1.6rem;

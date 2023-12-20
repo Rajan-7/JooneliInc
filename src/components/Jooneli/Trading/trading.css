@@ -26,14 +26,14 @@ body {
 /* ? trading section start here */
 
 .trading-section {
-  margin: 28rem 16rem 0rem 16rem;
+  margin: 36rem 16rem 0rem 16rem;
 
   & .bank-heading--section {
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
     & .bank-system--heading {
       font-size: 3.2rem;
       text-align: center;
-      padding-bottom: 0.8rem;
+      padding-bottom: 1rem;
       & .color-1 {
         color: var(--heading-color);
       }
@@ -42,7 +42,7 @@ body {
       font-size: 1.6rem;
       color: var(--sub-content--color);
       text-align: center;
-      padding: 0rem 2rem;
+      padding: 0rem 3rem;
     }
   }
 
@@ -51,7 +51,7 @@ body {
     & .offerings {
       font-size: 2.4rem;
       text-align: center;
-      padding-bottom: 1.5rem;
+      padding-bottom: 3.5rem;
       & .color {
         color: var(--main-color);
         font-size: 3rem;
@@ -104,7 +104,7 @@ body {
     & .main-heading {
       font-size: 2.4rem;
       text-align: center;
-      padding-bottom: 0.5rem;
+      padding-bottom: 1rem;
       & .color {
         color: var(--main-color);
         font-size: 3rem;
@@ -115,14 +115,14 @@ body {
       font-size: 1.6rem;
       color: var(--sub-content--color);
       text-align: center;
-      padding:0rem 2rem 4rem 2rem;
+      padding:0rem 3rem;
     }
 
     & .box-content {
       display: grid;
       grid-template-columns: repeat(3, 2fr);
       grid-template-rows: repeat(2, 2fr);
-      margin-bottom: 4rem;
+      margin:7rem 0rem;
       & .content-one {
         position: relative;
         height: 25rem;

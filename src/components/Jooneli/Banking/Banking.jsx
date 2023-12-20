@@ -1,5 +1,5 @@
 import React from "react";
-import BankingHeader from './BankingHeader'
+import BankingHeader from "./BankingHeader";
 import Footer from "../Footer/Footer";
 import "./banking.css";
 
@@ -243,18 +243,18 @@ const Banking = () => {
             <div className="box-details">
               <div className="details-one">
                 <div className="icon">
-                  <i class="fa-solid fa-user-tie"></i>
+                  <img src="/image/admin.png" alt="" />
                 </div>
                 <div className="heading">Administrator</div>
                 <div className="sub-heading">
-                  This section is the admin section. Here you can manage you
-                  charts of accounts, delegation of staffs, interest rates,
+                  This section is the admin section.Here you can manage you
+                  charts of accounts,delegation of staffs, interest rates,
                   analyzing tools as well as many other things.
                 </div>
               </div>
               <div className="details-one">
                 <div className="icon">
-                  <i class="fa-solid fa-users"></i>
+                  <img src="/image/users.png" alt="" />
                 </div>
                 <div className="heading">Users</div>
                 <div className="sub-heading">

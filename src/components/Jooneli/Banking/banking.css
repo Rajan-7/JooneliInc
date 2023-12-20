@@ -26,14 +26,15 @@ body {
 /* ? Banking section start here */
 
 .bank-section {
-  margin: 28rem 16rem 0rem 16rem;
+  width: 75%;
+  margin: 36rem 16rem 0rem 16rem;
 
   & .bank-heading--section {
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
     & .bank-system--heading {
       font-size: 3.2rem;
       text-align: center;
-      padding-bottom: 0.8rem;
+      padding-bottom: 1rem;
       & .color-1 {
         color: var(--heading-color);
       }
@@ -48,10 +49,11 @@ body {
 
   & .bank-features--section {
     margin-bottom: 5rem;
+    padding: 0rem 4rem;
     & .offerings {
       font-size: 2.4rem;
       text-align: center;
-      padding-bottom: 1.5rem;
+      padding-bottom: 3.5rem;
       & .color {
         color: var(--main-color);
         font-size: 3rem;
@@ -64,7 +66,7 @@ body {
       gap: 0rem;
 
       & .left-side--list {
-        padding-left: 12rem;
+        padding-left: 8rem;
         text-align: left;
         & li {
           list-style: none;
@@ -105,6 +107,7 @@ body {
     & .main-heading {
       font-size: 2.4rem;
       text-align: center;
+      padding-bottom: 1rem;
       & .color {
         color: var(--main-color);
         font-size: 3rem;
@@ -115,7 +118,6 @@ body {
       font-size: 1.6rem;
       color: var(--sub-content--color);
       text-align: center;
-      padding-bottom: 4rem;
     }
 
     & .box-content {
@@ -123,7 +125,7 @@ body {
       display: grid;
       grid-template-columns: repeat(3, 2fr);
       grid-template-rows: repeat(3, 2fr);
-      margin-bottom: 4rem;
+      margin: 7rem 0rem;
       & .content-one {
         position: relative;
         height: 25rem;
@@ -190,10 +192,10 @@ body {
     }
 
     & .reports {
-      padding-left: 3rem;
+      padding: 0rem 6rem 0rem 6rem;
       margin-bottom: 5rem;
       & .report-title {
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         font-size: 1.6rem;
         color: var(--sub-content--color);
       }
@@ -202,7 +204,7 @@ body {
         & li {
           font-size: 1.6rem;
           list-style: none;
-          padding-bottom: 1.2rem;
+          padding-bottom: 0.8rem;
           color: var(--sub-content--color);
           & i {
             font-size: 1.8rem;
@@ -218,7 +220,7 @@ body {
     & .bank-lower--title {
       text-align: center;
       font-size: 2.4rem;
-      padding-bottom: 1.2rem;
+      padding-bottom: 1rem;
       & span {
         color: var(--main-color);
         font-size: 3rem;
@@ -249,23 +251,34 @@ body {
       & .box-details {
         text-align: center;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         gap: 4rem;
         padding-right: 2rem;
 
         & .details-one {
-          & i {
+          /* & i {
             font-size: 5rem;
             color: var(--font-icon--color);
+            padding: 0.5rem 0rem;
+          } */
+          & .icon {
+            /* text-align: left; */
+            & img {
+              height: 7.5rem;
+              width: 7.5rem;
+            }
           }
           & .heading {
-            padding: 0.5rem;
+            padding: 0.5rem 0rem;
             font-size: 1.8rem;
+            color: #ec180d;
+            /* text-align: left; */
           }
           & .sub-heading {
-            font-size: 1.6rem;
-            text-align: justify;
+            font-size: 161.41%;
+            text-align: left;
+            color: rgba(0, 0, 0, 0.6);
           }
         }
       }

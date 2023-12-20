@@ -24,15 +24,15 @@ body {
 /* ? client section start here */
 
 .client-section {
-  margin: 28rem 16rem 0rem 16rem;
+  margin: 36rem 16rem 0rem 16rem;
   & .client-list--section {
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
     & .client-list--heading {
       text-align: center;
       font-size: 4rem;
       text-transform: capitalize;
       font-weight: 500;
-      padding: 4rem;
+      padding-bottom: 3.5rem;
     }
 
     & .client-container {

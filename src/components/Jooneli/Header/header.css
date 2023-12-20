@@ -12,6 +12,7 @@ body {
 }
 :root {
   --font-color: #fff;
+  --joon-main--color:#ec180d;
 }
 
 /*? Header section start */
@@ -72,7 +73,7 @@ body {
   color: var(--font-color);
 
   &:hover {
-    color: red;
+    color: var(--joon-main--color);
   }
 }
 

@@ -23,6 +23,7 @@ body {
   --sub-content--color: rgba(0, 0, 0, 0.6);
   --copyright-color: rgba(0, 0, 0, 0.5);
   --media-icon--color: #777;
+  --joon-main-color:#ec180d;
 }
 
 /* ? nav section start here */
@@ -230,12 +231,17 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 1rem 0rem;
+      & i{
+        color:rgba(0,0,0,.7);
+      }
     }
 
     & .heading {
       font-size: 2.4rem;
       /* font-weight: bold; */
       text-align: center;
+      padding-bottom: 1rem;
     }
 
     & p {

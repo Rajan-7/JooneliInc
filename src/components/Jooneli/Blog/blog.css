@@ -16,12 +16,13 @@ body {
   --blog-heading: #508d69;
   --blog-background--color: rgba(0,0,0,.02);
   --paragraph-color:rgba(0,0,0,.6);
-  --icon-btn--color: #a41f30;
+  --icon-btn--color: #ec180d;
+  --arrow-color:#b6babe;
 }
 
 /* Blog section start here */
 .blog-section {
-  margin-top: 28rem;
+  margin-top: 36rem;
   padding-top: 0rem;
   & .blog-container {
     padding-top: 2rem;
@@ -32,8 +33,8 @@ body {
       text-transform: uppercase;
       font-size: 2.4rem;
       width: 100%;
-      padding: 3rem;
-      margin-bottom: 3rem;
+      padding: 0rem;
+      margin-bottom: 3.5rem;
       text-align: center;
       & .color-1 {
         color: var(--icon-btn--color);
@@ -85,7 +86,10 @@ body {
 
       & .fa-solid {
         font-size: 4rem;
-        color: var(--icon-btn--color);
+        color: var(--arrow-color);
+        &:hover{
+          color:var(--icon-btn--color);
+        }
       }
     }
   }
