@@ -23,7 +23,7 @@ body {
   --sub-content--color: rgba(0, 0, 0, 0.6);
   --copyright-color: rgba(0, 0, 0, 0.5);
   --media-icon--color: #777;
-  --joon-main-color:#ec180d;
+  --joon-main-color: #ec180d;
 }
 
 /* ? nav section start here */
@@ -119,11 +119,10 @@ body {
   color: var(--text-color);
   display: inline-block;
   position: relative;
-  &:hover{
+  &:hover {
     color: red;
   }
 }
-
 
 .drop-down--product {
   display: none;
@@ -217,6 +216,7 @@ body {
     font-size: 3.8rem;
     text-align: center;
     line-height: 1.5;
+    font-weight: 300;
   }
 
   & .main-content {
@@ -232,8 +232,12 @@ body {
       justify-content: center;
       align-items: center;
       padding: 1rem 0rem;
-      & i{
+      /* & i{
         color:rgba(0,0,0,.7);
+      } */
+      & img {
+        height: 8rem;
+        width: 8rem;
       }
     }
 
@@ -245,9 +249,10 @@ body {
     }
 
     & p {
-      font-size: 1.8rem;
+      font-size: 2rem;
       text-align: center;
       word-spacing: 0.2rem;
+      font-weight: 300;
     }
   }
 }
@@ -345,33 +350,10 @@ body {
 
       &:hover .sub-heading {
         font-size: 1.5rem;
-        padding-left: 4rem;
+        padding: 0rem 2rem 0rem 4rem;
         margin-top: -8.5rem;
         display: block;
         color: var(--text-color);
-      }
-    }
-
-    @keyframes lefttoright {
-      0% {
-        background-image: linear-gradient(
-          to right top,
-          #0f0505,
-          #100707,
-          #110909,
-          #110b0b,
-          #120d0d
-        );
-      }
-      100% {
-        background-image: linear-gradient(
-          to right top,
-          #261717,
-          #271818,
-          #281a1a,
-          #2a1b1b,
-          #2b1d1d
-        );
       }
     }
 
@@ -502,7 +484,7 @@ body {
         & .news-section--heading {
           line-height: 1.5;
           height: 6rem;
-          width: 38.4rem;
+          width: 85%;
           font-size: 2rem;
           overflow: hidden;
         }
@@ -524,7 +506,7 @@ body {
         height: 5.5rem;
         width: 17.5rem;
         font-size: 1.5rem;
-        border: 0.1rem solid var(--red-color);
+        border: 0.1rem solid var(--joon-main-color);
         border-radius: 0.5rem;
         -webkit-border-radius: 0.5rem;
         -moz-border-radius: 0.5rem;
@@ -532,7 +514,7 @@ body {
         -o-border-radius: 0.5rem;
 
         &:hover {
-          background-color: var(--red-color);
+          background-color: var(--joon-main-color);
           color: var(--text-color);
         }
       }
@@ -551,7 +533,7 @@ body {
 
   & .footer-container {
     display: flex;
-    padding: 7rem 22rem 2rem 22rem;
+    padding: 7rem 15rem 2rem 22rem;
     gap: 7rem;
 
     & .compaines-section {
@@ -604,11 +586,11 @@ body {
     }
 
     & .contact-section {
+      width: 40%;
       & .contact-heading {
         font-weight: 600;
         font-size: 1.8rem;
         color: rgba(0, 0, 0, 0.6);
-
         text-transform: uppercase;
       }
       & .contact-info {
@@ -652,3 +634,70 @@ body {
 }
 
 /* ? Footer-section end here */
+
+/* ? media queries */
+
+/* * Mainbody section */
+
+@media (width <= 1220px) {
+  html {
+    font-size: 54%;
+  }
+  .footer-section .footer-container {
+    padding: 7rem 16rem 0rem;
+  }
+}
+
+@media (width <= 1100px) {
+  .photo-news {
+    gap: 0rem;
+  }
+
+  .photo-news .photo-info {
+    /* position: relative; */
+    text-align: center;
+  }
+
+  .photo-news .photo-info .img-container {
+    position: relative;
+  }
+
+  .photo-news .photo-info .img-container .overlay {
+    width: 100%;
+    text-align: left;
+    padding: 15rem;
+    position: absolute;
+    top: 15%;
+  }
+
+  .footer-section .footer-container .contact-section {
+    width: 25rem;
+  }
+
+  .contact-section .contact-info li {
+    text-wrap: nowrap;
+  }
+}
+
+@media (width <= 998px) {
+  .main .main-heading {
+    padding: 0rem;
+    margin-top: -2rem;
+  }
+
+  .footer-section .footer-container {
+    padding: 7rem 16rem 0rem;
+  }
+
+  .photo-news .photo-info .img-container {
+    position: relative;
+  }
+
+  .photo-news .photo-info .img-container .overlay {
+    width: 100%;
+    text-align: left;
+    padding: 10rem;
+    position: absolute;
+    top: 27%;
+  }
+}

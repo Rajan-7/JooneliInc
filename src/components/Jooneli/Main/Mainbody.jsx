@@ -12,7 +12,7 @@ const Mainbody = () => {
         <div className="main-content">
           <div className="main-content--1">
             <div className="icon">
-              <i class="fa-solid fa-circle-exclamation"></i>
+              <img src="/image/aboutus.png" alt="" />
             </div>
             <div className="heading">About Us</div>
             <p>
@@ -22,7 +22,7 @@ const Mainbody = () => {
           </div>
           <div className="main-content--1">
             <div className="icon">
-              <i class="fa-solid fa-industry"></i>
+              <img src="/image/milestone.png" alt="" />
             </div>
             <div className="heading">Milestones</div>
             <p>
@@ -33,7 +33,7 @@ const Mainbody = () => {
           </div>
           <div className="main-content--1">
             <div className="icon">
-              <i class="fa-solid fa-person-walking-luggage"></i>
+              <img src="/image/leader.png" alt="" />
             </div>
             <div className="heading">Leadership</div>
             <p>
@@ -111,7 +111,7 @@ const Mainbody = () => {
               "React is a JavaScript library for building user interfaces,
               developed by Facebook. It allows developers to create reusable UI
               components and manage the state of an application efficiently,
-              making it a popular choice for building modern web applications...
+              making it a popular choice for building modern web applications..."
               <div className="name">Jooneli</div>
               <div className="info">MD,Ktm</div>
               <div className="action">

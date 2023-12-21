@@ -48,14 +48,28 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 
+    & .main-content--1{
+      & .icon{
+        & img{
+          height: 7rem;
+          width: 7rem;
+        }
+      }
+    }
+
     & .icon {
       font-size: 4rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      & i{
+      /* & i{
         color:var(--joon-main-color);
-      }
+      } */
+
+      /* & img{
+        height: 7rem;
+        width: 7rem;
+      } */
     }
 
     & .heading {
