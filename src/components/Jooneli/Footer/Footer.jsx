@@ -58,7 +58,7 @@ const Footer = () => {
                 <img src="/image/swastik.png" alt="" />
               </div>
             </div>
-            <div className="copyright">&copy;Jooneli International Pvt.Ltd</div>
+            <div className="copyright">&copy;Jooneli Inc. Pvt.Ltd</div>
           </div>
           <div className="contact-section">
             <div className="contact-heading">Contact</div>
@@ -71,7 +71,7 @@ const Footer = () => {
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i>
-                <Link>jooneli.acct@gmail.com</Link>
+                <Link>sales@jooneli.com</Link>
               </li>
             </div>
             <div className="media-section ">Follow Us</div>

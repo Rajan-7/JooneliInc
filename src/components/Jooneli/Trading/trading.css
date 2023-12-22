@@ -21,6 +21,7 @@ body {
   --bg-box--color: rgba(0, 0, 0, 0.5);
   --bg-color-2: rgba(0, 0, 0, 0.6);
   --main-color: #0c0d13;
+  --joon-main-color:#ec180d;
 }
 
 /* ? trading section start here */
@@ -29,7 +30,7 @@ body {
   margin: 36rem 16rem 0rem 16rem;
 
   & .bank-heading--section {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     & .bank-system--heading {
       font-size: 3.2rem;
       text-align: center;
@@ -37,17 +38,25 @@ body {
       & .color-1 {
         color: var(--heading-color);
       }
+      & h2{
+        font-weight: 300;
+        font-size: 3.2rem;
+      }
+      & h3{
+        font-weight: 300;
+        font-size: 2.4rem;
+      }
     }
     & .bank-system--details {
       font-size: 1.6rem;
       color: var(--sub-content--color);
       text-align: center;
-      padding: 0rem 3rem;
+      padding: 0rem 8rem;
     }
   }
 
   & .bank-features--section {
-    margin-bottom: 5rem;
+    margin-bottom: 9rem;
     & .offerings {
       font-size: 2.4rem;
       text-align: center;
@@ -64,7 +73,7 @@ body {
       gap: 0rem;
 
       & .left-side--list {
-        padding-left: 22rem;
+        padding-left: 8rem;
         text-align: left;
         & li {
           list-style: none;
@@ -72,10 +81,22 @@ body {
           font-size: 1.6rem;
           cursor: pointer;
           color: var(--feature-color);
+          display: flex;
+          gap:1rem;
+          & span{
+            color:var(--main-color);
+          }
           & i {
             padding-right: 0.5rem;
-            color: var(--font-icon--color);
+            color: grey;
             font-size: 1.8rem;
+            width: 2.5rem;
+          }
+          &:hover i {
+            color:var(--joon-main-color);
+          }
+          &:hover span{
+            color:var(--joon-main-color);
           }
         }
       }
@@ -88,11 +109,23 @@ body {
           padding-bottom: 1.5rem;
           font-size: 1.6rem;
           cursor: pointer;
+          display: flex;
+          gap:1rem;
           color: var(--feature-color);
+          & span{
+            color:var(--main-color);
+          }
           & i {
             font-size: 1.8rem;
             padding-right: 0.5rem;
-            color: var(--font-icon--color);
+            color: grey;
+            width: 2.5rem;
+          }
+          &:hover i {
+            color:var(--joon-main-color);
+          }
+          &:hover span{
+            color:var(--joon-main-color);
           }
         }
       }
@@ -115,14 +148,14 @@ body {
       font-size: 1.6rem;
       color: var(--sub-content--color);
       text-align: center;
-      padding:0rem 3rem;
+      /* padding:0rem 7rem; */
     }
 
     & .box-content {
       display: grid;
       grid-template-columns: repeat(3, 2fr);
       grid-template-rows: repeat(2, 2fr);
-      margin:7rem 0rem;
+      margin:2rem 0rem;
       & .content-one {
         position: relative;
         height: 25rem;

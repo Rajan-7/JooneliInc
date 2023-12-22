@@ -94,8 +94,7 @@ const Client = () => {
               <div className="heading-details">
                 <div className="sub-heading">Testomonials</div>
                 <div className="heading">
-                  What Our <span className="clr">Trustworthy</span> Clients
-                  Say
+                  What Our <span className="clr">Trustworthy</span> Clients Say
                 </div>
               </div>
               <div className="heading-effect"></div>
@@ -110,12 +109,13 @@ const Client = () => {
           <div className="client-response--details">
             <div className="response-details--box">
               <div className="comment">
-                &#x201c; Jooneli is one of the best IT company of Nepal
-                promoting effective & relevant digital services to their
-                clients. They provide follow up services even after the
-                completion of projects. They also values your time & mainly
-                focus on providing the required solutions for the issues.
-                &#x201d;
+                <span className="comment-quote">&#x201c;</span> Jooneli is one
+                of the best IT company of Nepal promoting effective & relevant
+                digital services to their clients. They provide follow up
+                services even after the completion of projects. They also values
+                your time & mainly focus on providing the required solutions for
+                the issues.
+                <span className="comment-quote">&#x201d;</span>
               </div>
               <div className="responser">
                 <div className="logo">
@@ -129,12 +129,12 @@ const Client = () => {
             </div>
             <div className="response-details--box">
               <div className="comment">
-                &#x201c;They exceeded my expectations with their
-                exceptional expertise, delivering innovative solutions that
-                streamlined our operations and significantly enhanced our
-                technological capabilities. Their dedicated team's
-                professionalism and commitment to customer satisfaction truly
-                set them apart in the industry.&#x201d;
+              <span className="comment-quote">&#x201c;</span> They exceeded my expectations with their exceptional
+                expertise, delivering innovative solutions that streamlined our
+                operations and significantly enhanced our technological
+                capabilities. Their dedicated team's professionalism and
+                commitment to customer satisfaction truly set them apart in the
+                industry.<span className="comment-quote">&#x201d;</span>
               </div>
               <div className="responser">
                 <div className="logo">

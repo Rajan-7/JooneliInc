@@ -9,7 +9,10 @@ const Banking = () => {
       <BankingHeader />
       <div className="bank-section">
         <div className="bank-heading--section">
-          <div className="bank-system--heading">360 Core Banking System</div>
+          <div className="bank-system--heading">
+            <h2>360 Core Banking System</h2>
+            <h3>Always Leading, always Innovative ,Always Trust</h3>
+          </div>
           <div className="bank-system--details">
             360 is the most technically advanced banking system available today.
             It combines the most comprehensive and flexible business
@@ -25,47 +28,57 @@ const Banking = () => {
           <div className="offerings-list">
             <div className="left-side--list">
               <li>
-                <i class="fa-solid fa-mobile-screen"></i>Mobile Banking
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span> Mobile Banking</span>
               </li>
               <li>
-                <i class="fa-solid fa-comment"></i>Sms Banking
+                <i class="fa-solid fa-comment"></i>
+                <span>Sms Banking</span>
               </li>
               <li>
-                <i class="fa-solid fa-tablet-button"></i>Tab Banking
+                <i class="fa-solid fa-tablet-button"></i>
+                <span>Tab Banking</span>
               </li>
               <li>
-                <i class="fa-solid fa-table-cells-large"></i>Collector App
+                <i class="fa-solid fa-table-cells-large"></i>
+                <span>Collector App</span>
               </li>
               <li>
-                <i class="fa-solid fa-calculator"></i>Interest Banking
+                <i class="fa-solid fa-calculator"></i>
+                <span>Interest Banking</span>
               </li>
               <li>
-                <i class="fa-solid fa-satellite-dish"></i>More than 130 Reports
-                are available for daily operation and corporate good governance.
+                <i class="fa-solid fa-satellite-dish"></i>
+                <span>
+                  More than 130 Reports are available for daily operation and
+                  corporate good governance.
+                </span>
               </li>
             </div>
             <div className="right-side--list">
               <li>
-                <i class="fa-solid fa-face-smile"></i>100% tested system and 50+
-                satisfied customer
+                <i class="fa-solid fa-face-smile"></i>
+                <span>100% tested system and 50+ satisfied customer</span>
               </li>
               <li>
-                <i class="fa-solid fa-shield"></i>7 Layer Network security
+                <i class="fa-solid fa-shield"></i>
+                <span>7 Layer Network security</span>
               </li>
               <li>
-                <i class="fa-brands fa-codepen"></i>Easy compliable with any
-                program & system
+                <i class="fa-brands fa-codepen"></i>
+                <span>Easy compliable with any program & system</span>
               </li>
               <li>
-                <i class="fa-solid fa-calendar-days"></i>Nepali calender
-                embedded
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Nepali calender embedded</span>
               </li>
               <li>
-                <i class="fa-solid fa-money-check"></i>E Banking
+                <i class="fa-solid fa-money-check"></i>
+                <span>E Banking</span>
               </li>
               <li>
-                <i class="fa-solid fa-file"></i>PEARLS, NRB and Monthly
-                Cooperative Report embedded
+                <i class="fa-solid fa-file"></i>
+                <span>PEARLS, NRB and Monthly Cooperative Report embedded</span>
               </li>
             </div>
           </div>
@@ -213,16 +226,20 @@ const Banking = () => {
             </div>
             <div className="report-list">
               <li>
-                <i class="fa-solid fa-file-excel"></i>Standard Report
+                <i class="fa-solid fa-file-excel"></i>
+                <span>Standard Report</span>
               </li>
               <li>
-                <i class="fa-solid fa-file-word"></i>System Report
+                <i class="fa-solid fa-file-word"></i>
+                <span>System Report</span>
               </li>
               <li>
-                <i class="fa-solid fa-file-invoice"></i>Advanced Report
+                <i class="fa-solid fa-file-invoice"></i>
+                <span>Advanced Report</span>
               </li>
               <li>
-                <i class="fa-solid fa-folder-tree"></i>Analytical Report
+                <i class="fa-solid fa-folder-tree"></i>
+                <span>Analytical Report</span>
               </li>
             </div>
           </div>

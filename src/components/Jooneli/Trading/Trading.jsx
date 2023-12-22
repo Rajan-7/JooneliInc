@@ -9,7 +9,10 @@ const Trading = () => {
       <TradingHeader />
       <div className="trading-section">
         <div className="bank-heading--section">
-          <div className="bank-system--heading">Jooneli Trading</div>
+          <div className="bank-system--heading">
+            <h2>Jooneli Trading</h2>
+            <h3>An Accounting Integrated System for Business</h3>
+          </div>
           <div className="bank-system--details">
             Jooneli Trading software refers to computer programs that are
             designed to facilitate the buying and selling of financial
@@ -21,36 +24,46 @@ const Trading = () => {
           <div className="offerings-list">
             <div className="left-side--list">
               <li>
-                <i class="fa-regular fa-hard-drive"></i>Provides market data
+                <i class="fa-regular fa-hard-drive"></i>
+                <span>Provides market data</span>
               </li>
               <li>
-                <i class="fa-solid fa-layer-group"></i>Order Management
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Order Management</span>
               </li>
               <li>
-                <i class="fa-solid fa-gears"></i>Technical Analysis
+                <i class="fa-solid fa-gears"></i>
+                <span>Technical Analysis</span>
               </li>
               <li>
-                <i class="fa-solid fa-chart-line"></i>Trading Strategics
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Trading Strategics</span>
               </li>
               <li>
-                <i class="fa-solid fa-triangle-exclamation"></i>Risk Management
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Risk Management</span>
               </li>
             </div>
             <div className="right-side--list">
               <li>
-                <i class="fa-solid fa-layer-group"></i>Trading platforms
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Trading platforms</span>
               </li>
               <li>
-                <i class="fa-solid fa-user-gear"></i>Account Management
+                <i class="fa-solid fa-user-gear"></i>
+                <span>Account Management</span>
               </li>
               <li>
-                <i class="fa-solid fa-mobile"></i>Mobile trading
+                <i class="fa-solid fa-mobile"></i>
+                <span>Mobile trading</span>
               </li>
               <li>
-                <i class="fa-solid fa-headset"></i>Customer Support
+                <i class="fa-solid fa-headset"></i>
+                <span>Customer Support</span>
               </li>
               <li>
-                <i class="fa-solid fa-book-open"></i>Education & Training
+                <i class="fa-solid fa-book-open"></i>
+                <span>Education & Training</span>
               </li>
             </div>
           </div>

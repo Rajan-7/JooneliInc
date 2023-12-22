@@ -19,6 +19,7 @@ body {
   --job-heading--color: #7c6576;
   --testomonials-style--color: #B31312;
   --client-name--color: rgba(0, 0, 0, 0.8);
+  --joon-main-color:#ec180d;
 }
 
 /* ? client section start here */
@@ -38,7 +39,7 @@ body {
     & .client-container {
       display: grid;
       grid-template-columns: repeat(3, 2fr);
-      gap: 2rem;
+      gap: 2.5rem;
       padding: 0rem 2.5rem;
 
       & .client {
@@ -138,6 +139,10 @@ body {
           font-size: 1.6rem;
           font-style: italic;
           color: var(--sub-content--color);
+          & .comment-quote{
+            color:#b6babe;
+            font-size: 1.8rem;
+          }
         }
         & .responser {
           display: flex;

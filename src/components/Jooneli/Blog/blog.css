@@ -14,10 +14,10 @@ body {
 :root {
   --text-color: #fff;
   --blog-heading: #508d69;
-  --blog-background--color: rgba(0,0,0,.02);
-  --paragraph-color:rgba(0,0,0,.6);
+  --blog-background--color: rgba(0, 0, 0, 0.02);
+  --paragraph-color: rgba(0, 0, 0, 0.6);
   --icon-btn--color: #ec180d;
-  --arrow-color:#b6babe;
+  --arrow-color: #b6babe;
 }
 
 /* Blog section start here */
@@ -46,7 +46,8 @@ body {
       justify-content: center;
       gap: 2rem;
       & .blog-1 {
-        height: 50rem;
+        cursor: pointer;
+        height: 40rem;
         width: 40rem;
         border-radius: 1rem;
         background-color: var(--blog-background--color);
@@ -54,27 +55,77 @@ body {
         -moz-border-radius: 1rem;
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
-
-        & img {
-          height: 60%;
-          width: 70%;
+        border: 0.1rem solid #535151;
+        &:hover {
+          border: 0.1rem solid #ec180d;
+        }
+        &:hover .image-class-cc {
+          filter: grayscale(0%);
+          -webkit-filter: grayscale(0%);
+        }
+        &:hover .image-class-rsk {
+          filter: grayscale(0%);
+          -webkit-filter: grayscale(0%);
+        }
+        &:hover .image-class-cwc {
+          filter: grayscale(0%);
+          -webkit-filter: grayscale(0%);
+        }
+        & .image-class-cc {
+          height: 45%;
+          width: 50%;
           margin: auto;
+          /* display: flex;
+          justify-content: center;
+          align-items: flex-start; */
+          margin-top: 2rem;
+          background-image: url("../../../../public/image/c&c3.png");
+          background-size: cover;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+        }
+
+        & .image-class-cwc {
+          height: 45%;
+          width: 50%;
+          margin: auto;
+          margin-top: 2rem;
           display: flex;
           justify-content: center;
           align-items: center;
           border-top-right-radius: 1rem;
           border-top-left-radius: 1rem;
+          background-image: url("../../../../public/image/cwc3.png");
+          background-size: cover;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+        }
+
+        & .image-class-rsk{
+          height: 45%;
+          width: 50%;
+          margin: auto;
+          margin-top: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-top-right-radius: 1rem;
+          border-top-left-radius: 1rem;
+          background-image: url("../../../../public/image/risk3.png");
+          background-size: cover;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
         }
 
         & .content-heading {
-          padding: 2rem 0rem 0rem 2rem;
+          padding: 2rem 0rem 0rem 3rem;
           font-size: 2rem;
         }
         & p {
           text-align: left;
           font-size: 1.8rem;
-          color:var(--paragraph-color);
-          padding: 1rem 0rem 0rem 2rem;
+          color: var(--paragraph-color);
+          padding: 1rem 1rem 0rem 3rem;
         }
       }
     }
@@ -87,8 +138,8 @@ body {
       & .fa-solid {
         font-size: 4rem;
         color: var(--arrow-color);
-        &:hover{
-          color:var(--icon-btn--color);
+        &:hover {
+          color: var(--icon-btn--color);
         }
       }
     }
