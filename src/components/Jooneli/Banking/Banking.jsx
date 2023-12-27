@@ -255,7 +255,7 @@ const Banking = () => {
           </div>
           <div className="lower-box--container">
             <div className="logo">
-              <img src="/image/rks.png" alt="" />
+              <img src="/image/joonwork.png" alt="" />
             </div>
             <div className="box-details">
               <div className="details-one">

@@ -61,7 +61,7 @@ const BankingHeader = () => {
             </ul>
             <ul>
               <li>
-                <Link to="/talk">Lets Talk</Link>
+                <Link to="/talk" className="a-3">Lets Talk</Link>
               </li>
             </ul>
             <ul>

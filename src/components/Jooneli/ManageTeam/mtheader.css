@@ -71,6 +71,10 @@ body {
   }
 }
 
+.nav-bars ul li .a-3{
+  text-wrap: nowrap;
+}
+
 .nav-container .nav-bars {
   position: relative;
   font-size: 1.8rem;

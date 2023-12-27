@@ -54,7 +54,7 @@ body {
 .header-section .center-content video {
   position: absolute;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   z-index: -1;
 }
 

@@ -10,7 +10,7 @@ const About = () => {
       <div className="about-section">
         <div className="about-section--1">
           <div className="sub-section--1">
-            <img src="/image/about2.jpeg" alt="" />
+            <img src="/image/abtus.png" alt="" />
           </div>
           <div className="sub-section--2">
             <div className="sub-heading">About Us</div>

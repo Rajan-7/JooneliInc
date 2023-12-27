@@ -61,7 +61,7 @@ const TalkHeader = () => {
             </ul>
             <ul>
               <li>
-                <Link to="/blog">Lets Talk</Link>
+                <Link to="/blog" className="a-3">Lets Talk</Link>
               </li>
             </ul>
             <ul>

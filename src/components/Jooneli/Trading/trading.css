@@ -34,7 +34,7 @@ body {
     & .bank-system--heading {
       font-size: 3.2rem;
       text-align: center;
-      padding-bottom: 1rem;
+      padding-bottom: 3rem;
       & .color-1 {
         color: var(--heading-color);
       }

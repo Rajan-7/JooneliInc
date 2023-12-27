@@ -35,12 +35,12 @@ body {
     & .bank-system--heading {
       font-size: 3.2rem;
       text-align: center;
-      padding-bottom: 1rem;
-      & h2{
+      padding-bottom: 3rem;
+      & h2 {
         font-weight: 300;
         font-size: 3.2rem;
       }
-      & h3{
+      & h3 {
         font-weight: 300;
         font-size: 2.4rem;
       }
@@ -81,34 +81,13 @@ body {
         padding-left: 8rem;
         text-align: left;
 
-        /* & .offers {
-          width: 70%;
-          height: 20%;
-          display: flex;
-         justify-content: flex-start;
-         align-items: center;
-          & .logo-offers {
-            & img {
-              height: 4rem;
-              width: 4rem;
-            }
-          }
-          & .offer-name{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.6rem;
-            text-wrap: wrap;
-            word-break: break-all;
-          }
-        } */
         & li {
           list-style: none;
           padding-bottom: 1.5rem;
           font-size: 1.6rem;
           cursor: pointer;
           display: flex;
-          gap:1rem;
+          gap: 1rem;
           color: var(--feature-color);
           & span {
             color: var(--main-color);
@@ -139,7 +118,7 @@ body {
           color: var(--feature-color);
           text-align: left;
           display: flex;
-          gap:1rem;
+          gap: 1rem;
           & span {
             color: var(--main-color);
           }
@@ -148,7 +127,6 @@ body {
             padding-right: 0.5rem;
             color: grey;
             width: 2.5rem;
-
             /* color: var(--joon-main-color); */
           }
           &:hover i {
@@ -256,21 +234,21 @@ body {
     padding: 0rem 6rem 0rem 6rem;
     margin-bottom: 5rem;
     & .report-title {
-     margin-bottom: 4rem;
+      margin-bottom: 4rem;
       font-size: 1.6rem;
       color: var(--sub-content--color);
     }
     & .report-list {
-      /* padding-left: 2rem; */
+      cursor: pointer;
       & li {
         font-size: 1.6rem;
         list-style: none;
         padding-bottom: 0.8rem;
         color: var(--sub-content--color);
         display: flex;
-        gap:1rem;
-        & span{
-          color:var(--main-color);
+        gap: 1rem;
+        & span {
+          color: var(--main-color);
         }
         & i {
           font-size: 1.8rem;
@@ -316,7 +294,7 @@ body {
       justify-content: center;
       & img {
         height: 50rem;
-        width: 65rem;
+        width: 50rem;
         border: none;
       }
     }
