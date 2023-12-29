@@ -727,6 +727,7 @@ body {
   }
   .main .main-heading {
     width: 100%;
+    padding: 0rem 1rem;
   }
 
   .main .main-content {
@@ -738,11 +739,26 @@ body {
 
   .boxes .right-grid {
     display: grid;
-    grid-template-columns: repeat(2,32rem);
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .photo-news .photo-info .img-container .overlay {
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    left: 0;
+  }
+  .footer-section {
+    width: 100%;
+  }
+  .footer-section .footer-container {
+    width: 100%;
+    padding: 5rem 5rem 1rem;
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   .header-section {
     width: 100%;
     position: relative;
@@ -828,6 +844,8 @@ body {
 
   .boxes .right-grid {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .boxes .right-grid .box1:nth-child(4) {
@@ -877,7 +895,7 @@ body {
 
   .footer-section .footer-container .compaines-section .companies-logos {
     display: grid;
-    grid-template-columns: repeat(3, 16rem);
+    grid-template-columns: repeat(3, 50%);
   }
 
   .footer-section
@@ -1032,6 +1050,149 @@ body {
   .footer-section .footer-container .compaines-section .companies-logos {
     display: grid;
     grid-template-columns: repeat(3, 14rem);
+  }
+
+  .footer-section .footer-container .contact-section {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .header-section {
+    width: 100%;
+    position: relative;
+  }
+  .nav-container .logo-section img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .header-section .nav-container {
+    background-color: #1b1f25;
+    display: grid;
+    grid-template-columns: 1rem 1fr 2fr 1rem;
+  }
+  .nav-container .logo-section {
+    grid-column: 2/3;
+  }
+  .nav-container .nav-bars {
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    gap: .5rem;
+  }
+
+  .nav-container .nav-bars .hover-effectors {
+    display: flex;
+    gap: .5rem;
+  }
+
+  .header-section .center-content video {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    object-fit: fill;
+  }
+
+  .header-section .center-content {
+    height: 30rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .hover-effect--background {
+    height: 25rem;
+  }
+
+  .main {
+    width: 100%;
+    margin-top: 50rem;
+  }
+
+  .main .main-heading {
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 0rem 1rem;
+    text-align: center;
+  }
+
+  .main .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main .main-content .main-content--1 .icon img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .main-content .main-content--1 .heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .main-content .main-content--1 p {
+    font-size: 1.8rem;
+    padding: 0rem 2rem;
+  }
+
+  .boxes .side-flex {
+    display: none;
+  }
+
+  .boxes .right-grid {
+    width: 100%;
+  }
+
+  .boxes .right-grid .box1:nth-child(4) {
+    display: none;
+  }
+
+  .boxes .right-grid .box1 .heading {
+    font-size: 2.6rem;
+  }
+
+  .photo-news {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .photo-news .photo-info {
+    width: 100%;
+  }
+  .photo-news .photo-info .img-container img {
+    height: 55rem;
+    width: 90%;
+  }
+
+  .photo-news .photo-info .img-container .overlay {
+    width: 100%;
+    text-align: left;
+    padding: 5rem;
+    position: absolute;
+    top: 15%;
+  }
+
+  .photo-news .news {
+    padding-left: 3rem;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .footer-section .footer-container {
+    width: 100%;
+    padding: 2rem 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-section .footer-container .compaines-section .companies-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 9rem);
   }
 
   .footer-section .footer-container .contact-section {
