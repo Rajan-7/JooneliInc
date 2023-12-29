@@ -24,7 +24,7 @@ const BankingHeader = () => {
               </li>
             </ul>
             <div
-              className="hover-effectors boxes"
+              className="hover-effectors "
               onMouseOver={() => setShow(true)}
               onMouseLeave={() => setShow(false)}
             >
@@ -61,7 +61,9 @@ const BankingHeader = () => {
             </ul>
             <ul>
               <li>
-                <Link to="/talk" className="a-3">Lets Talk</Link>
+                <Link to="/talk" className="a-3">
+                  Lets Talk
+                </Link>
               </li>
             </ul>
             <ul>
