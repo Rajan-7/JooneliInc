@@ -1193,7 +1193,7 @@ body {
 
   .footer-section .footer-container {
     width: 100%;
-    padding: 2rem 3rem 0rem;
+    padding: 2rem 3rem 1rem;
     display: flex;
     flex-direction: column;
   }
@@ -1201,6 +1201,7 @@ body {
   .footer-section .footer-container .compaines-section .companies-logos {
     display: grid;
     grid-template-columns: repeat(3, 9rem);
+    gap:1rem;
   }
 
   .footer-section .footer-container .contact-section {

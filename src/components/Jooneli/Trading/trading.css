@@ -21,7 +21,7 @@ body {
   --bg-box--color: rgba(0, 0, 0, 0.5);
   --bg-color-2: rgba(0, 0, 0, 0.6);
   --main-color: #0c0d13;
-  --joon-main-color:#ec180d;
+  --joon-main-color: #ec180d;
 }
 
 /* ? trading section start here */
@@ -38,11 +38,11 @@ body {
       & .color-1 {
         color: var(--heading-color);
       }
-      & h2{
+      & h2 {
         font-weight: 300;
         font-size: 3.2rem;
       }
-      & h3{
+      & h3 {
         font-weight: 300;
         font-size: 2.4rem;
       }
@@ -82,9 +82,9 @@ body {
           cursor: pointer;
           color: var(--feature-color);
           display: flex;
-          gap:1rem;
-          & span{
-            color:var(--main-color);
+          gap: 1rem;
+          & span {
+            color: var(--main-color);
           }
           & i {
             padding-right: 0.5rem;
@@ -93,10 +93,10 @@ body {
             width: 2.5rem;
           }
           &:hover i {
-            color:var(--joon-main-color);
+            color: var(--joon-main-color);
           }
-          &:hover span{
-            color:var(--joon-main-color);
+          &:hover span {
+            color: var(--joon-main-color);
           }
         }
       }
@@ -110,10 +110,10 @@ body {
           font-size: 1.6rem;
           cursor: pointer;
           display: flex;
-          gap:1rem;
+          gap: 1rem;
           color: var(--feature-color);
-          & span{
-            color:var(--main-color);
+          & span {
+            color: var(--main-color);
           }
           & i {
             font-size: 1.8rem;
@@ -122,10 +122,10 @@ body {
             width: 2.5rem;
           }
           &:hover i {
-            color:var(--joon-main-color);
+            color: var(--joon-main-color);
           }
-          &:hover span{
-            color:var(--joon-main-color);
+          &:hover span {
+            color: var(--joon-main-color);
           }
         }
       }
@@ -155,7 +155,7 @@ body {
       display: grid;
       grid-template-columns: repeat(3, 2fr);
       grid-template-rows: repeat(2, 2fr);
-      margin:2rem 0rem;
+      margin: 2rem 0rem;
       & .content-one {
         position: relative;
         height: 25rem;
@@ -232,3 +232,253 @@ body {
 }
 
 /* ? Trading section end here */
+
+/* * Media queries */
+
+@media (max-width: 1220px) {
+  html {
+    font-size: 54%;
+  }
+
+  .footer-section {
+    padding-bottom: 1rem;
+  }
+
+  .footer-section .footer-container {
+    display: flex;
+    gap: 5rem;
+    padding: 7rem 16rem 0rem;
+  }
+
+  .trading-section .bank-features--section .offerings,
+  .trading-section .bank-lower--content .bank-lower--title,
+  .trading-section .main-content--section .main-heading {
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 1100px) {
+  .trading-section .bank-features--section .offerings-list .right-side--list {
+    padding-left: 10rem;
+  }
+
+  .trading-section .main-content--section .main-heading,
+  .details,
+  .box-content {
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 998px) {
+  .trading-section .bank-lower--content .lower-box--container .box-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem;
+  }
+
+  .trading-section
+    .bank-lower--content
+    .lower-box--container
+    .box-details
+    .details-one:nth-child(2) {
+    height: 50%;
+  }
+}
+
+@media (max-width: 820px) {
+  .trading-section {
+    margin: 36rem 12rem 0rem;
+  }
+  .trading-section .bank-heading--section .bank-system--details {
+    padding: 0rem 4rem;
+  }
+  .trading-section .bank-features--section .offerings-list .left-side--list {
+    padding-left: 4rem;
+  }
+  .trading-section .bank-features--section .offerings-list .right-side--list {
+    padding-left: 4rem;
+  }
+
+  .main-content--section .box-content .content-one .image-overlay .image-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .bank-lower--content .lower-box--container {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .bank-lower--content .lower-box--container .logo img {
+    height: 35rem;
+    width: 35rem;
+  }
+  .trading-section
+    .bank-lower--content
+    .lower-box--container
+    .box-details
+    .details-one:nth-child(2) {
+    height: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .trading-section {
+    width: 100%;
+    margin: 38rem 0rem 0rem;
+  }
+
+  .header-section .nav-container {
+    display: flex;
+    gap: 1rem;
+    padding: 0rem 2rem;
+  }
+  .header-section .nav-container .nav-bars {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .header-section .nav-container .nav-bars .hover-effectors {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .trading-section .bank-features--section .offerings-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trading-section .bank-features--section .offerings-list .left-side--list {
+    padding-right: 8rem;
+  }
+  .trading-section .bank-features--section .offerings-list .right-side--list {
+    padding-left: 8rem;
+  }
+
+  .trading-section .bank-lower--content .lower-box--container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trading-section .bank-lower--content .lower-box--container .box-details {
+    margin: 0 5rem;
+  }
+  
+
+  .trading-section .main-content--section .main-heading {
+    padding-bottom: 2.5rem;
+  }
+
+  .trading-section .main-content--section .details {
+    padding: 0rem 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .trading-section .main-content--section .box-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trading-section .bank-heading--section h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 385px) {
+  .header-section .nav-container {
+    display: flex;
+    padding: 0rem 0rem;
+  }
+  .header-section .nav-container .nav-bars {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .header-section .nav-container .nav-bars .hover-effectors {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .trading-section .bank-heading--section .bank-system--heading h2 {
+    font-size: 2.4rem;
+  }
+  .trading-section .bank-heading--section .bank-system--heading h3 {
+    font-size: 1.8rem;
+  }
+  .trading-section .bank-heading--section .bank-system--details {
+    padding: 0rem 3rem;
+  }
+
+  .trading-section .bank-features--section .offerings-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 8rem;
+  }
+
+  .trading-section .bank-features--section .offerings-list .right-side--list,
+  .trading-section .bank-features--section .offerings-list .left-side--list {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .trading-section .main-content--section .details {
+    padding: 0rem 3rem;
+  }
+
+  .trading-section .main-content--section .box-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .trading-section .bank-lower--content .bank-lower--details {
+    padding: 0rem 3rem;
+  }
+
+  .trading-section .bank-heading--section .bank-system--heading h3{
+    font-size: 1.8rem;
+  }
+
+  .trading-section .bank-features--section .offerings{
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .trading-section .bank-lower--content .lower-box--container .logo img {
+    height: 25rem;
+    width: 25rem;
+  }
+  .trading-section .bank-lower--content .lower-box--container .box-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trading-section .bank-heading--section .bank-system--heading h2 {
+    padding-bottom: 1rem;
+  }
+
+  .header-section .nav-container .nav-bars {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  .header-section .nav-container .nav-bars .hover-effectors {
+    display: flex;
+    gap: 1rem;
+  }
+  .trading-section .bank-features--section .offerings,
+  .trading-section .bank-lower--content .bank-lower--title,
+  .trading-section .main-content--section .main-heading {
+    font-size: 2.4rem;
+  }
+
+  .trading-section .main-content--section .details {
+    padding-bottom: 2.5rem;
+  }
+
+
+}
