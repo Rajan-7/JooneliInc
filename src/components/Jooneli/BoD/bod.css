@@ -95,3 +95,42 @@ body {
 }
 
 /* ? BoD section end here */
+
+/* * Media QUERY */
+@media(max-width:1220px){
+  html{
+    font-size: 54%;
+  }
+}
+
+@media(max-width:998px){
+  .bod-section .bod-content--section{
+    margin:0rem 6rem;
+  }
+  .bod-section .bod-content--section .content-section .logo-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media(max-width:820px){
+  .bod-section .bod-content--section{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+  }
+}
+
+@media(max-width:600px){
+  .bod-section .bod-content--section{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+  }
+}
+
+@media(max-width:280px){
+  .bod-section .bod-content--section .content-section{
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -13,8 +13,8 @@ const Talk = () => {
           <div className="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14133.487246700395!2d85.3049364!3d27.674901!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19240dd21323%3A0xc3c94e19f8e6322b!2sJooneli%20Inc.!5e0!3m2!1sen!2snp!4v1702449223717!5m2!1sen!2snp"
-              width="600"
-              height="450"
+              width=""
+              height=""
               style={{ border: 0 }}
               allowfullscreen=""
               loading="lazy"

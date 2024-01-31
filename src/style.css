@@ -450,8 +450,8 @@ body {
         }
 
         & button:hover {
-          background-color: var(--text-color);
-          color: var(--red-color);
+          background-color: var(--joon-main-color);
+          color: var(--text-color);
         }
       }
     }

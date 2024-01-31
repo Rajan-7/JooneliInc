@@ -17,9 +17,9 @@ body {
   --main-heading--color: #263671;
   --sub-content--color: rgba(0, 0, 0, 0.5);
   --job-heading--color: #7c6576;
-  --testomonials-style--color: #B31312;
+  --testomonials-style--color: #b31312;
   --client-name--color: rgba(0, 0, 0, 0.8);
-  --joon-main-color:#ec180d;
+  --joon-main-color: #ec180d;
 }
 
 /* ? client section start here */
@@ -129,6 +129,7 @@ body {
       gap: 4rem;
 
       & .response-details--box {
+        width: 100%;
         border-top-right-radius: 4.5rem;
         border-top-left-radius: 4.5rem;
         border-bottom-left-radius: 4.5rem;
@@ -139,8 +140,8 @@ body {
           font-size: 1.6rem;
           font-style: italic;
           color: var(--sub-content--color);
-          & .comment-quote{
-            color:#b6babe;
+          & .comment-quote {
+            color: #b6babe;
             font-size: 1.8rem;
           }
         }
@@ -185,3 +186,66 @@ body {
 }
 
 /* ? client section end here */
+
+/* * Media QUERY */
+@media (max-width: 1220px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media (max-width: 820px) {
+  .client-section .client-list--section .client-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 620px) {
+  .client-section {
+    margin: 36rem 3rem 0rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .client-section
+    .client-response--section
+    .client-response--heading
+    .main-heading
+    .heading-details
+    .heading {
+    font-size: 3rem;
+  }
+  .client-section
+    .client-response--section
+    .client-response--heading
+    .main-details {
+    font-size: 1.5rem;
+  }
+  .client-section .client-response--section .client-response--details {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 280px) {
+  .client-section
+    .client-response--section
+    .client-response--heading
+    .main-heading
+    .heading-effect {
+    display: none;
+  }
+  .client-section
+    .client-response--section
+    .client-response--heading
+    .main-details {
+    display: none;
+  }
+  .client-section
+    .client-response--section
+    .client-response--heading
+    {
+     padding-left: 4rem;
+    }
+}

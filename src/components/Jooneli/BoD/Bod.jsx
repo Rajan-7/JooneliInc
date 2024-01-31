@@ -29,11 +29,11 @@ const Bod = () => {
             </div>
             <div className="dir-info">
               <div className="main-heading">Muktinath</div>
-              <div className="sub-heading">Managing Director,Jooneli</div>
+              <div className="sub-heading">Manager,Jooneli</div>
               <p>
                 "The journey of fallen people is a testament to resilience,
                 marked by the strength to rise from adversity, learn from
-                setbacks, and rebuild a new narrative of redemption."
+                setbacks, and rebuild."
               </p>
             </div>
           </div>
