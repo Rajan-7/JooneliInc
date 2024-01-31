@@ -24,6 +24,7 @@ body {
 /* ? userLogin section start */
 
 .user-login--section {
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -247,3 +248,34 @@ body {
 }
 
 /* ? Forgetpass section end */
+
+/* * Media QUERY */
+/* Login Section */
+@media(max-width:1220px){
+  html{
+    font-size: 54%;
+  }
+}
+
+@media(max-width:280px){
+  .user-login--section .form-container{
+    height: 40rem;
+    width: 25rem;
+  }
+}
+
+/* Sigin/Register section */
+@media(max-width:280px){
+  .user-register--section .form-container{
+    height: 45rem;
+    width: 25rem;
+  }
+}
+
+/* Forget/Reset password section */
+@media (max-width:280px){
+  .forget-password--section .forget-container{
+    height: 25rem;
+    width: 25rem;
+  }
+}

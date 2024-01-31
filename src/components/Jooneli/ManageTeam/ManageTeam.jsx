@@ -69,10 +69,9 @@ const ManageTeam = () => {
                   <div className="info-heading">Rose</div>
                   <div className="info-sub--heading">Designer,Jooneli</div>
                   <p>
-                    Frontend involves creating the user interface and user
-                    experience of a website or web application, focusing on the
-                    visual and interactive elements that users interact with
-                    directly.
+                    A designer melds creativity and functionality, crafting
+                    visual elements to communicate messages effectively, enhance
+                    user experiences, and solve complex problems.
                   </p>
                 </div>
               </div>
@@ -99,10 +98,8 @@ const ManageTeam = () => {
                   <div className="info-heading">Dave</div>
                   <div className="info-sub--heading">Backend,Jooneli</div>
                   <p>
-                    Frontend involves creating the user interface and user
-                    experience of a website or web application, focusing on the
-                    visual and interactive elements that users interact with
-                    directly.
+                    Backend manages server side operations, databases, and logic
+                    to supporty front-end functionlity and user interaction;
                   </p>
                 </div>
               </div>
@@ -134,10 +131,9 @@ const ManageTeam = () => {
                   <div className="info-heading">Shyam</div>
                   <div className="info-sub--heading">Testing,Jooneli</div>
                   <p>
-                    Frontend involves creating the user interface and user
-                    experience of a website or web application, focusing on the
-                    visual and interactive elements that users interact with
-                    directly.
+                    Testing ensures software quality by validating
+                    functionality, identifying bugs, and ensuring compilance
+                    with requirements & user expectation.
                   </p>
                 </div>
               </div>
@@ -164,10 +160,9 @@ const ManageTeam = () => {
                   <div className="info-heading">Hary</div>
                   <div className="info-sub--heading">QA,Jooneli</div>
                   <p>
-                    Frontend involves creating the user interface and user
-                    experience of a website or web application, focusing on the
-                    visual and interactive elements that users interact with
-                    directly.
+                    Quality assurance ensures products meet standard through
+                    meticulous testing, adherence to specifications, and
+                    continuous improvement process.
                   </p>
                 </div>
               </div>
@@ -194,10 +189,9 @@ const ManageTeam = () => {
                   <div className="info-heading">Roman</div>
                   <div className="info-sub--heading">Analyst,Jooneli</div>
                   <p>
-                    Frontend involves creating the user interface and user
-                    experience of a website or web application, focusing on the
-                    visual and interactive elements that users interact with
-                    directly.
+                    An Analyst interprets data, identify trends, and provides
+                    insights to inform decision making and drive business
+                    strategies.
                   </p>
                 </div>
               </div>
