@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { faGoogle, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import "./manageteam.css";
 import MtHeader from "./ManageTeamheader";
@@ -12,7 +12,7 @@ const ManageTeam = () => {
       <MtHeader />
       <div className="management-section">
         <div className="management-team--heading">Our Management Teams</div>
-        <div className="management-team--content">
+        {/* <div className="management-team--content">
           <div className="developer-section">
             <div className="developer-heading">Developer Teams</div>
             <div className="developer-container">
@@ -194,6 +194,87 @@ const ManageTeam = () => {
                     strategies.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+        <div className="team-container">
+          <div className="team-container--one">
+            <div className="img">
+              <img src="/image/team1.webp" alt="team-photo" />
+            </div>
+            <div className="team-name">Apar Thebe</div>
+            <div className="designation">CEO</div>
+            <div className="social-icon">
+                <Link>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+                <Link>
+                  <FontAwesomeIcon icon={faGoogle} />
+                </Link>
+              </div>
+          </div>
+          <div className="team-container--two">
+            <div className="team-two">
+              <div className="img">
+                <img src="/image/team1.webp" alt="team-photo" />
+              </div>
+              <div className="team-name">Sapana Maharjan</div>
+              <div className="designation">Financa Head/Administration Head</div>
+              <div className="social-icon">
+                <Link>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+                <Link>
+                  <FontAwesomeIcon icon={faGoogle} />
+                </Link>
+              </div>
+            </div>
+            <div className="team-two">
+              <div className="img">
+                <img src="/image/team1.webp" alt="team-photo" />
+              </div>
+              <div className="team-name">Samir shakya</div>
+              <div className="designation">CTO</div>
+              <div className="social-icon">
+                <Link>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+                <Link>
+                  <FontAwesomeIcon icon={faGoogle} />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="team-container--two">
+            <div className="team-two">
+              <div className="img">
+                <img src="/image/team1.webp" alt="team-photo" />
+              </div>
+              <div className="team-name">Sajana Shrestha</div>
+              <div className="designation">Sr. Business Development office</div>
+              <div className="social-icon">
+                <Link>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+                <Link>
+                  <FontAwesomeIcon icon={faGoogle} />
+                </Link>
+              </div>
+            </div>
+            <div className="team-two">
+              <div className="img">
+                <img src="/image/team1.webp" alt="team-photo" />
+              </div>
+              <div className="team-name">Sulochana Kandel</div>
+              <div className="designation">Business Development Office</div>
+              <div className="social-icon">
+                <Link>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+                <Link>
+                  <FontAwesomeIcon icon={faGoogle} />
+                </Link>
               </div>
             </div>
           </div>

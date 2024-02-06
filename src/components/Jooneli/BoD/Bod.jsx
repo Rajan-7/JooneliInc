@@ -18,6 +18,10 @@ const Bod = () => {
               <div className="logo">
                 <img src="/image/photo.jpeg" alt="" />
               </div>
+            </div>
+            <div className="dir-info">
+              <div className="main-heading">Apar Thebe</div>
+              <div className="sub-heading">Chairman</div>
               <div className="social-icon">
                 <Link>
                   <FontAwesomeIcon icon={faLinkedin} />
@@ -26,63 +30,46 @@ const Bod = () => {
                   <FontAwesomeIcon icon={faGoogle} />
                 </Link>
               </div>
-            </div>
-            <div className="dir-info">
-              <div className="main-heading">Muktinath</div>
-              <div className="sub-heading">Manager,Jooneli</div>
-              <p>
-                "The journey of fallen people is a testament to resilience,
-                marked by the strength to rise from adversity, learn from
-                setbacks, and rebuild."
-              </p>
             </div>
           </div>
-          <div className="content-section">
-            <div className="logo-info">
-              <div className="logo">
-                <img src="/image/bod1.jpeg" alt="" />
+          <div className="sub-content--section">
+            <div className="sub-content--one">
+              <div className="logo-info">
+                <div className="logo">
+                  <img src="/image/photo.jpeg" alt="" />
+                </div>
               </div>
-              <div className="social-icon">
-                <Link>
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </Link>
-                <Link>
-                  <FontAwesomeIcon icon={faGoogle} />
-                </Link>
-              </div>
-            </div>
-            <div className="dir-info">
-              <div className="main-heading">Henry Stark</div>
-              <div className="sub-heading">Director,Jooneli</div>
-              <p>
-                "Life is a transformative journey where each step, whether in
-                joy or hardship, contributes to the ever-evolving tapestry of
-                our existence."
-              </p>
-            </div>
-          </div>
-          <div className="content-section">
-            <div className="logo-info">
-              <div className="logo">
-                <img src="/image/bod2.png" alt="" />
-              </div>
-              <div className="social-icon">
-                <Link>
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </Link>
-                <Link>
-                  <FontAwesomeIcon icon={faGoogle} />
-                </Link>
+              <div className="dir-info">
+                <div className="main-heading">Sapana Maharjan</div>
+                <div className="sub-heading">Member</div>
+                <div className="social-icon">
+                  <Link>
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </Link>
+                  <Link>
+                    <FontAwesomeIcon icon={faGoogle} />
+                  </Link>
+                </div>
               </div>
             </div>
-            <div className="dir-info">
-              <div className="main-heading">Bill Harson</div>
-              <div className="sub-heading">Senior Manager,Jooneli</div>
-              <p>
-                "A company's journey is a continuous pursuit of growth and
-                adaptation, navigating through challenges and milestones to
-                carve its unique path toward success."
-              </p>
+            <div className="sub-content--one">
+              <div className="logo-info">
+                <div className="logo">
+                  <img src="/image/photo.jpeg" alt="" />
+                </div>
+              </div>
+              <div className="dir-info">
+                <div className="main-heading">Laxmi Subedi</div>
+                <div className="sub-heading">Member</div>
+                <div className="social-icon">
+                  <Link>
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </Link>
+                  <Link>
+                    <FontAwesomeIcon icon={faGoogle} />
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

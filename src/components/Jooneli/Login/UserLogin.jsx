@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./userlogin.css";
 
 const UserLogin = () => {
+  
   return (
     <div>
       <section className="user-login--section">
@@ -29,8 +30,8 @@ const UserLogin = () => {
               type="text"
               placeholder=""
               autoComplete="off"
-              id="username"
-              name="username"
+              id="password"
+              name="password"
               required
             />
           </div>

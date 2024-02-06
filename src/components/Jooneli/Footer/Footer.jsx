@@ -71,13 +71,13 @@ const Footer = () => {
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i>
-                <Link>sales@jooneli.com</Link>
+                <Link to="https://www.facebook.com/p/Jooneli-Inc-100063535842460/" >sales@jooneli.com</Link>
               </li>
             </div>
             <div className="media-section ">Follow Us</div>
             <div className="media">
               <div className="media-logo">
-                <Link>
+                <Link to="https://www.facebook.com/p/Jooneli-Inc-100063535842460/">
                   <FontAwesomeIcon icon={faFacebook} />
                 </Link>
               </div>

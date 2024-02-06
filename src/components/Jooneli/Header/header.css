@@ -165,7 +165,7 @@ body {
   width: 100vw;
   top: 0;
   left: 0;
-  background-color: #d0d9dd;
+  background-color:rgba(0,0,0,.1);
   /* display: none; */
 }
 
