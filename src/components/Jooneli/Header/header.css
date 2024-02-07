@@ -12,7 +12,7 @@ body {
 }
 :root {
   --font-color: #fff;
-  --joon-main--color:#ec180d;
+  --joon-main--color: #ec180d;
 }
 
 /*? Header section start */
@@ -71,7 +71,6 @@ body {
 .nav-container .nav-bars ul li a {
   text-decoration: none;
   color: var(--font-color);
-
   &:hover {
     color: var(--joon-main--color);
   }
@@ -110,12 +109,11 @@ body {
   }
 }
 
-
 .drop-down--product {
   display: none;
   position: absolute;
   min-width: 25rem;
-  padding:1rem 0rem;
+  padding: 1rem 0rem;
 
   & a {
     display: flex;
@@ -165,7 +163,7 @@ body {
   width: 100vw;
   top: 0;
   left: 0;
-  background-color:rgba(0,0,0,.1);
+  background-color: rgba(0, 0, 0, 0.1);
   /* display: none; */
 }
 

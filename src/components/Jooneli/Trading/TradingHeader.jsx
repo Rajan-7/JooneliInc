@@ -61,7 +61,9 @@ const Header = () => {
             </ul>
             <ul>
               <li>
-                <Link to="/talk" className="a-3">Lets Talk</Link>
+                <Link to="/talk" className="a-3">
+                  Lets Talk
+                </Link>
               </li>
             </ul>
             <ul>

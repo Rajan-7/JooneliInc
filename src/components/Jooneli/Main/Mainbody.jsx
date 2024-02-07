@@ -75,6 +75,7 @@ const Mainbody = () => {
             </p>
           </div>
           <div className="box1">
+            {/* <img src="/image/joonsewa.png" alt="" className="sewa" /> */}
             <img src="/image/eswa1.png" alt="" />
             <div className="heading">Hands-on-learning</div>
             <p className="sub-heading">
@@ -108,12 +109,13 @@ const Mainbody = () => {
               <img src="/image/water.jpeg" alt="" />
             </Link>
             <div className="overlay">
-              "React is a JavaScript library for building user interfaces,
-              developed by Facebook. It allows developers to create reusable UI
-              components and manage the state of an application efficiently,
-              making it a popular choice for building modern web applications..."
+              "Continuously at the forefront of innovation & reliability, our
+              financial software has been rigorously over 4,257,360 hours by
+              satisfying customer. Tailor specifically for cooperative, it
+              provides invaluable, offering assistant & practicality at every
+              turn..."
               <div className="name">Jooneli</div>
-              <div className="info">MD,Ktm</div>
+              <div className="info">IT company</div>
               <div className="action">
                 <button>Read More</button>
               </div>
@@ -156,8 +158,8 @@ const Mainbody = () => {
             </div>
             <div className="news-section ">
               <div className="news-section--heading">
-                Fonepay & NIPL coming up with the cross border QR code-based
-                payment solution..
+                Jooneli is participating in CAN Info-Tech at Bhrikutimandap
+                where...
               </div>
               <div className="news-date">Sep 07, 2023</div>
             </div>

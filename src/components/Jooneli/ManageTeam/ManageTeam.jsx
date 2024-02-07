@@ -201,7 +201,7 @@ const ManageTeam = () => {
         <div className="team-container">
           <div className="team-container--one">
             <div className="img">
-              <img src="/image/team1.webp" alt="" />
+              <img src="/image/team2.jpeg" alt="" />
             </div>
             <div className="team-name">Apar Thebe</div>
             <div className="designation">CEO</div>
@@ -232,7 +232,7 @@ const ManageTeam = () => {
             </div>
             <div className="team-two">
               <div className="img">
-                <img src="/image/team1.webp" alt="" />
+                <img src="/image/team3.jpeg" alt="" />
               </div>
               <div className="team-name">Samir shakya</div>
               <div className="designation">CTO</div>

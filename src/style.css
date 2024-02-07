@@ -269,7 +269,6 @@ body {
 
   & .side-flex {
     width: 33.33%;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -371,6 +370,13 @@ body {
     font-size: 2.4rem;
   }
 }
+
+/* .main .boxes .right-grid  .box1 .image-sewa{
+  height: 45%;
+  width: 50%;
+  background-image: url("../public/image/joonsewa.png");
+} */
+
 
 /* boxes section end */
 
@@ -572,10 +578,10 @@ body {
             width: 8.4rem;
             font-size: 1.5rem;
           }
-          & .f1 {
+          /* & .f1 {
             height: 4.4rem;
             width: 4.4rem;
-          }
+          } */
           & .f2 {
             height: 4.4rem;
             width: 8.4rem;
@@ -636,6 +642,11 @@ body {
       }
     }
   }
+}
+
+.footer-section .footer-container .compaines-section .companies-logos .logo .f1{
+  width: 8rem;
+  height: 8rem;
 }
 
 /* ? Footer-section end here */
@@ -794,6 +805,7 @@ body {
     display: flex;
     gap: 1rem;
     margin: 0;
+    padding: 0rem;
   }
 
   .header-section .center-content video {

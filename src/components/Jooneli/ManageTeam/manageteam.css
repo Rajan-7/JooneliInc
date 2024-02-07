@@ -167,8 +167,8 @@ body {
 }
 
 .management-section .team-container .team-container--one .img img {
-  height: 25rem;
-  width: 25rem;
+  height: 23rem;
+  width: 23rem;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -203,8 +203,8 @@ body {
   gap:.2rem;
 }
 .management-section .team-container .team-container--two .team-two .img img{
-  height: 25rem;
-  width: 25rem;
+  height: 23rem;
+  width: 23rem;
   border-radius: .5rem;
   -webkit-border-radius: .5rem;
   -moz-border-radius: .5rem;

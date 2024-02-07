@@ -18,14 +18,18 @@ const Footer = () => {
             <div className="companies-logos">
               <div className="logo">
                 <Link>
-                  <img src="/image/f1soft.png" alt="" className="f1" />
+                  <img src="/image/joonlogo.png" alt="" className="f1" />
                 </Link>
               </div>
               <div className="logo">
-                <img src="/image/fesewa.png" alt="" />
+                <Link>
+                  <img src="/image/joonlogo.png" alt="" className="f1" />
+                </Link>
               </div>
               <div className="logo">
-                <img src="/image/fpay.png" alt="" />
+                <Link>
+                  <img src="/image/joonlogo.png" alt="" className="f1" />
+                </Link>
               </div>
               <div className="logo">
                 <img src="/image/floan.png" alt="" />

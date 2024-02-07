@@ -174,4 +174,9 @@ body {
   width: 12rem;
 }
 
+.header-section .center-content--trading img{
+  height: 40rem;
+  width: 100%;
+}
+
 /* Header section end */

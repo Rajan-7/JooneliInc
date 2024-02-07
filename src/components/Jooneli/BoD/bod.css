@@ -30,6 +30,7 @@ body {
   & .bod-heading--section {
     font-size: 3.6rem;
     text-align: center;
+    font-weight: 300;
     text-transform: capitalize;
   }
 
@@ -52,8 +53,8 @@ body {
         gap: 0.1rem;
         & .logo {
           & img {
-            height: 25rem;
-            width: 25rem;
+            height: 23rem;
+            width: 23rem;
             border-radius: 1rem;
             -webkit-border-radius: 1rem;
             -moz-border-radius: 1rem;
@@ -88,7 +89,7 @@ body {
           }
         }
         & .main-heading {
-          font-weight: 500;
+          font-weight: 300;
           font-size: 2rem;
         }
         & .sub-heading {
@@ -171,6 +172,7 @@ body {
   .sub-content--one
   .dir-info
   .main-heading {
+  font-weight: 300;
   font-size: 2rem;
 }
 
@@ -214,12 +216,12 @@ body {
   .bod-section .bod-content--section {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-    gap:5rem;
+    gap: 5rem;
   }
   .bod-section .bod-content--section .sub-content--section {
     display: flex;
     flex-direction: column;
-    gap:5rem;
+    gap: 5rem;
   }
 }
 

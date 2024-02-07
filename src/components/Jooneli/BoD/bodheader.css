@@ -174,3 +174,10 @@ body {
 }
 
 /* Header section end */
+
+@media(max-width:600px){
+  .nav-container .nav-bars .hover-effectors{
+    margin: 0rem;
+    padding: 0rem;
+  }
+}

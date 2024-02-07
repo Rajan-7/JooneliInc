@@ -36,7 +36,7 @@ const Bod = () => {
             <div className="sub-content--one">
               <div className="logo-info">
                 <div className="logo">
-                  <img src="/image/photo.jpeg" alt="" />
+                  <img src="/image/bod2.png" alt="" />
                 </div>
               </div>
               <div className="dir-info">
