@@ -35,14 +35,14 @@ body {
     & .bank-system--heading {
       font-size: 3.2rem;
       text-align: center;
-      padding-bottom: 3rem;
+      margin-bottom: 3rem;
       & h2 {
         font-weight: 300;
-        font-size: 3.2rem;
+        font-size: 3.6rem;
       }
       & h3 {
         font-weight: 300;
-        font-size: 2.4rem;
+        font-size: 2.6rem;
       }
       /* & h2{
         font-size: 3.2rem ;
@@ -52,10 +52,11 @@ body {
       }
     }
     & .bank-system--details {
-      font-size: 1.6rem;
+      font-size: 1.9rem;
       color: var(--sub-content--color);
       text-align: center;
       padding: 0rem 8rem;
+      font-weight: 300;
     }
   }
 
@@ -63,13 +64,14 @@ body {
     margin-bottom: 9rem;
     padding: 0rem 4rem;
     & .offerings {
-      font-size: 2.4rem;
+      font-size: 2.6rem;
       text-align: center;
+      font-weight: 300;
       padding-bottom: 3.5rem;
       & .color {
         color: var(--main-color);
         font-size: 3rem;
-        font-weight: 500;
+        font-weight: 400;
       }
     }
     & .offerings-list {
@@ -84,7 +86,8 @@ body {
         & li {
           list-style: none;
           padding-bottom: 1.5rem;
-          font-size: 1.6rem;
+          font-size: 1.9rem;
+          font-weight: 300;
           cursor: pointer;
           display: flex;
           gap: 1rem;
@@ -108,12 +111,13 @@ body {
       }
       & .right-side--list {
         text-align: left;
-        padding-left: 12rem;
+        padding-left: 10rem;
 
         & li {
           list-style: none;
           padding-bottom: 1.5rem;
-          font-size: 1.6rem;
+          font-size: 1.9rem;
+          font-weight: 300;
           cursor: pointer;
           color: var(--feature-color);
           text-align: left;
@@ -144,9 +148,10 @@ body {
 & .main-content--section {
   margin-bottom: 9rem;
   & .main-heading {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     text-align: center;
-    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
     & .color {
       color: var(--main-color);
       font-size: 3rem;
@@ -154,9 +159,11 @@ body {
     }
   }
   & .details {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: var(--sub-content--color);
     text-align: center;
+    font-weight: 300;
+    padding: 0rem 4rem;
   }
 
   & .box-content {
@@ -164,7 +171,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(3, 2fr);
-    margin: 2rem 0rem;
+    margin: 3rem 0rem;
     & .content-one {
       position: relative;
       height: 25rem;
@@ -218,6 +225,7 @@ body {
         & .image-description {
           font-size: 1.6rem;
           text-align: center;
+          font-weight: 300;
         }
       }
       & .image-primary {
@@ -231,18 +239,20 @@ body {
   }
 
   & .reports {
-    padding: 0rem 6rem 0rem 6rem;
+    padding: 0rem 4rem 0rem 4rem;
     margin-bottom: 5rem;
     & .report-title {
       margin-bottom: 4rem;
-      font-size: 1.6rem;
+      font-size: 1.9rem;
+      font-weight: 300;
       color: var(--sub-content--color);
     }
     & .report-list {
       cursor: pointer;
       & li {
-        font-size: 1.6rem;
+        font-size: 1.9rem;
         list-style: none;
+        font-weight: 300;
         padding-bottom: 0.8rem;
         color: var(--sub-content--color);
         display: flex;
@@ -270,31 +280,35 @@ body {
 & .bank-lower--content {
   & .bank-lower--title {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
+    font-weight: 300;
     padding-bottom: 1rem;
     & span {
       color: var(--main-color);
       font-size: 3rem;
-      font-weight: 500;
+      font-weight: 300;
     }
   }
   & .bank-lower--details {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: var(--sub-content--color);
     padding-bottom: 2rem;
+    font-weight: 300;
+    padding: 0rem 4rem;
   }
 
   & .lower-box--container {
     display: flex;
+    gap:4rem;
     /* flex-direction: column; */
 
     & .logo {
       display: flex;
       justify-content: center;
       & img {
-        height: 50rem;
-        width: 50rem;
+        height: 40rem;
+        width: 40rem;
         border: none;
       }
     }
@@ -317,19 +331,21 @@ body {
           /* text-align: left; */
           & img {
             filter: grayscale(100%);
-            height: 7.5rem;
-            width: 7.5rem;
+            height: 8rem;
+            width: 8rem;
             -webkit-filter: grayscale(100%);
           }
         }
         & .heading {
           padding: 0.5rem 0rem;
-          font-size: 1.8rem;
+          font-size: 2.1rem;
+          font-weight: 300;
           color: rgba(0, 0, 0, 0.6);
         }
         & .sub-heading {
-          font-size: 161.41%;
-          text-align: left;
+          font-size: 1.8rem;
+          font-weight: 300;
+          text-align: center;
           color: rgba(0, 0, 0, 0.6);
         }
 

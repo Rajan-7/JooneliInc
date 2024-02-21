@@ -201,7 +201,7 @@ const ManageTeam = () => {
         <div className="team-container">
           <div className="team-container--one">
             <div className="img">
-              <img src="/image/team2.jpeg" alt="" />
+              <img src="/image/demoman.jpeg" alt="" />
             </div>
             <div className="team-name">Apar Thebe</div>
             <div className="designation">CEO</div>
@@ -217,7 +217,7 @@ const ManageTeam = () => {
           <div className="team-container--two">
             <div className="team-two">
               <div className="img">
-                <img src="/image/team1.webp" alt="" />
+                <img src="/image/demoman.jpeg" alt="" />
               </div>
               <div className="team-name">Sapana Maharjan</div>
               <div className="designation">Finance Head/Administration Head</div>
@@ -232,7 +232,7 @@ const ManageTeam = () => {
             </div>
             <div className="team-two">
               <div className="img">
-                <img src="/image/team3.jpeg" alt="" />
+                <img src="/image/demoman.jpeg" alt="" />
               </div>
               <div className="team-name">Samir shakya</div>
               <div className="designation">CTO</div>
@@ -249,7 +249,7 @@ const ManageTeam = () => {
           <div className="team-container--two">
             <div className="team-two">
               <div className="img">
-                <img src="/image/team1.webp" alt="" />
+                <img src="/image/demoman.jpeg" alt="" />
               </div>
               <div className="team-name">Sajana Shrestha</div>
               <div className="designation">Sr. Business Development office</div>
@@ -264,7 +264,7 @@ const ManageTeam = () => {
             </div>
             <div className="team-two">
               <div className="img">
-                <img src="/image/team1.webp" alt="" />
+                <img src="/image/demoman.jpeg" alt="" />
               </div>
               <div className="team-name">Sulochana Kandel</div>
               <div className="designation">Business Development Office</div>

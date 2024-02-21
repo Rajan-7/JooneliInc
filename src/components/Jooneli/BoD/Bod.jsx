@@ -16,7 +16,7 @@ const Bod = () => {
           <div className="content-section">
             <div className="logo-info">
               <div className="logo">
-                <img src="/image/photo.jpeg" alt="" />
+                <img src="/image/demoman.jpeg" alt="" />
               </div>
             </div>
             <div className="dir-info">
@@ -36,7 +36,7 @@ const Bod = () => {
             <div className="sub-content--one">
               <div className="logo-info">
                 <div className="logo">
-                  <img src="/image/bod2.png" alt="" />
+                  <img src="/image/demoman.jpeg" alt="" />
                 </div>
               </div>
               <div className="dir-info">
@@ -55,7 +55,7 @@ const Bod = () => {
             <div className="sub-content--one">
               <div className="logo-info">
                 <div className="logo">
-                  <img src="/image/photo.jpeg" alt="" />
+                  <img src="/image/demoman.jpeg" alt="" />
                 </div>
               </div>
               <div className="dir-info">

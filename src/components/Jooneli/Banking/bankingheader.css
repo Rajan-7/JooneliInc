@@ -37,6 +37,11 @@ body {
   align-items: center;
   color: var(--center-content--color);
   font-size: 1.4rem;
+  background-color: black;
+  /* z-index: -2; */
+  /* background-image: url("../../../../public/image/bank.jpg");
+  background-repeat: no-repeat;
+ background-position: 35% 35%; */
 
   &::after {
     content: "\201D";

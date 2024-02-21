@@ -61,7 +61,9 @@ const Header = () => {
             </ul>
             <ul>
               <li>
-                <Link to="/talk" className="a-3">LetsTalk</Link>
+                <Link to="/talk" className="a-3">
+                  LetsTalk
+                </Link>
               </li>
             </ul>
             <ul>
@@ -72,7 +74,14 @@ const Header = () => {
           </div>
         </div>
         <div className="center-content">
-          <video src="/video/head.mp4" alt="Background Content" autoPlay muted loop/>
+          <video
+            src="/video/headervideo.mp4"
+            alt="Background Content"
+            autoPlay
+            muted
+            loop
+            className="full-width-video"
+          />
           {/* We are Jooneli ✌️ */}
         </div>
       </header>

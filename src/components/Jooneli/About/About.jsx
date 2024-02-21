@@ -46,7 +46,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="sub-section--4">
+          <div className="sub-section--3">
             <div className="icon">
               <i class="fa-solid fa-handshake"></i>
             </div>

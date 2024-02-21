@@ -68,13 +68,13 @@ const Footer = () => {
             <div className="contact-heading">Contact</div>
             <div className="contact-info">
               <li>
-                <i class="fa-solid fa-location-dot"></i>Dhobhighat-4, Lalitpur
+                <i className="fa-solid fa-location-dot"></i>Dhobhighat-4, Lalitpur
               </li>
               <li>
-                <i class="fa-solid fa-phone"></i>(977) -1-5153449
+                <i className="fa-solid fa-phone"></i>(977) -1-5153449
               </li>
               <li>
-                <i class="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope"></i>
                 <Link to="https://www.facebook.com/p/Jooneli-Inc-100063535842460/" >sales@jooneli.com</Link>
               </li>
             </div>

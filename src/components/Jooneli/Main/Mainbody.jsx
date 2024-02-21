@@ -76,7 +76,7 @@ const Mainbody = () => {
           </div>
           <div className="box1">
             {/* <img src="/image/joonsewa.png" alt="" className="sewa" /> */}
-            <img src="/image/eswa1.png" alt="" />
+            <img src="/image/sewajoon.jpg" alt="" />
             <div className="heading">Hands-on-learning</div>
             <p className="sub-heading">
               With 80K+ agents across Nepal, eSewa reaches out to every part of
@@ -120,8 +120,8 @@ const Mainbody = () => {
                 <button>Read More</button>
               </div>
               <div className="forward-backward">
-                <i class="fa-solid fa-less-than"></i>
-                <i class="fa-solid fa-greater-than"></i>
+                <i className="fa-solid fa-less-than"></i>
+                <i className="fa-solid fa-greater-than"></i>
               </div>
             </div>
           </div>

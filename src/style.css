@@ -9,9 +9,9 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
+body{
+  font-family: "Roboto";
+ }
 
 :root {
   --text-color: #fff;
@@ -47,8 +47,8 @@ body {
   position: absolute;
   height: 39rem;
   width: 100%;
-  top: 0;
-  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,12 +56,9 @@ body {
   font-size: 1.8rem;
 }
 
-/* .header-section .center-content img {
-  position: absolute;
-  height: 100%;
+.header-section .center-content .full-width-video {
   width: 100%;
-  z-index: -1;
-} */
+}
 
 .header-section .center-content video {
   position: absolute;
@@ -179,9 +176,6 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  &:hover {
-    background-color: transparent;
-  }
 }
 
 .none {
@@ -234,27 +228,27 @@ body {
       justify-content: center;
       align-items: center;
       padding: 1rem 0rem;
-      /* & i{
-        color:rgba(0,0,0,.7);
-      } */
       & img {
+        filter: grayscale(100%);
         height: 8rem;
         width: 8rem;
+        -webkit-filter: grayscale(100%);
       }
     }
 
     & .heading {
-      font-size: 2.4rem;
-      /* font-weight: bold; */
+      font-size: 2.9rem;
       text-align: center;
       padding-bottom: 1rem;
+      color: rgba(0, 0, 0, 0.5);
     }
 
     & p {
-      font-size: 2rem;
+      font-size: 2.7rem;
       text-align: center;
       word-spacing: 0.2rem;
       font-weight: 300;
+      color: grey;
     }
   }
 }
@@ -370,13 +364,6 @@ body {
     font-size: 2.4rem;
   }
 }
-
-/* .main .boxes .right-grid  .box1 .image-sewa{
-  height: 45%;
-  width: 50%;
-  background-image: url("../public/image/joonsewa.png");
-} */
-
 
 /* boxes section end */
 
@@ -644,7 +631,12 @@ body {
   }
 }
 
-.footer-section .footer-container .compaines-section .companies-logos .logo .f1{
+.footer-section
+  .footer-container
+  .compaines-section
+  .companies-logos
+  .logo
+  .f1 {
   width: 8rem;
   height: 8rem;
 }
@@ -719,15 +711,15 @@ body {
     position: relative;
   }
 
-  .main .main-heading{
+  .main .main-heading {
     width: 100%;
   }
 
-  .main .main-content{
+  .main .main-content {
     width: 100%;
   }
 
-  .main .main-content .main-content--1 p{
+  .main .main-content .main-content--1 p {
     padding: 0rem 2rem;
   }
 
@@ -781,6 +773,7 @@ body {
   .header-section {
     width: 100%;
     position: relative;
+    margin-bottom: -10rem;
   }
   .nav-container .logo-section img {
     height: 8rem;
@@ -809,7 +802,7 @@ body {
   }
 
   .header-section .center-content video {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     position: absolute;
     object-fit: fill;
@@ -956,12 +949,12 @@ body {
     width: 100%;
     font-size: 1rem;
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .nav-container .nav-bars .hover-effectors {
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .header-section .center-content video {
@@ -1098,12 +1091,12 @@ body {
     width: 100%;
     font-size: 1rem;
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .nav-container .nav-bars .hover-effectors {
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .header-section .center-content video {
@@ -1213,7 +1206,7 @@ body {
   .footer-section .footer-container .compaines-section .companies-logos {
     display: grid;
     grid-template-columns: repeat(3, 9rem);
-    gap:1rem;
+    gap: 1rem;
   }
 
   .footer-section .footer-container .contact-section {

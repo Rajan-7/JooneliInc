@@ -16,7 +16,7 @@ body {
   --text-color: #fff;
   --side-flex-bgcolor: #1b1f25;
   --red-color: #9a031e;
-  --joon-main-color:#ec180d;
+  --joon-main-color: #ec180d;
   --news-date--color: rgba(0, 0, 0, 0.4);
 }
 
@@ -48,9 +48,9 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 
-    & .main-content--1{
-      & .icon{
-        & img{
+    & .main-content--1 {
+      & .icon {
+        & img {
           height: 7rem;
           width: 7rem;
         }
@@ -62,14 +62,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      /* & i{
-        color:var(--joon-main-color);
-      } */
-
-      /* & img{
-        height: 7rem;
-        width: 7rem;
-      } */
     }
 
     & .heading {
