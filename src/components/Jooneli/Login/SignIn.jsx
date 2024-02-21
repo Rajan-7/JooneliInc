@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import "./userlogin.css";
+import React, { useState } from "react";
+import { useAuth } from "../store/auth";
+import { Link, useNavigate } from "react-router-dom";
 
 const URl = "http://localhost:5005/api/auth/register";
 
@@ -23,6 +24,7 @@ const SignIn = () => {
   };
 
   const navigate = useNavigate();
+  const { storeTokenInLs } = useAuth();
 
   // Form submission Handler
   const handleSubmit = async (e) => {
@@ -37,10 +39,16 @@ const SignIn = () => {
         body: JSON.stringify(register),
       });
       if (response.ok) {
+        const res_data = await response.json();
+        // console.log(res_data);
+
+        // Storing Token In The LocalStorage
+        storeTokenInLs(res_data.token);
+
         setRegister({ username: "", email: "", phone: "", password: "" });
         navigate("/login");
       }
-      console.log("Response Data:",response);
+      console.log("Response Data:", response);
     } catch (error) {
       console.error("From the register : ", error);
     }
