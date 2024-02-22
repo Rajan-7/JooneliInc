@@ -24,7 +24,7 @@ const Header = () => {
               </li>
             </ul>
             <div
-              className="hover-effectors "
+              className="hover-effectors boxes"
               onMouseOver={() => setShow(true)}
               onMouseLeave={() => setShow(false)}
             >

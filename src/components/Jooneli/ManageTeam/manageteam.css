@@ -5,12 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: "Roboto";
 }
+
 :root {
   --text-color: #fff;
   --red-color: #9a031e;
@@ -100,7 +103,6 @@ body {
                 color: var(--font-icon-color);
               }
             }
-
             & .rgb-design {
               margin-top: 0.5rem;
               display: flex;

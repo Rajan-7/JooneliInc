@@ -22,7 +22,6 @@ body {
 }
 
 /* ? userLogin section start */
-
 .user-login--section {
   width: 100%;
   height: 100vh;
@@ -31,7 +30,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--section-bg--color);
-
   & .form-container {
     height: 33rem;
     width: 32rem;
@@ -43,17 +41,14 @@ body {
     -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
     -o-border-radius: 1.5rem;
-
     & .login-heading {
       font-size: 2.4rem;
       text-align: center;
       font-weight: 500;
       padding: 2rem 0rem;
     }
-
     & .login-container {
       padding: 0rem 2rem 1rem 2rem;
-
       & li {
         font-size: 1.6rem;
         list-style: none;
@@ -62,7 +57,6 @@ body {
           font-size: 1.5rem;
         }
       }
-
       & input {
         width: 100%;
         height: 4rem;
@@ -70,14 +64,12 @@ body {
         padding: 0rem 0.4rem;
       }
     }
-
     & .forget-pass {
       display: flex;
       justify-content: flex-end;
       padding: 0rem 2rem 1rem 2rem;
       font-size: 1.6rem;
     }
-
     & .login-button {
       padding: 0rem 2rem 1rem 2rem;
       & .btn {
@@ -98,7 +90,6 @@ body {
         }
       }
     }
-
     & .account {
       text-align: center;
       font-size: 1.6rem;
@@ -108,7 +99,6 @@ body {
 }
 
 /* ? userLogin section end */
-
 /* ? user-register section start here */
 
 .user-register--section {
@@ -117,7 +107,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--section-bg--color);
-
   & .form-container {
     height: 41rem;
     width: 32rem;
@@ -129,7 +118,6 @@ body {
     -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
     -o-border-radius: 1.5rem;
-
     & .register-heading {
       font-size: 2.4rem;
       text-align: center;
@@ -142,19 +130,11 @@ body {
         width: 100%;
         height: 4rem;
         outline: none;
-        padding-left: .4rem;
+        padding-left: 0.4rem;
         &::placeholder {
           font-size: 1.5rem;
         }
       }
-      /* & input[type="text"] {
-        padding-left: 0.5rem;
-        font-size: 1.6rem;
-      }
-      & input[type="password"] {
-        padding-left: 0.5rem;
-        font-size: 1.6rem;
-      } */
     }
     & .register-button {
       padding: 0rem 2rem 1rem 2rem;
@@ -181,7 +161,6 @@ body {
 }
 
 /* ? user-register section end here */
-
 /* ? Forgetpass section start */
 
 .forget-password--section {
@@ -190,7 +169,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--section-bg--color);
-
   & .forget-container {
     height: 25rem;
     width: 40rem;
@@ -202,7 +180,6 @@ body {
     -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
     -o-border-radius: 1.5rem;
-
     & .heading {
       font-size: 2.4rem;
       text-align: center;
@@ -217,7 +194,6 @@ body {
       & input {
         height: 4rem;
         width: 100%;
-
         &::placeholder {
           font-size: 1.6rem;
         }
@@ -248,15 +224,13 @@ body {
 }
 
 /* ? Forgetpass section end */
-
 /* * Media QUERY */
-/* Login Section */
+/* * Login Section */
 @media (max-width: 1220px) {
   html {
     font-size: 54%;
   }
 }
-
 @media (max-width: 280px) {
   .user-login--section .form-container {
     height: 40rem;
@@ -264,7 +238,7 @@ body {
   }
 }
 
-/* Sigin/Register section */
+/* * Sigin/Register section */
 @media (max-width: 280px) {
   .user-register--section .form-container {
     height: 45rem;
@@ -272,7 +246,7 @@ body {
   }
 }
 
-/* Forget/Reset password section */
+/* * Forget/Reset password section */
 @media (max-width: 280px) {
   .forget-password--section .forget-container {
     height: 25rem;

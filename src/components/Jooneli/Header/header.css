@@ -32,9 +32,9 @@ body {
 }
 
 .header-section .center-content {
-  position: relative;
-  height: 60rem;
-  width: 100vw;
+  position: absolute;
+  height: 40rem;
+  width: 100%;
   top: 0;
   left: 0;
   display: flex;
@@ -44,12 +44,7 @@ body {
   font-size: 1.8rem;
 }
 
-/* .header-section .center-content img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-} */
+
 
 .header-section .center-content video {
   position: absolute;
@@ -70,10 +65,7 @@ body {
 
 .nav-container .nav-bars ul li a {
   text-decoration: none;
-  color: var(--font-color);
-  &:hover {
-    color: var(--joon-main--color);
-  }
+  color: white;
 }
 
 .nav-container .nav-bars {
@@ -130,7 +122,6 @@ body {
 
 .display-company {
   color: var(--font-color);
-  /* display: inline-block; */
   position: relative;
   &:hover {
     color: red;
@@ -166,6 +157,10 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.hover-effect--background:hover{
+  background-color: black;
+}
+
 .none {
   height: 0rem;
   width: 0rem;
@@ -177,4 +172,4 @@ body {
   width: 12rem;
 }
 
-/* Header section end */
+/* ? Header section end */

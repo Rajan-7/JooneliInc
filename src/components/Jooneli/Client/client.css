@@ -35,13 +35,11 @@ body {
       font-weight: 400;
       padding-bottom: 3.5rem;
     }
-
     & .client-container {
       display: grid;
       grid-template-columns: repeat(3, 2fr);
       gap: 2.5rem;
       padding: 0rem 2.5rem;
-
       & .client {
         & .logo {
           & img {
@@ -64,18 +62,15 @@ body {
       }
     }
   }
-
   & .client-response--section {
     & .client-response--heading {
       display: grid;
       grid-template-columns: repeat(2, 2fr);
       gap: 4rem;
       margin-bottom: 6rem;
-
       & .main-heading {
         text-align: right;
         display: flex;
-
         & .heading-details {
           & .sub-heading {
             font-size: 1.6rem;
@@ -93,7 +88,6 @@ body {
               -o-transform: translateY(-0.5rem);
             }
           }
-
           & .heading {
             font-weight: 400;
             font-size: 4.5rem;
@@ -114,7 +108,6 @@ body {
           margin-left: 5rem;
         }
       }
-
       & .main-details {
         font-size: 1.6rem;
         width: 80%;
@@ -123,18 +116,15 @@ body {
         color: var(--sub-content--color);
       }
     }
-
     & .client-response--details {
       display: flex;
       gap: 4rem;
-
       & .response-details--box {
         width: 100%;
         border-top-right-radius: 4.5rem;
         border-top-left-radius: 4.5rem;
         border-bottom-left-radius: 4.5rem;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
         & .comment {
           padding: 4rem 4rem 0rem 4rem;
           font-size: 1.6rem;
@@ -153,7 +143,6 @@ body {
           margin-top: 2rem;
           padding: 0rem 0rem 1rem 4rem;
           position: relative;
-
           & .logo {
             & img {
               height: 6rem;
@@ -165,13 +154,11 @@ body {
               -o-border-radius: 50%;
             }
           }
-
           & .logo-details {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-
             & .name {
               font-size: 1.8rem;
             }
@@ -186,7 +173,6 @@ body {
 }
 
 /* ? client section end here */
-
 /* * Media QUERY */
 @media (max-width: 1220px) {
   html {
@@ -242,10 +228,7 @@ body {
     .main-details {
     display: none;
   }
-  .client-section
-    .client-response--section
-    .client-response--heading
-    {
-     padding-left: 4rem;
-    }
+  .client-section .client-response--section .client-response--heading {
+    padding-left: 4rem;
+  }
 }

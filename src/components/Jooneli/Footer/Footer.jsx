@@ -62,7 +62,7 @@ const Footer = () => {
                 <img src="/image/swastik.png" alt="" />
               </div>
             </div>
-            <div className="copyright">&copy;Jooneli Inc. Pvt.Ltd</div>
+            <div className="copyright">&copy;Jooneli Inc.</div>
           </div>
           <div className="contact-section">
             <div className="contact-heading">Contact</div>

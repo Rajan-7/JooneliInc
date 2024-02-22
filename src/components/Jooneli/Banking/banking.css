@@ -25,11 +25,9 @@ body {
 }
 
 /* ? Banking section start here */
-
 .bank-section {
   width: 75%;
   margin: 36rem 16rem 0rem 16rem;
-
   & .bank-heading--section {
     margin-bottom: 9rem;
     & .bank-system--heading {
@@ -44,9 +42,6 @@ body {
         font-weight: 300;
         font-size: 2.6rem;
       }
-      /* & h2{
-        font-size: 3.2rem ;
-      } */
       & .color-1 {
         color: var(--heading-color);
       }
@@ -59,7 +54,6 @@ body {
       font-weight: 300;
     }
   }
-
   & .bank-features--section {
     margin-bottom: 9rem;
     padding: 0rem 4rem;
@@ -78,11 +72,9 @@ body {
       display: grid;
       grid-template-columns: repeat(2, 2fr);
       gap: 0rem;
-
       & .left-side--list {
         padding-left: 8rem;
         text-align: left;
-
         & li {
           list-style: none;
           padding-bottom: 1.5rem;
@@ -112,7 +104,6 @@ body {
       & .right-side--list {
         text-align: left;
         padding-left: 10rem;
-
         & li {
           list-style: none;
           padding-bottom: 1.5rem;
@@ -131,7 +122,6 @@ body {
             padding-right: 0.5rem;
             color: grey;
             width: 2.5rem;
-            /* color: var(--joon-main-color); */
           }
           &:hover i {
             color: var(--joon-main-color);
@@ -159,15 +149,14 @@ body {
     }
   }
   & .details {
-    font-size: 1.9rem;
-    color: var(--sub-content--color);
-    text-align: center;
     font-weight: 300;
+    font-size: 1.9rem;
     padding: 0rem 4rem;
+    text-align: center;
+    color: var(--sub-content--color);
   }
 
   & .box-content {
-    /* position: relative; */
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(3, 2fr);
@@ -175,9 +164,7 @@ body {
     & .content-one {
       position: relative;
       height: 25rem;
-
       & .image-img {
-        /* position: absolute; */
         height: 100%;
         width: 100%;
       }
@@ -200,7 +187,6 @@ body {
           font-size: 2rem;
         }
       }
-
       & .image-overlay {
         position: absolute;
         top: 0;
@@ -214,11 +200,9 @@ body {
         align-items: center;
         opacity: 0;
         padding: 0rem 1.5rem;
-
         &:hover {
           opacity: 1;
         }
-
         & .image-title {
           font-size: 2rem;
         }
@@ -231,7 +215,6 @@ body {
       & .image-primary {
         background: var(--bg-color-2);
       }
-
       &:hover .heading-text {
         display: none;
       }
@@ -299,10 +282,8 @@ body {
   }
 
   & .lower-box--container {
+    gap: 4rem;
     display: flex;
-    gap:4rem;
-    /* flex-direction: column; */
-
     & .logo {
       display: flex;
       justify-content: center;
@@ -312,7 +293,6 @@ body {
         border: none;
       }
     }
-
     & .box-details {
       text-align: center;
       display: flex;
@@ -322,13 +302,7 @@ body {
       padding-right: 2rem;
 
       & .details-one {
-        /* & i {
-            font-size: 5rem;
-            color: var(--font-icon--color);
-            padding: 0.5rem 0rem;
-          } */
         & .icon {
-          /* text-align: left; */
           & img {
             filter: grayscale(100%);
             height: 8rem;
@@ -348,11 +322,9 @@ body {
           text-align: center;
           color: rgba(0, 0, 0, 0.6);
         }
-
         &:hover .heading {
           color: #ec180d;
         }
-
         &:hover .icon img {
           filter: grayscale(0%);
           -webkit-filter: grayscale(0%);
@@ -363,7 +335,6 @@ body {
 }
 
 /* ? Banking section end here */
-
 /* * Media queries */
 
 @media (max-width: 1220px) {
@@ -378,7 +349,6 @@ body {
   .footer-section .footer-container {
     display: flex;
     gap: 5rem;
-    padding: 7rem 16rem 0rem;
   }
 
   .bank-section .bank-features--section .offerings,
@@ -401,10 +371,9 @@ body {
 }
 
 @media (max-width: 998px) {
-  .bank-section .bank-lower--content .lower-box--container .box-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0rem;
+  .bank-section .bank-lower--content .lower-box--container {
+    display: flex;
+    flex-direction: column;
   }
 
   .bank-section
@@ -430,13 +399,14 @@ body {
     padding-left: 4rem;
   }
 
+  .bank-section .bank-lower--content .lower-box--container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .main-content--section .box-content .content-one .image-overlay .image-title {
     font-size: 2rem;
     text-align: center;
-  }
-  .bank-lower--content .lower-box--container {
-    display: flex;
-    gap: 3rem;
   }
 
   .bank-lower--content .lower-box--container .logo img {
@@ -526,6 +496,14 @@ body {
     gap: 1rem;
   }
 
+  .bank-section .bank-heading--section .bank-system--heading .main-heading {
+    font-size: 2.7rem;
+  }
+
+  .bank-section .bank-heading--section .bank-system--details {
+    font-size: 1.6rem;
+  }
+
   .bank-section .bank-heading--section .bank-system--heading h2 {
     font-size: 2.4rem;
   }
@@ -546,8 +524,22 @@ body {
     padding-left: 0rem;
   }
 
+  .bank-section .bank-features--section .offerings-list .left-side--list li,
+  .bank-section .bank-features--section .offerings-list .right-side--list li {
+    font-size: 1.6rem;
+  }
+
   .bank-section .main-content--section .details {
     padding: 0rem 3rem;
+  }
+
+  .bank-section .bank-lower--content .lower-box--container .box-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bank-section .bank-lower--content .bank-lower--details {
+    font-size: 1.6rem;
   }
 
   .bank-section .main-content--section .box-content {

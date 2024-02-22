@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Roboto";
 }
+
 :root {
   --text-color: #fff;
   --sub-content--color: rgba(0, 0, 0, 0.6);
@@ -25,10 +26,8 @@ body {
 }
 
 /* ? trading section start here */
-
 .trading-section {
   margin: 36rem 16rem 0rem 16rem;
-
   & .bank-heading--section {
     margin-bottom: 9rem;
     & .bank-system--heading {
@@ -56,7 +55,6 @@ body {
       padding: 0rem 8rem;
     }
   }
-
   & .bank-features--section {
     margin-bottom: 9rem;
     & .offerings {
@@ -74,7 +72,6 @@ body {
       display: grid;
       grid-template-columns: repeat(2, 2fr);
       gap: 0rem;
-
       & .left-side--list {
         padding-left: 14rem;
         text-align: left;
@@ -105,7 +102,7 @@ body {
         }
       }
       & .right-side--list {
-        text-align:center;
+        text-align: center;
         padding-left: 16rem;
 
         & li {
@@ -136,7 +133,6 @@ body {
       }
     }
   }
-
   & .main-content--section {
     margin-bottom: 4rem;
     & .main-heading {
@@ -155,9 +151,8 @@ body {
       color: var(--sub-content--color);
       text-align: center;
       font-weight: 300;
-      padding:0rem 4rem;
+      padding: 0rem 4rem;
     }
-
     & .box-content {
       display: grid;
       grid-template-columns: repeat(3, 2fr);
@@ -166,13 +161,10 @@ body {
       & .content-one {
         position: relative;
         height: 25rem;
-
         & .image-img {
-          /* position: absolute; */
           height: 100%;
           width: 100%;
         }
-
         &::before {
           position: absolute;
           top: 0;
@@ -192,7 +184,6 @@ body {
             font-size: 2rem;
           }
         }
-
         & .image-overlay {
           position: absolute;
           top: 0;
@@ -206,11 +197,9 @@ body {
           align-items: center;
           opacity: 0;
           padding: 0rem 1.5rem;
-
           &:hover {
             opacity: 1;
           }
-
           & .image-title {
             font-size: 2rem;
           }
@@ -223,11 +212,9 @@ body {
         & .image-primary {
           background: var(--bg-color-2);
         }
-
         &:hover .heading-text {
           display: none;
         }
-
         &:nth-child(4) .image-description {
           & li {
             list-style: none;
@@ -240,7 +227,6 @@ body {
 }
 
 /* ? Trading section end here */
-
 /* * Media queries */
 
 @media (max-width: 1220px) {
@@ -254,8 +240,7 @@ body {
 
   .footer-section .footer-container {
     display: flex;
-    gap: 5rem;
-    padding: 7rem 16rem 0rem;
+    
   }
 
   .trading-section .bank-features--section .offerings,
@@ -353,6 +338,7 @@ body {
 
   .trading-section .bank-features--section .offerings-list {
     display: flex;
+
     justify-content: center;
     align-items: center;
   }
@@ -372,7 +358,6 @@ body {
   .trading-section .bank-lower--content .lower-box--container .box-details {
     margin: 0 5rem;
   }
-  
 
   .trading-section .main-content--section .main-heading {
     padding-bottom: 2.5rem;
@@ -393,6 +378,21 @@ body {
   }
 }
 
+@media (max-width:440px) {
+  
+  .trading-section .bank-features--section .offerings-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .trading-section .bank-features--section .offerings-list .right-side--list,
+  .trading-section .bank-features--section .offerings-list .left-side--list
+   {
+   padding: 0;
+  }
+}
+
 @media (max-width: 385px) {
   .header-section .nav-container {
     display: flex;
@@ -404,11 +404,9 @@ body {
     font-size: 1.2rem;
   }
 
-  .header-section .nav-container .nav-bars .hover-effectors {
-    display: flex;
-    gap: 1rem;
+  .header-section .nav-container .nav-bars .hover-effectors{
+    margin: 0rem;
   }
-
   .trading-section .bank-heading--section .bank-system--heading h2 {
     font-size: 2.4rem;
   }
@@ -446,11 +444,11 @@ body {
     padding: 0rem 3rem;
   }
 
-  .trading-section .bank-heading--section .bank-system--heading h3{
+  .trading-section .bank-heading--section .bank-system--heading h3 {
     font-size: 1.8rem;
   }
 
-  .trading-section .bank-features--section .offerings{
+  .trading-section .bank-features--section .offerings {
     font-size: 2.4rem;
   }
 }
@@ -487,6 +485,4 @@ body {
   .trading-section .main-content--section .details {
     padding-bottom: 2.5rem;
   }
-
-
 }

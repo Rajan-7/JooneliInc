@@ -1,3 +1,4 @@
+/* ? Main Part */
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +22,6 @@ body {
 }
 
 /* ? main body start here */
-
 .main {
   width: 100vw;
   margin-top: 17rem;
@@ -29,7 +29,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   & .main-heading {
     padding: 2rem;
     width: 110rem;
@@ -40,14 +39,12 @@ body {
     text-align: center;
     line-height: 2.5rem;
   }
-
   & .main-content {
     margin-top: 4rem;
     width: 110rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-
     & .main-content--1 {
       & .icon {
         & img {
@@ -56,20 +53,16 @@ body {
         }
       }
     }
-
     & .icon {
       font-size: 4rem;
       display: flex;
       justify-content: center;
       align-items: center;
     }
-
     & .heading {
       font-size: 2.4rem;
-      /* font-weight: bold; */
       text-align: center;
     }
-
     & p {
       font-size: 1.8rem;
       text-align: center;
@@ -78,9 +71,8 @@ body {
   }
 }
 
-/* main section end here */
-
-/* boxes section */
+/* ? main section end here */
+/* ? boxes section */
 .boxes {
   margin: 10rem 0rem;
   display: flex;
@@ -134,7 +126,6 @@ body {
       }
     }
   }
-
   & .right-grid {
     width: 66.67%;
     display: grid;
@@ -146,7 +137,6 @@ body {
       -webkit-animation: lefttoright 0.3s linear infinite;
       position: relative;
       overflow: hidden;
-
       & .heading {
         margin-top: -3rem;
         position: absolute;
@@ -167,7 +157,6 @@ body {
         -ms-transition: 0.2s ease-in;
         -o-transition: 0.2s ease-in;
       }
-
       &:hover .sub-heading {
         font-size: 1.5rem;
         padding-left: 4rem;
@@ -176,29 +165,19 @@ body {
         color: var(--text-color);
       }
     }
-
-    /* & img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    } */
   }
   & .heading {
     color: var(--text-color);
     font-size: 2.4rem;
   }
 }
-
-/* boxes section end */
-
-/* photo-info & news section start */
-
+/* ? boxes section end */
+/* ? photo-info & news section start */
 .photo-news {
   margin-top: 11rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
-
   & .photo-info {
     position: relative;
     width: 50vw;
@@ -239,11 +218,9 @@ body {
         font-size: 2rem;
         padding: 2rem;
         line-height: 2.5rem;
-
         & .name {
           margin-bottom: 1rem;
         }
-
         & .forward-backward {
           margin-top: 3rem;
           margin-left: 2rem;
@@ -265,7 +242,6 @@ body {
         margin-top: 1rem;
         display: flex;
         justify-content: flex-end;
-
         & button {
           cursor: pointer;
           border: 0.1rem solid var(--text-color);
@@ -279,7 +255,6 @@ body {
           -ms-border-radius: 0.5rem;
           -o-border-radius: 0.5rem;
         }
-
         & button:hover {
           background-color: var(--text-color);
           color: var(--red-color);
@@ -292,7 +267,6 @@ body {
       font-size: 3.6rem;
       margin-bottom: 3rem;
     }
-
     & .news-div--1 {
       display: flex;
       gap: 1.5rem;
@@ -331,7 +305,6 @@ body {
     & .mb-t {
       margin-top: 4rem;
     }
-
     & .news-button {
       margin-top: 5.1rem;
 
@@ -346,7 +319,6 @@ body {
         -moz-border-radius: 0.5rem;
         -ms-border-radius: 0.5rem;
         -o-border-radius: 0.5rem;
-
         &:hover {
           background-color: var(--red-color);
           color: var(--text-color);
@@ -356,5 +328,5 @@ body {
   }
 }
 
-/* photo-info & news section end */
+/* ? photo-info & news section end */
 /* ? main body end here */

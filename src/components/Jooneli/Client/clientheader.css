@@ -1,3 +1,5 @@
+/* ? Main Parts */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +18,7 @@ body {
 }
 
 /*? Header section start */
-
 .header-section .nav-container {
-  /* position:fixed; */
   padding-top: 2rem;
   display: flex;
   justify-content: space-around;
@@ -49,7 +49,6 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  /* margin-bottom: 20rem; */
 }
 
 .logo-section {
@@ -71,7 +70,7 @@ body {
   }
 }
 
-.nav-bars ul li .a-3{
+.nav-bars ul li .a-3 {
   text-wrap: nowrap;
 }
 
@@ -127,7 +126,6 @@ body {
 
 .display-company {
   color: var(--font-color);
-  /* display: inline-block; */
   position: relative;
   &:hover {
     color: red;
@@ -152,14 +150,12 @@ body {
 }
 
 .hover-effect--background {
-  position: absolute;
-  /* z-index: -3; */
-  height: 27rem;
-  width: 100vw;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 27rem;
+  position: absolute;
   background-color: #4cb9e7;
-  /* display: none; */
 }
 
 .none {
@@ -173,4 +169,4 @@ body {
   width: 12rem;
 }
 
-/* Header section end */
+/* ? Header section end */

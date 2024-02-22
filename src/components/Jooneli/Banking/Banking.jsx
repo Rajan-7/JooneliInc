@@ -10,10 +10,10 @@ const Banking = () => {
       <div className="bank-section">
         <div className="bank-heading--section">
           <div className="bank-system--heading">
-            <h2>360 Core Banking System</h2>
+            <h2 className="main-heading">360 Core Banking System</h2>
             <h3>Always Leading, always Innovative ,Always Trust</h3>
           </div>
-          <div className="bank-system--details">
+          <div className="bank-system--details res_3">
             360 is the most technically advanced banking system available today.
             It combines the most comprehensive and flexible business
             functionality with the most advanced and scalable architecture. This
@@ -22,7 +22,7 @@ const Banking = () => {
           </div>
         </div>
         <div className="bank-features--section">
-          <div className="offerings">
+          <div className="offerings main-heading">
             What We Offers <span className="color">?</span>
           </div>
           <div className="offerings-list">
@@ -87,7 +87,7 @@ const Banking = () => {
           <div className="main-heading">
             Why 360 Core Banking System<span className="color">?</span>
           </div>
-          <p className="details">
+          <p className="details res_3">
             360 Core Banking System ensures that the task you carry out would be
             completed 70% faster with minimum amount of errors.
           </p>

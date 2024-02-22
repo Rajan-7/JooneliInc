@@ -1,17 +1,19 @@
 /* ? main part  */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto";
 }
+
 html {
   font-size: 62.5%;
 }
-/* body {
+
+body {
   font-family: "Roboto";
-} */
+}
+
 :root {
   --text-color: #fff;
   --blog-heading: #508d69;
@@ -21,11 +23,10 @@ html {
   --arrow-color: #b6babe;
 }
 
-/* Blog section start here */
+/* ? Blog section start here */
 .blog-section {
   margin-top: 36rem;
   padding-top: 0rem;
-  /* font-family: "Urbanist"; */
   & .blog-container {
     padding-top: 2rem;
     display: flex;
@@ -83,7 +84,6 @@ html {
           filter: grayscale(100%);
           -webkit-filter: grayscale(100%);
         }
-
         & .image-class-cwc {
           height: 45%;
           width: 50%;
@@ -99,7 +99,6 @@ html {
           filter: grayscale(100%);
           -webkit-filter: grayscale(100%);
         }
-
         & .image-class-rsk {
           height: 45%;
           width: 50%;
@@ -115,7 +114,6 @@ html {
           filter: grayscale(100%);
           -webkit-filter: grayscale(100%);
         }
-
         & .content-heading {
           padding: 1rem 0rem 0rem 3rem;
           font-size: 2rem;
@@ -147,8 +145,7 @@ html {
     }
   }
 }
-/* Blog section end here */
-
+/* ? Blog section end here */
 /* * Media Queries */
 
 @media (max-width: 1220px) {
@@ -215,7 +212,6 @@ html {
     margin-top: 0rem;
   }
 }
-
 
 @media (max-width: 385px) {
   .blog-section .blog-container .blog-contents .blog-1 .image-class-rsk,

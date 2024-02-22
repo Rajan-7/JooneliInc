@@ -1,16 +1,19 @@
-/* ? main part  */
+/* ? Main part  */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: "Roboto";
 }
+
 :root {
   --text-color: #fff;
   --font-icon--color: #3081d0;
@@ -34,12 +37,13 @@ body {
       text-transform: capitalize;
     }
     & .main-details {
-      font-size: 1.6rem;
+      font-size: 1.9rem;
+      font-weight: 300;
       text-align: center;
+      padding: 0 2rem;
       color: var(--sub-content--color);
     }
   }
-
   & .career-main--section {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -48,7 +52,6 @@ body {
     row-gap: 5rem;
     padding: 0rem 2rem;
     margin-bottom: 6rem;
-
     & .content-container {
       display: flex;
       gap: 4rem;
@@ -58,30 +61,28 @@ body {
           font-size: 4rem;
           opacity: 50%;
         }
-        
       }
       & .content-details {
         & .content-heading {
           padding-bottom: 1rem;
-          font-size: 1.8rem;
-          font-weight: 600;
+          font-size: 2rem;
+          font-weight: 500;
           text-transform: capitalize;
           color: var(--sub-content--color);
         }
         & .content-details {
-          font-size: 1.6rem;
+          font-size: 1.8rem;
           text-align: none;
+          font-weight: 300;
           word-spacing: 1.5;
           color: var(--sub-content--color);
         }
       }
     }
   }
-
   & .career-job--section {
     display: flex;
     flex-direction: column;
-
     & .heading {
       font-size: 3.2rem;
       text-align: center;
@@ -100,12 +101,14 @@ body {
         align-items: center;
         box-shadow: var(--box-shadow--color) 0px 1px 4px;
         & .job-heading {
-          font-size: 2.8rem;
+          font-size: 2.7rem;
           color: var(--job-heading--color);
         }
         & .job-details {
-          font-size: 1.6rem;
+          font-size: 1.9rem;
           padding: 0rem 2rem;
+          font-weight: 300;
+          padding-top: 1rem;
           text-align: justify;
           color: var(--sub-content--color);
         }
@@ -114,12 +117,12 @@ body {
   }
 }
 
-.career-section .career-main--section .content-container .logo i:hover{
+.career-section .career-main--section .content-container .logo i:hover {
   color: var(--joon-main-color);
   opacity: 100%;
 }
-/* ? career section end here */
 
+/* ? career section end here */
 /* * Media QUERY */
 @media (max-width: 1220px) {
   html {

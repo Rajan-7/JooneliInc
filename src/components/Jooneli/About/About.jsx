@@ -10,7 +10,7 @@ const About = () => {
       <div className="about-section">
         <div className="about-section--1">
           <div className="sub-section--1">
-            <img src="/image/abtus.png" alt="" />
+            <img src="/image/about.png" alt="" />
           </div>
           <div className="sub-section--2">
             <div className="sub-heading">About Us</div>
@@ -31,11 +31,14 @@ const About = () => {
               data, enabling collaboration.
             </p>
           </div>
-          <div className="sub-section--3">
-            <div className="icon">
-              <i class="fa-solid fa-bullseye"></i>
-            </div>
-            <div className="contents">
+        </div>
+        <div className="mv-container">
+          <div className="mv-content">
+            <div className="mv-section">
+              <div className="icon">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+
               <div className="heading">Our Mission</div>
               <p className="details">
                 Our mission is to develop, produce, and sell software products
@@ -45,12 +48,10 @@ const About = () => {
                 also creating value for customers, employees.
               </p>
             </div>
-          </div>
-          <div className="sub-section--3">
-            <div className="icon">
-              <i class="fa-solid fa-handshake"></i>
-            </div>
-            <div className="contents">
+            <div className="mv-section">
+              <div className="icon">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
               <div className="heading">Our Values</div>
               <p className="details">
                 We strive to provide excellent customer service and support, and
@@ -61,12 +62,15 @@ const About = () => {
               </p>
             </div>
           </div>
+          <div className="mv-image">
+            <img src="/image/mvimage.png" alt="" />
+          </div>
         </div>
         <div className="about-section--2">
           <div className="header-title">
             <div className="sub-header">Globally Renowned & trusted</div>
             <div className="main-header">
-              Why <span className="color-3">Choose Us</span>
+              Why <span>Choose Us</span>
             </div>
             <p className="header-content">
               Our IT services consist of business and technology experts who

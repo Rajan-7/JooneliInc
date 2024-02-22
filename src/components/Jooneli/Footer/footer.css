@@ -23,17 +23,14 @@ body {
   --media-icon--color: #777;
 }
 
-/* Footer-section start here */
-
+/* ? Footer-section start here */
 .footer-section {
   margin-top: 12rem;
   background-color: var(--footer-background);
-
   & .footer-container {
     display: flex;
     padding: 7rem 22rem 2rem 22rem;
     gap: 7rem;
-
     & .compaines-section {
       display: flex;
       flex-direction: column;
@@ -65,24 +62,18 @@ body {
             width: 8.4rem;
             font-size: 1.5rem;
           }
-          /* & .f1 {
-            height: 4.4rem;
-            width: 4.4rem;
-          } */
           & .f2 {
             height: 4.4rem;
             width: 8.4rem;
           }
         }
       }
-
       & .copyright {
         margin-top: 4rem;
         font-size: 1.5rem;
         color: var(--copyright-color);
       }
     }
-
     & .contact-section {
       & .contact-heading {
         font-weight: 600;
@@ -99,7 +90,6 @@ body {
           list-style: none;
           font-weight: 500;
           color: var(--copyright-color);
-
           & i {
             margin-right: 0.5rem;
           }
@@ -131,9 +121,14 @@ body {
   }
 }
 
-.footer-section .footer-container .compaines-section .companies-logos .logo .f1{
+.footer-section
+  .footer-container
+  .compaines-section
+  .companies-logos
+  .logo
+  .f1 {
   height: 10rem;
   width: 10rem;
 }
 
-/* Footer-section end here */
+/* ? Footer-section end here */

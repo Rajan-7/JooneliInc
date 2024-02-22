@@ -127,7 +127,6 @@ body {
 
 .display-company {
   color: var(--font-color);
-  /* display: inline-block; */
   position: relative;
   &:hover {
     color: red;
@@ -158,8 +157,7 @@ body {
   width: 100vw;
   top: 0;
   left: 0;
-  background-color: #4cb9e7;
-  /* display: none; */
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .none {

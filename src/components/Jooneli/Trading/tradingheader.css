@@ -8,18 +8,18 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: "Roboto", sans-serif;
 }
 :root {
   --font-color: #fff;
-  --center-content--color:rgba(255,255,255,.5);
+  --center-content--color: rgba(255, 255, 255, 0.5);
 }
 
 /*? Header section start */
 
 .header-section .nav-container {
-  /* position:fixed; */
   padding-top: 2rem;
   display: flex;
   justify-content: space-around;
@@ -37,11 +37,10 @@ body {
   align-items: center;
   color: var(--center-content--color);
   font-size: 1.4rem;
-
-  &::after{
+  &::after {
     content: "\201D";
   }
-  &::before{
+  &::before {
     content: "\201C";
   }
 }
@@ -72,7 +71,7 @@ body {
   }
 }
 
-.nav-bars ul li .a-3{
+.nav-bars ul li .a-3 {
   text-wrap: nowrap;
 }
 
@@ -128,7 +127,6 @@ body {
 
 .display-company {
   color: var(--font-color);
-  /* display: inline-block; */
   position: relative;
   &:hover {
     color: red;
@@ -139,7 +137,6 @@ body {
   display: none;
   position: absolute;
   min-width: 25rem;
-
   & a {
     display: flex;
     &:hover {
@@ -154,13 +151,11 @@ body {
 
 .hover-effect--background {
   position: absolute;
-  /* z-index: -3; */
   height: 27rem;
   width: 100vw;
   top: 0;
   left: 0;
   background-color: #4cb9e7;
-  /* display: none; */
 }
 
 .none {
@@ -174,9 +169,26 @@ body {
   width: 12rem;
 }
 
-.header-section .center-content--trading img{
+.header-section .center-content--trading img {
   height: 40rem;
   width: 100%;
 }
 
-/* Header section end */
+/* ? Header section end */
+
+/* MEDIA QUERY */
+@media (max-width:600px) {
+  .header-section  .center-content--trading{
+    height: 25rem;
+  }
+}
+@media (max-width:440px) {
+  .header-section  .center-content--trading{
+    height: 25rem;
+  }
+}
+@media (max-width:380px) {
+  .header-section  .center-content--trading{
+    height: 25rem;
+  }
+}
