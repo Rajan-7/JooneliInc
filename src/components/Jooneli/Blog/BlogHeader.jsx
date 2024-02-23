@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./blogheader.css";
-// import Home from "./home";
+
 
 const BlogHeader = () => {
   const [show, setShow] = useState(false);
@@ -24,7 +24,7 @@ const BlogHeader = () => {
               </li>
             </ul>
             <div
-              className="hover-effectors boxes"
+              className="hover-effectors"
               onMouseOver={() => setShow(true)}
               onMouseLeave={() => setShow(false)}
             >

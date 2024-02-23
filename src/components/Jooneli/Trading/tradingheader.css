@@ -187,8 +187,11 @@ body {
     height: 25rem;
   }
 }
-@media (max-width:380px) {
+@media (max-width:385px) {
   .header-section  .center-content--trading{
     height: 25rem;
+  }
+  .header-section .nav-container .nav-bars .hover-effectors{
+    padding: 0;
   }
 }

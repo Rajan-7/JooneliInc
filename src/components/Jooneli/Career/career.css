@@ -130,13 +130,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
-  .career-section {
-    margin: 36rem 5rem 0rem;
-  }
-}
-
-@media (max-width: 420px) {
+@media (max-width:998px) {
   .career-section .career-main--section {
     display: flex;
     flex-direction: column;
@@ -144,6 +138,35 @@ body {
   .career-section .career-job--section .job-container {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .career-section {
+    margin: 36rem 5rem 0rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .career-section .career-main--section {
+    display: flex;
+    flex-direction: column;
+  }
+  .career-section .career-job--section .job-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:380px) {
+  .career-section .career-main--section .content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .career-section .career-job--section .job-container .job-container--one{
+    height: 25rem;
   }
 }
 

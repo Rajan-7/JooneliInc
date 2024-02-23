@@ -430,18 +430,19 @@ body {
 
   .header-section .nav-container {
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
     padding: 0rem 2rem;
   }
   .header-section .nav-container .nav-bars {
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
     font-size: 1.4rem;
   }
 
   .header-section .nav-container .nav-bars .hover-effectors {
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
+    padding: 0;
   }
 
   .bank-section .bank-features--section .offerings-list {

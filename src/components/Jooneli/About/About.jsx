@@ -36,7 +36,7 @@ const About = () => {
           <div className="mv-content">
             <div className="mv-section">
               <div className="icon">
-                <i class="fa-solid fa-bullseye"></i>
+                {/* <i class="fa-solid fa-bullseye"></i> */}
               </div>
 
               <div className="heading">Our Mission</div>
@@ -50,7 +50,7 @@ const About = () => {
             </div>
             <div className="mv-section">
               <div className="icon">
-                <i class="fa-solid fa-handshake"></i>
+                {/* <i class="fa-solid fa-handshake"></i> */}
               </div>
               <div className="heading">Our Values</div>
               <p className="details">
@@ -63,7 +63,7 @@ const About = () => {
             </div>
           </div>
           <div className="mv-image">
-            <img src="/image/mvimage.png" alt="" />
+            <img src="/image/mvpic1.png" alt="" />
           </div>
         </div>
         <div className="about-section--2">
@@ -123,7 +123,7 @@ const About = () => {
                   status of your project. Quality is the basis to measure how
                   safe, secure and reliable your codebase is. Maintenance of
                   high quality is not difficult for Jooneli to develop
-                  safety-critical systems on your project.
+                   systems.
                 </p>
               </div>
             </div>

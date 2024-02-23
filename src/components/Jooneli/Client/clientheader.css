@@ -170,3 +170,19 @@ body {
 }
 
 /* ? Header section end */
+/* *MEDIA QUERY */
+@media (max-width:600px) {
+  .header-section .center-content--client{
+    height: 23.7rem;
+  }
+}
+@media (max-width:440px) {
+  .header-section .center-content--client{
+    height: 23.7rem;
+  }
+}
+@media (max-width:380px) {
+  .header-section .center-content--client{
+    height: 23.7rem;
+  }
+}

@@ -174,13 +174,31 @@ body {
     margin: 0rem;
     padding: 0rem;
   }
-}
-
-@media (max-width:380px) {
   .header-section .center-content--bod{
+    height: 23rem;
+  }
+  .header-section .nav-container .logo-section{
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 440px) {
+  .header-section .center-content--bod {
     height: 22rem;
   }
-  .header-section .nav-container .nav-bars .hover-effectors{
+  .header-section .nav-container .nav-bars{
+    margin-right: .5rem;
+  }
+}
+@media (max-width: 380px) {
+  .header-section .center-content--bod {
+    height: 22rem;
+  }
+  .header-section .nav-container .nav-bars .hover-effectors {
     margin: 0rem;
+  }
+}
+@media (max-width:280px) {
+  .header-section .nav-container .nav-bars{
+    margin:0;
   }
 }

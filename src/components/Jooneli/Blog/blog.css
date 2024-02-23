@@ -170,8 +170,12 @@ body {
   .blog-section .blog-container .blog-contents .blog-1 .image-class-cc,
   .blog-section .blog-container .blog-contents .blog-1 .image-class-cwc {
     height: 53%;
-    width: 75%;
+    width: 79.9%;
     margin-top: 0rem;
+  }
+  .blog-section .blog-container .blog-contents .blog-1{
+   height: 44rem;
+   width: 44rem;
   }
 }
 
@@ -203,6 +207,22 @@ body {
   }
 }
 
+@media (max-width:540px) {
+  .header-section .nav-container .nav-bars .hover-effectors {
+    display: flex;
+    gap: 2rem;
+  }
+  .header-section .nav-container .logo-section{
+    padding-left:  1rem;
+  }
+  .header-section .nav-container .nav-bars{
+    display: flex;
+    gap:2rem;
+    font-size: 1.4rem;
+     /* margin:0rem 0rem 0rem 2rem; */
+  }
+}
+
 @media (max-width: 500px) {
   .blog-section .blog-container .blog-contents .blog-1 .image-class-rsk,
   .blog-section .blog-container .blog-contents .blog-1 .image-class-cc,
@@ -213,12 +233,24 @@ body {
   }
 }
 
-@media (max-width: 385px) {
+@media (max-width:420px) {
+  .header-section .nav-container .nav-bars{
+    margin-left: .8rem;
+  }
+}
+
+@media (max-width: 390px) {
   .blog-section .blog-container .blog-contents .blog-1 .image-class-rsk,
   .blog-section .blog-container .blog-contents .blog-1 .image-class-cc,
   .blog-section .blog-container .blog-contents .blog-1 .image-class-cwc {
     height: 49%;
     width: 80%;
+  }
+  .header-section .nav-container .logo-section{
+    padding-left: .5rem;
+  }
+  .header-section .nav-container .nav-bars{
+    margin-left: .8rem;
   }
 }
 @media (max-width: 280px) {

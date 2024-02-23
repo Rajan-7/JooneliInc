@@ -322,18 +322,17 @@ body {
 
   .header-section .nav-container {
     display: flex;
-    gap: 1rem;
     padding: 0rem 2rem;
   }
   .header-section .nav-container .nav-bars {
     display: flex;
-    gap: 2rem;
+    /* gap: 2rem; */
     font-size: 1.4rem;
   }
 
   .header-section .nav-container .nav-bars .hover-effectors {
     display: flex;
-    gap: 1rem;
+    
   }
 
   .trading-section .bank-features--section .offerings-list {
@@ -396,17 +395,19 @@ body {
 @media (max-width: 385px) {
   .header-section .nav-container {
     display: flex;
-    padding: 0rem 0rem;
+    padding: 0rem 1rem;
   }
   .header-section .nav-container .nav-bars {
     display: flex;
-    gap: 1rem;
+    gap:2rem;
     font-size: 1.2rem;
   }
 
-  .header-section .nav-container .nav-bars .hover-effectors{
-    margin: 0rem;
+  .header-section .nav-container .logo-section{
+    margin-right: .5rem;
   }
+
+  
   .trading-section .bank-heading--section .bank-system--heading h2 {
     font-size: 2.4rem;
   }
@@ -467,6 +468,12 @@ body {
     padding-bottom: 1rem;
   }
 
+  .header-section .nav-container .logo-section{
+    & img{
+      height: 5rem;
+      width: 5rem;
+    }
+  }
   .header-section .nav-container .nav-bars {
     display: flex;
     gap: 0.5rem;

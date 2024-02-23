@@ -19,7 +19,6 @@ body {
 
 /*? Header section start */
 .header-section .nav-container {
-  /* position:fixed; */
   padding-top: 2rem;
   display: flex;
   justify-content: space-around;

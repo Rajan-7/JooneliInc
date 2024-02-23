@@ -170,4 +170,33 @@ body {
   width: 12rem;
 }
 
-/* Header section end */
+/* ? Header section end */
+
+/* * MEDIA QUERY */
+@media (max-width:600px) {
+  .header-section .center-content--mt{
+    height: 23.7rem;
+  }
+}
+@media (max-width:440px) {
+  .header-section .center-content--mt{
+    height:23.7rem;
+  }
+  .header-section .nav-container .nav-bars{
+    margin-right: 1.5rem;
+  }
+}
+@media (max-width:380px) {
+  .header-section .center-content--mt{
+    height: 23.7rem;
+  }
+  .header-section .nav-container .nav-bars{
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width:280px) {
+  .header-section .center-content--mt{
+    height: 20rem;
+  }
+}
