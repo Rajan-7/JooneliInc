@@ -12,6 +12,7 @@ import Talk from "./components/Jooneli/LetsTalk/Talk";
 import UserLogin from "./components/Jooneli/Login/UserLogin";
 import ForgetPass from "./components/Jooneli/Login/ForgetPass";
 import SignIn from "./components/Jooneli/Login/SignIn";
+import Logout from "./components/Jooneli/logout/Logout";
 
 const router = createBrowserRouter([
   {
@@ -39,35 +40,37 @@ const router = createBrowserRouter([
     element: <Career />,
   },
   {
-    path:"client",
-    element:<Client/>
-  }
-  ,
-  {
-    path:"bank",
-    element:<Banking/>
+    path: "client",
+    element: <Client />,
   },
   {
-    path:"trading",
-    element:<Trading/>
+    path: "bank",
+    element: <Banking />,
   },
   {
-    path:"talk",
-    element:<Talk/>
+    path: "trading",
+    element: <Trading />,
   },
   {
-    path:'login',
-    element:<UserLogin/>
+    path: "talk",
+    element: <Talk />,
   },
   {
-    path:'forgetpass',
-    element:<ForgetPass/>
+    path: "login",
+    element: <UserLogin />,
   },
   {
-    path:'signin',
-    element:<SignIn/>
-  }
-
+    path: "forgetpass",
+    element: <ForgetPass />,
+  },
+  {
+    path: "signin",
+    element: <SignIn />,
+  },
+  {
+    path:"logout",
+    element:<Logout/>
+  },
 ]);
 
 export default router;

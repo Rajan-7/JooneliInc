@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../store/auth";
 import "./header.css";
 // import Home from "./home";
 
 const Header = () => {
+  const { isLoggedIn } = useAuth();
   const [show, setShow] = useState(false);
   return (
     <>
@@ -66,11 +68,19 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-            <ul>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
-            </ul>
+            {isLoggedIn ? (
+              <ul>
+                <li>
+                  <Link to="/logout">Logout</Link>
+                </li>
+              </ul>
+            ) : (
+              <ul>
+                <li>
+                  <Link to="/login">Login</Link>
+                </li>
+              </ul>
+            )}
           </div>
         </div>
         <div className="center-content">
@@ -82,7 +92,6 @@ const Header = () => {
             loop
             className="full-width-video"
           />
-          {/* We are Jooneli ✌️ */}
         </div>
       </header>
     </>

@@ -222,12 +222,12 @@ body {
           gap:2rem;
           & .heading {
             font-weight: 400;
-            font-size: 2rem;
+            font-size: 2.1rem;
             letter-spacing: 0.05rem;
           }
           & .details {
             color: rgba(0, 0, 0, 0.6);
-            font-size: 1.7rem;
+            font-size: 1.9rem;
             line-height: 1.7;
             word-spacing: 1.7;
             font-weight: 300;

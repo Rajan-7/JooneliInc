@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import TalkHeader from "./TalkHeader";
 import Footer from "../Footer/Footer";
 import "./talk.css";
 
 const Talk = () => {
+  const [contact, setContact] = useState({
+    username: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  // Handling the contact Inputs
+  const handleContact = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+    setContact({
+      ...contact,
+      [name]: value,
+    });
+  };
+
+  // Handling contact submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(contact);
+  };
+
   return (
     <>
       <TalkHeader />
@@ -25,7 +48,7 @@ const Talk = () => {
           <div className="contact-content">
             <div className="contact-title">Get In Touch</div>
             <div className="form-container">
-              <form action="" method="POST">
+              <form onSubmit={handleSubmit} method="POST">
                 <div className="grid-two--cols mb-3">
                   <div>
                     <label for="username">Your Name</label>
@@ -33,20 +56,24 @@ const Talk = () => {
                       type="text"
                       name="username"
                       id="username"
-                      autocomplete="off"
+                      autoComplete="off"
                       required
                       placeholder="Enter your name"
+                      value={contact.username}
+                      onChange={handleContact}
                     />
                   </div>
                   <div>
                     <label for="username">Your Email</label>
                     <input
-                      type="text"
+                      type="email"
                       name="email"
                       id="email"
-                      autocomplete="off"
+                      autoComplete="off"
                       required
                       placeholder="Enter your email"
+                      value={contact.email}
+                      onChange={handleContact}
                     />
                   </div>
                 </div>
@@ -56,8 +83,10 @@ const Talk = () => {
                     type="text"
                     name="subject"
                     id="subject"
-                    autocomplete="off"
+                    autoComplete="off"
                     placeholder="Your subject matter"
+                    value={contact.subject}
+                    onChange={handleContact}
                   />
                 </div>
                 <div className="mb-3 message">
@@ -67,8 +96,10 @@ const Talk = () => {
                     id="message"
                     cols="30"
                     rows="10"
-                    autocomplete="off"
+                    autoComplete="off"
                     placeholder="Enter your message..."
+                    value={contact.message}
+                    onChange={handleContact}
                   ></textarea>
                 </div>
                 <div className="send-message">
