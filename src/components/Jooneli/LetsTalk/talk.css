@@ -153,13 +153,17 @@ body {
 
 @media (max-width: 600px) {
   .talk-section {
-    margin: 36rem 6rem 0rem;
+    margin: 39rem 6rem 0rem;
+  }
+  .talk-section .talk-main--content .contact-content .form-container form .grid-two--cols{
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media (max-width: 420px) {
   .talk-section {
-    margin: 36rem 6rem 0rem;
+    margin: 41rem 6rem 0rem;
   }
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useAuth } from "../store/auth";
 import TalkHeader from "./TalkHeader";
 import Footer from "../Footer/Footer";
 import "./talk.css";
@@ -10,6 +11,19 @@ const Talk = () => {
     subject: "",
     message: "",
   });
+
+  const { contactData } = useAuth();
+  const [user, setUser] = useState(true);
+
+  if (user && contactData) {
+    setContact({
+      username: contactData.username,
+      email: contactData.email,
+      subject: "",
+      message: "",
+    });
+    setUser(false);
+  }
 
   // Handling the contact Inputs
   const handleContact = (e) => {

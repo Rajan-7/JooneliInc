@@ -175,3 +175,9 @@ body {
 }
 
 /* ? Header section end */
+/* * MEDIA QUERY */
+@media (max-width:600px) {
+  .header-section .center-content--talk{
+    height: 25rem;
+  }
+}
