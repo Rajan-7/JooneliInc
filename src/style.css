@@ -1,4 +1,4 @@
-/* ? Main Part */
+/*  Main Part */
 * {
   margin: 0;
   padding: 0;
@@ -185,11 +185,11 @@ body {
   width: 12rem;
 }
 
-/* ? Header section end */
-/* ? Nav/Header section end here */
+/*  Header section end */
+/*  Nav/Header section end here */
 
-/* ? Main body start here */
-/* ? Main section start here */
+/*  Main body start here */
+/*  Main section start here */
 .main {
   width: 100vw;
   margin-top: 52rem;
@@ -248,9 +248,9 @@ body {
   }
 }
 
-/* ? Main section end here */
+/*  Main section end here */
 
-/* ? Boxes section */
+/*  Boxes section */
 .boxes {
   width: 100%;
   margin: 10rem 0rem;
@@ -359,8 +359,8 @@ body {
   }
 }
 
-/* ? Boxes section end */
-/* ? Photo-info & news section start */
+/*  Boxes section end */
+/*  Photo-info & news section start */
 
 .photo-news {
   margin-top: 11rem;
@@ -513,7 +513,7 @@ body {
 }
 
 /* photo-info & news section end */
-/* ? main body end here */
+/* main body end here */
 
 /* ? Footer-section start here */
 

@@ -13,6 +13,7 @@ import UserLogin from "./components/Jooneli/Login/UserLogin";
 import ForgetPass from "./components/Jooneli/Login/ForgetPass";
 import SignIn from "./components/Jooneli/Login/SignIn";
 import Logout from "./components/Jooneli/logout/Logout";
+import Software from "./components/Jooneli/jobs/Software";
 
 const router = createBrowserRouter([
   {
@@ -68,8 +69,12 @@ const router = createBrowserRouter([
     element: <SignIn />,
   },
   {
-    path:"logout",
-    element:<Logout/>
+    path: "logout",
+    element: <Logout />,
+  },
+  {
+    path: "software",
+    element: <Software />,
   },
 ]);
 
