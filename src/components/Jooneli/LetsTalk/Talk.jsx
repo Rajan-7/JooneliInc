@@ -4,14 +4,17 @@ import TalkHeader from "./TalkHeader";
 import Footer from "../Footer/Footer";
 import "./talk.css";
 
-const Talk = () => {
-  const [contact, setContact] = useState({
-    username: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+const defaultContactForm = {
+  username:"",
+  email:"",
+  subject:"",
+  message:""
+}
 
+const URL = "http://localhost:5005/api/form/contact";
+
+const Talk = () => {
+  const [contact, setContact] = useState(defaultContactForm);
   const { contactData } = useAuth();
   const [user, setUser] = useState(true);
 
@@ -36,9 +39,26 @@ const Talk = () => {
   };
 
   // Handling contact submit
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    console.log(contact);
+    try {
+      const response = await fetch(URL,{
+        method:"POST",
+        headers:{
+          'Content-Type':'application/json',
+        },
+        body:JSON.stringify(contact)
+      })
+      if(response.ok){
+        alert("Message sent successfully");
+        const data = await response.json();
+        console.log(data);
+        setContact(defaultContactForm);
+      }
+    } catch (error) {
+      alert("Message not send successfully");
+      console.error(error);
+    }
   };
 
   return (
