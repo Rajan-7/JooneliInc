@@ -10,6 +10,7 @@ export const AuthProvider = ({ children }) => {
 
   // Storing Token in LocalStorage
   const storeTokenInLs = (serverToken) => {
+    setToken(serverToken);
     return localStorage.setItem("token", serverToken);
   };
 
@@ -43,7 +44,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     userAuthentication();
-  }, []);
+  });
 
   return (
     <AuthContext.Provider value={{ storeTokenInLs, LogutUser, isLoggedIn, contactData }}>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useAuth } from "../store/auth";
 import { Link, useNavigate } from "react-router-dom";
 
-const URl = "http://localhost:5005/api/auth/login";
+const URL = "http://localhost:5005/api/auth/login";
 
 const UserLogin = () => {
   const [login, setLogin] = useState({
@@ -29,23 +29,23 @@ const UserLogin = () => {
     e.preventDefault();
     // console.log("Login data :", login);
     try {
-      const response = await fetch(URl, {
+      const response = await fetch(URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(login),
       });
+      const res_data = await response.json();
+      // console.log(res_data.message);
       if (response.ok) {
-        const res_data = await response.json();
-        console.log(res_data);
         // Storing The Token In LocalStorage
         storeTokenInLs(res_data.token);
-        // alert("Login Successfull");  
+        alert("Login Successfull");
         setLogin({ email: "", password: "" });
         navigate("/");
       } else {
-        alert("Invalid username or password");
+        alert(res_data.moreDetails ? res_data.moreDetails : res_data.message);
       }
     } catch (error) {
       console.error("Invalid Credentials");
