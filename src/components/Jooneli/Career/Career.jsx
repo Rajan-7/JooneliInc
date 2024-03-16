@@ -1,10 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import CareerHeader from "./CareerHeader";
 import Footer from "../Footer/Footer";
 import { NavLink } from "react-router-dom";
 import "./career.css";
 
 const Career = () => {
+  const jobs = [
+    {
+      title: "Software Developer",
+      description:
+        "Develop, and maintain software solutions, ensuring and jalkjflkajkljfakljfklajsklfj",
+      location: "Nepal",
+      type: "development",
+    },
+    {
+      title: "Software Developer",
+      description:
+        "Develop, and maintain software solutions, ensuring and jalkjflkajkljfakljfklajsklfj",
+      location: "Nepal",
+      type: "development",
+    },
+    {
+      title: "Soley",
+      description:
+        "Develop, and maintain software solutions, ensuring and jalkjflkajkljfakljfklajsklfj",
+      location: "Aus",
+      type: "sales",
+    },
+  ];
+  const [location, setLocation] = useState("Nepal");
+  const [type, setType] = useState("all");
+  const [work, setWork] = useState(jobs);
+  const handleLocationChange = (e) => {
+    const location = e.target.value;
+    const updatedWork = jobs.filter((value) => value.location === location);
+    setWork(updatedWork);
+    setLocation(e.target.value);
+  };
+
+
+  const handleTypeChange = (e) => {
+    const type = e.target.value;
+    if(type === "all"){
+      setWork(jobs);
+      setType(type);
+    }
+    const updatedWork = jobs.filter((value) => value.type === type);
+    setWork(updatedWork);
+    setType(e.target.value);
+  };
+
+  console.log(type);
+
   return (
     <>
       <CareerHeader />
@@ -20,17 +67,17 @@ const Career = () => {
         <div className="selection-wrapper mb_3">
           <div className="selection">
             <div className="s-body">
-              <select className="mr_5 fw">
-                <option value="one">All Department</option>
-                <option value="">Software Development</option>
-                <option value="">Sales</option>
-                <option value="">Designing</option>
+              <select className="mr_5 fw" value={type} onChange={handleTypeChange}>
+                <option value="all">All Department</option>
+                <option value="development">Software Development</option>
+                <option value="sales">Sales</option>
+                <option value="design">Designing</option>
               </select>
             </div>
             <div className="s-body">
-              <select className="mr_5 fw">
-                <option value="">Nepal</option>
-                <option value="">Australia</option>
+              <select className="mr_5 fw" value={location} onChange={handleLocationChange}>
+                <option value="Nepal">Nepal</option>
+                <option value="Aus">Australia</option>
               </select>
             </div>
           </div>
@@ -38,72 +85,24 @@ const Career = () => {
         <div className="job-container">
           <div className="job-box--container">
             <div className="jb-wrapper bb-color">
-              <div className="job-box">
+             {
+                 work.map((item,index)=>(
+                  <div className="job-box" key={index}>
                 <NavLink to={"/software"} className="f_17 fw">
-                  Software Development
+                 {item.title}
                 </NavLink>
                 <p className="f_19 fw">
-                  Develop, and maintain software solutions, ensuring
-                  functionality, efficiency, and scalability while meeting
-                  client requirements
+                  {item.description}
                 </p>
               </div>
-              <div className="job-box m-lb">
-                <NavLink to={"/software"} className="f_21 fw">
-                  Senior Software Developer
-                </NavLink>
-                <p className="f_17 fw">
-                  <i class="fa-solid fa-location-dot"></i> Nepal - Onsite
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="job-box--container">
-            <div className="jb-wrapper bb-color">
-              <div className="job-box">
-                <NavLink to={"/software"} className="f_17 fw">
-                  Sales
-                </NavLink>
-                <p className="f_19 fw">
-                  Drive sales growth through effective communication,
-                  relationship-building, and strategic planning.
-                </p>
-              </div>
-              <div className="job-box">
-                <NavLink to={"/software"} className="f_21 fw">
-                  Sales Manager
-                </NavLink>
-                <p className="f_17 fw">
-                  <i class="fa-solid fa-location-dot"></i> Nepal - Onsite
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="job-box--container">
-            <div className="jb-wrapper bb-color">
-              <div className="job-box">
-                <NavLink to={"/software"} className="f_17 fw">
-                  Designer
-                </NavLink>
-                <p className="f_19 fw">
-                  Create intuitive and visually appealing user experiences
-                  through design innovation and attention to detail.
-                </p>
-              </div>
-              <div className="job-box">
-                <NavLink to={"/software"} className="f_21 fw">
-                  UI/UX
-                </NavLink>
-                <p className="f_17 fw">
-                  <i class="fa-solid fa-location-dot"></i> Australia - Remote
-                </p>
-              </div>
+                 ))
+             }  
             </div>
           </div>
         </div>
         <div className="content_box">
           <div className="icon">
-            <i class="fa-regular fa-hand"></i>
+            <i className="fa-regular fa-hand"></i>
           </div>
           <p className="fw f_15">
             Jooneli does not discriminate in employment matters on the basis of
