@@ -8,23 +8,26 @@ const Career = () => {
   const jobs = [
     {
       title: "Software Developer",
+      position: "Senior software developer",
       description:
-        "Develop, and maintain software solutions, ensuring and jalkjflkajkljfakljfklajsklfj",
+        "Design, develop, and maintain software solutions, ensuring functionality, efficiency, and scalability while meeting client requirements.",
       location: "Nepal",
       type: "development",
     },
     {
-      title: "Software Developer",
+      title: "Designer",
+      position: "UI/UX Developer",
       description:
-        "Develop, and maintain software solutions, ensuring and jalkjflkajkljfakljfklajsklfj",
-      location: "Nepal",
-      type: "development",
+        "Drive sales growth through effective communication, relationship-building, and strategic planning.",
+      location: "Australia",
+      type: "design",
     },
     {
-      title: "Soley",
+      title: "Sales",
+      position: "Sales Manager",
       description:
-        "Develop, and maintain software solutions, ensuring and jalkjflkajkljfakljfklajsklfj",
-      location: "Aus",
+        "Create intuitive and visually appealing user experiences through design innovation and attention to detail.",
+      location: "Nepal",
       type: "sales",
     },
   ];
@@ -38,15 +41,16 @@ const Career = () => {
     setLocation(e.target.value);
   };
 
-
   const handleTypeChange = (e) => {
     const type = e.target.value;
-    if(type === "all"){
+    setType(type);
+    if (type === "all") {
       setWork(jobs);
-      setType(type);
+    } else {
+      const updatedWork = jobs.filter((value) => value.type === type);
+      setWork(updatedWork);
     }
-    const updatedWork = jobs.filter((value) => value.type === type);
-    setWork(updatedWork);
+
     setType(e.target.value);
   };
 
@@ -67,7 +71,11 @@ const Career = () => {
         <div className="selection-wrapper mb_3">
           <div className="selection">
             <div className="s-body">
-              <select className="mr_5 fw" value={type} onChange={handleTypeChange}>
+              <select
+                className="mr_5 fw"
+                value={type}
+                onChange={handleTypeChange}
+              >
                 <option value="all">All Department</option>
                 <option value="development">Software Development</option>
                 <option value="sales">Sales</option>
@@ -75,9 +83,13 @@ const Career = () => {
               </select>
             </div>
             <div className="s-body">
-              <select className="mr_5 fw" value={location} onChange={handleLocationChange}>
+              <select
+                className="mr_5 fw"
+                value={location}
+                onChange={handleLocationChange}
+              >
                 <option value="Nepal">Nepal</option>
-                <option value="Aus">Australia</option>
+                <option value="Australia">Australia</option>
               </select>
             </div>
           </div>
@@ -85,18 +97,25 @@ const Career = () => {
         <div className="job-container">
           <div className="job-box--container">
             <div className="jb-wrapper bb-color">
-             {
-                 work.map((item,index)=>(
+              {work.map((item, index) => (
+                <>
                   <div className="job-box" key={index}>
-                <NavLink to={"/software"} className="f_17 fw">
-                 {item.title}
-                </NavLink>
-                <p className="f_19 fw">
-                  {item.description}
-                </p>
-              </div>
-                 ))
-             }  
+                    <NavLink to={"/software"} className="f_17 fw">
+                      {item.title}
+                    </NavLink>
+                    <p className="f_19 fw">{item.description}</p>
+                  </div>
+                  <div className="jobs-details">
+                    <NavLink to={"/software"} className="f_21 fw">
+                      {item.position}
+                    </NavLink>
+                    <p className="f_17 fw">
+                      <i className="fa-solid fa-location-dot"></i>
+                      {item.location},On site
+                    </p>
+                  </div>
+                </>
+              ))}
             </div>
           </div>
         </div>

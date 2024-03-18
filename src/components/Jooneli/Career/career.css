@@ -127,8 +127,24 @@ select {
 }
 
 .jb-wrapper{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
   gap:7.7rem;
+}
+
+.jobs-details{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.jobs-details a{
+  text-decoration: none;
+}
+
+.jobs-details i{
+  color: #a5a7ae;
+  padding-right: .35rem;
 }
 
 .job-container{
