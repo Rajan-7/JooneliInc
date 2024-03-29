@@ -50,11 +50,7 @@ const Career = () => {
       const updatedWork = jobs.filter((value) => value.type === type);
       setWork(updatedWork);
     }
-
-    setType(e.target.value);
   };
-
-  console.log(type);
 
   return (
     <>
@@ -123,7 +119,7 @@ const Career = () => {
           <div className="icon">
             <i className="fa-regular fa-hand"></i>
           </div>
-          <p className="fw f_15">
+          <p className="fw f_15 ">
             Jooneli does not discriminate in employment matters on the basis of
             race, color, religion, gender, national origin, age, military
             service eligibility, veteran status, sexual orientation, marital

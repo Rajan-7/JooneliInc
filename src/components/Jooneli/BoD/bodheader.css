@@ -178,7 +178,7 @@ body {
     height: 23rem;
   }
   .header-section .nav-container .logo-section{
-    margin-left: 2rem;
+    margin-left: 0rem;
   }
 }
 @media (max-width: 440px) {

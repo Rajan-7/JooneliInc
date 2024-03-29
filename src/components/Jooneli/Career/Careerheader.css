@@ -179,6 +179,9 @@ body {
   .header-section .center-content--career{
     height: 23.7rem;
   }
+  .header-section .nav-container .nav-bars{
+    font-size: 1.2rem;
+  }
 }
 @media (max-width:380px) {
   .header-section .center-content--career{

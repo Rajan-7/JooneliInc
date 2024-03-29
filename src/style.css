@@ -786,6 +786,12 @@ body {
   .nav-container .logo-section {
     grid-column: 2/3;
   }
+  .header-section .center-content video {
+    position: absolute;
+    height: 40rem;
+    width: 100%;
+    z-index: -2;
+  }
   .nav-container .nav-bars {
     width: 100%;
     font-size: 1.2rem;
@@ -821,7 +827,7 @@ body {
 
   .main {
     width: 100%;
-    margin-top: 65rem;
+    margin-top: 95rem;
   }
 
   .main .main-heading {
@@ -900,14 +906,14 @@ body {
   }
 
   .footer-section .footer-container {
-    padding: 2rem 3rem 0rem;
+    /* padding: 2rem 3rem 0rem; */
     display: flex;
     flex-direction: column;
   }
 
   .footer-section .footer-container .compaines-section .companies-logos {
     display: grid;
-    grid-template-columns: repeat(3, 50%);
+    grid-template-columns: repeat(3, 40%);
   }
 
   .footer-section

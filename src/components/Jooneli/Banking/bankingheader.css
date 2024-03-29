@@ -189,8 +189,8 @@ body {
     height: 20rem;
   }
   .header-section .nav-container .logo-section img{
-    height: 7rem;
-    width: 7rem;
+    height: 5.5rem;
+    width: 5.5rem;
   }
 }
 @media (max-width:360px) {
