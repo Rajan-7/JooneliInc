@@ -2,16 +2,13 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext();
 
-const URL = "http://localhost:5005/api/auth/user";
-
 export const AuthProvider = ({ children }) => {
-  const [contactData,setContactData]=useState('');
-  const [token, setToken] = useState(localStorage.getItem("token"));
+  const [token, setToken] = useState(localStorage.getItem("joonToken"));
 
   // Storing Token in LocalStorage
   const storeTokenInLs = (serverToken) => {
     setToken(serverToken);
-    return localStorage.setItem("token", serverToken);
+    return localStorage.setItem("joonToken", serverToken);
   };
 
   // Tackling Toggle functionality
@@ -23,31 +20,10 @@ export const AuthProvider = ({ children }) => {
     return localStorage.removeItem("token");
   };
 
-  // JWT Authentication - getting the user data
-  const userAuthentication = async () => {
-    try {
-      const response = await fetch(URL,{
-        method:"GET",
-        headers:{
-          Authorization:`Bearer ${token}`,
-        }
-      })
-      if(response.ok){
-        const data = await response.json();
-        console.log("Info of User",data.userData);
-        setContactData(data.userData);
-      }
-    } catch (error) {
-      console.error('Error occured while fetching user Data');
-    }
-  };
-
-  useEffect(() => {
-    userAuthentication();
-  });
+  useEffect(() => {});
 
   return (
-    <AuthContext.Provider value={{ storeTokenInLs, LogutUser, isLoggedIn, contactData }}>
+    <AuthContext.Provider value={{ storeTokenInLs, LogutUser, isLoggedIn }}>
       {children}
     </AuthContext.Provider>
   );

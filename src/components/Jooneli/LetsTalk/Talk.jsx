@@ -1,32 +1,20 @@
 import React, { useState } from "react";
-import { useAuth } from "../store/auth";
 import TalkHeader from "./TalkHeader";
 import Footer from "../Footer/Footer";
+import axios from "axios";
 import "./talk.css";
 
 const defaultContactForm = {
-  username:"",
-  email:"",
-  subject:"",
-  message:""
-}
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+};
 
 const URL = "http://localhost:5005/api/form/contact";
 
 const Talk = () => {
   const [contact, setContact] = useState(defaultContactForm);
-  const { contactData } = useAuth();
-  const [user, setUser] = useState(true);
-
-  if (user && contactData) {
-    setContact({
-      username: contactData.username,
-      email: contactData.email,
-      subject: "",
-      message: "",
-    });
-    setUser(false);
-  }
 
   // Handling the contact Inputs
   const handleContact = (e) => {
@@ -39,20 +27,17 @@ const Talk = () => {
   };
 
   // Handling contact submit
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(URL,{
-        method:"POST",
-        headers:{
-          'Content-Type':'application/json',
-        },
-        body:JSON.stringify(contact)
-      })
-      if(response.ok){
-        alert("Message sent successfully");
-        const data = await response.json();
-        console.log(data);
+      const response = axios.post(URL, {
+        name:contact.name,
+        email:contact.email,
+        subject:contact.subject,
+        message:contact.message
+      });
+      if(response){
+        alert("Message Delivered successfully");
         setContact(defaultContactForm);
       }
     } catch (error) {
@@ -85,15 +70,15 @@ const Talk = () => {
               <form onSubmit={handleSubmit} method="POST">
                 <div className="grid-two--cols mb-3">
                   <div>
-                    <label for="username">Your Name</label>
+                    <label for="name">Your Name</label>
                     <input
                       type="text"
-                      name="username"
-                      id="username"
+                      name="name"
+                      id="name"
                       autoComplete="off"
                       required
                       placeholder="Enter your name"
-                      value={contact.username}
+                      value={contact.name}
                       onChange={handleContact}
                     />
                   </div>

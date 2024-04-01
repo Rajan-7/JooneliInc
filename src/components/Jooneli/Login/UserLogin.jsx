@@ -1,6 +1,7 @@
 import "./userlogin.css";
 import React, { useState } from "react";
-import { useAuth } from "../store/auth";
+import axios from "axios";
+// import { useAuth } from "../store/auth";
 import { Link, useNavigate } from "react-router-dom";
 
 const URL = "http://localhost:5005/api/auth/login";
@@ -22,33 +23,55 @@ const UserLogin = () => {
   };
 
   const navigate = useNavigate();
-  const { storeTokenInLs } = useAuth();
+  // const { storeTokenInLs } = useAuth();
 
   // Handling login submit
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   // console.log("Login data :", login);
+  //   try {
+  //     const response = await fetch(URL, {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(login),
+  //     });
+  //     const res_data = await response.json();
+  //     // console.log(res_data.message);
+  //     if (response.ok) {
+  //       // Storing The Token In LocalStorage
+  //       storeTokenInLs(res_data.token);
+  //       alert("Login Successfull");
+  //       setLogin({ email: "", password: "" });
+  //       navigate("/");
+  //     } else {
+  //       alert(res_data.moreDetails ? res_data.moreDetails : res_data.message);
+  //     }
+  //   } catch (error) {
+  //     console.error("Invalid Credentials");
+  //   }
+  // };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log("Login data :", login);
     try {
-      const response = await fetch(URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(login),
+      const result = axios.post(URL, {
+        email: login.email,
+        password: login.password,
       });
-      const res_data = await response.json();
-      // console.log(res_data.message);
-      if (response.ok) {
-        // Storing The Token In LocalStorage
-        storeTokenInLs(res_data.token);
-        alert("Login Successfull");
-        setLogin({ email: "", password: "" });
+      if (result) {
+        // storeTokenInLs(result.data.token);
+
+        alert("Login successful");
+        setLogin({
+          email: "",
+          password: "",
+        });
         navigate("/");
-      } else {
-        alert(res_data.moreDetails ? res_data.moreDetails : res_data.message);
       }
     } catch (error) {
-      console.error("Invalid Credentials");
+      console.log(error);
     }
   };
   return (
@@ -86,9 +109,9 @@ const UserLogin = () => {
               onChange={handlInput}
             />
           </div>
-          <div className="forget-pass">
+          {/* <div className="forget-pass">
             <Link to="/forgetpass">Forget Password?</Link>
-          </div>
+          </div> */}
           <div className="login-button">
             <button type="submit" className="btn">
               Login

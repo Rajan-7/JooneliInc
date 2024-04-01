@@ -1,15 +1,17 @@
 import "./userlogin.css";
 import React, { useState } from "react";
+import axios from "axios";
 import { useAuth } from "../store/auth";
 import { Link, useNavigate } from "react-router-dom";
 
 const URl = "http://localhost:5005/api/auth/register";
 
+
 const SignIn = () => {
   const [register, setRegister] = useState({
     username: "",
     email: "",
-    phone: "",
+    contact: "",
     password: "",
   });
 
@@ -31,26 +33,26 @@ const SignIn = () => {
     e.preventDefault();
     // console.log("Register Data",register);
     try {
-      const response = await fetch(URl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(register),
+      const result =await axios.post(URl, {
+        username: register.username,
+        email: register.email,
+        contact: register.contact,
+        password: register.password,
       });
-      if (response.ok) {
-        const res_data = await response.json();
-        // console.log(res_data);
-
-        // Storing Token In The LocalStorage
-        storeTokenInLs(res_data.token);
-
-        setRegister({ username: "", email: "", phone: "", password: "" });
+      if (result) {
+        storeTokenInLs(result.data.token);
+        alert("Successful Registration");
+        setRegister({
+          username: "",
+          email: "",
+          contact: "",
+          password: "",
+        });
+        console.log(result.data.token);
         navigate("/login");
       }
-      console.log("Response Data:", response);
     } catch (error) {
-      console.error("From the register : ", error);
+      console.log(error);
     }
   };
 
@@ -85,13 +87,13 @@ const SignIn = () => {
           </div>
           <div className="register-container">
             <input
-              type="number"
+              type="text"
               placeholder="Contact number"
               autoComplete="off"
-              id="phone"
-              name="phone"
+              id="contact"
+              name="contact"
               required
-              value={register.phone}
+              value={register.contact}
               onChange={handleInput}
             />
           </div>
