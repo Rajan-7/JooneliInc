@@ -1,0 +1,47 @@
+
+html{
+    font-size: 62.5%;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.admin-section .nav-container .nav-bars ul li a{
+    color: #000;
+    font-weight: 300;
+}
+
+.admin-section .nav-container .nav-bars ul li a:hover{
+    color: #ec180d;
+}
+
+.admin-section .nav-container .nav-bars .hover-effectors .display-product,
+.admin-section .nav-container .nav-bars .hover-effectors .display-company{
+    color: #000;
+    font-weight: 300;
+}
+
+
+.admin-section .nav-container .nav-bars .hover-effectors .display-product:hover{
+    color:#ec180d;
+}
+.admin-section .nav-container .nav-bars .hover-effectors .display-company:hover{
+    color:#ec180d;
+}
+
+.admin-section .nav-container .nav-bars .hover-effectors .display-product .drop-down--product a{
+    color: #000;
+   font-weight: 300;
+}
+.admin-section .nav-container .nav-bars .hover-effectors .display-company .drop-down--company a{
+    font-weight: 300;
+    color:#000;
+ }
+
+ .admin-effect--background{
+    display: none;
+ }
+
+ 
