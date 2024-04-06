@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../Jooneli/store/auth";
-import "./AdminHeader.css";
+import "./admin.css";
 
 const AdminHeader = () => {
   const { isLoggedIn } = useAuth();
   const [show, setShow] = useState(false);
   return (
     <>
-      <header className="admin-section">
+      <header className="admin-section ">
         <div className="nav-container">
           <div className="logo-section">
             <Link to="/">

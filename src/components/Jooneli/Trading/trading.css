@@ -324,9 +324,9 @@ body {
     display: flex;
     padding: 0rem 2rem;
   }
-  .header-section .nav-container .nav-bars {
+  .nav-container .nav-bars {
     display: flex;
-    /* gap: 2rem; */
+    gap: 1remm;
     font-size: 1.3rem;
   }
 

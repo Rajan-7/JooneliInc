@@ -23,76 +23,76 @@
 // import AdminLayout from "./components/Layout/AdminLayout";
 // import AdminUser from "./components/Jooneli/Admin/AdminUser";
 
-// // const router = createBrowserRouter([
-// //   {
-// //     path: "/",
-// //     element: <Main />,
-// //   },
-// //   {
-// //     path: "/blog",
-// //     element: <Blog />,
-// //   },
-// //   {
-// //     path: "/about",
-// //     element: <About />,
-// //   },
-// //   {
-// //     path: "/bod",
-// //     element: <Bod />,
-// //   },
-// //   {
-// //     path: "manageteam",
-// //     element: <ManageTeam />,
-// //   },
-// //   {
-// //     path: "career",
-// //     element: <Career />,
-// //   },
-// //   {
-// //     path: "client",
-// //     element: <Client />,
-// //   },
-// //   {
-// //     path: "bank",
-// //     element: <Banking />,
-// //   },
-// //   {
-// //     path: "trading",
-// //     element: <Trading />,
-// //   },
-// //   {
-// //     path: "talk",
-// //     element: <Talk />,
-// //   },
-// //   {
-// //     path: "login",
-// //     element: <UserLogin />,
-// //   },
-// //   {
-// //     path: "forgetpass",
-// //     element: <ForgetPass />,
-// //   },
-// //   {
-// //     path: "signin",
-// //     element: <SignIn />,
-// //   },
-// //   {
-// //     path: "logout",
-// //     element: <Logout />,
-// //   },
-// //   {
-// //     path: "software",
-// //     element: <Software />,
-// //   },
-// //   {
-// //     path: "*",
-// //     element: <PageNotFound />,
-// //   },
-// //   {
-// //     path:"admin",
-// //     element:<AdminLayout/>
-// //   },
-// // ]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Main />,
+//   },
+//   {
+//     path: "/blog",
+//     element: <Blog />,
+//   },
+//   {
+//     path: "/about",
+//     element: <About />,
+//   },
+//   {
+//     path: "/bod",
+//     element: <Bod />,
+//   },
+//   {
+//     path: "manageteam",
+//     element: <ManageTeam />,
+//   },
+//   {
+//     path: "career",
+//     element: <Career />,
+//   },
+//   {
+//     path: "client",
+//     element: <Client />,
+//   },
+//   {
+//     path: "bank",
+//     element: <Banking />,
+//   },
+//   {
+//     path: "trading",
+//     element: <Trading />,
+//   },
+//   {
+//     path: "talk",
+//     element: <Talk />,
+//   },
+//   {
+//     path: "login",
+//     element: <UserLogin />,
+//   },
+//   {
+//     path: "forgetpass",
+//     element: <ForgetPass />,
+//   },
+//   {
+//     path: "signin",
+//     element: <SignIn />,
+//   },
+//   {
+//     path: "logout",
+//     element: <Logout />,
+//   },
+//   {
+//     path: "software",
+//     element: <Software />,
+//   },
+//   {
+//     path: "*",
+//     element: <PageNotFound />,
+//   },
+//   {
+//     path:"admin",
+//     element:<AdminLayout/>
+//   },
+// ]);
 
 // const router = () => {
 //   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import AdminHeader from "./AdminHeader";
 import AdminNav from "./components/AdminNav";
-import "./AdminLayout.css";
+import "./admin.css";
 import { Outlet } from "react-router-dom";
 // import AdminUser from "../Jooneli/Admin/AdminUser";
 // import { NavLink } from "react-router-dom";

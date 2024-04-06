@@ -102,6 +102,7 @@ body {
 
 .drop-down--product {
   display: none;
+  font-weight: 300;
   position: absolute;
   min-width: 25rem;
   padding: 1rem 0rem;
@@ -129,6 +130,7 @@ body {
 
 .drop-down--company {
   display: none;
+  font-weight: 300;
   position: absolute;
   min-width: 25rem;
   padding: 1rem 0rem;

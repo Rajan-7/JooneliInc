@@ -129,6 +129,7 @@ body {
 
   & a {
     display: flex;
+    font-weight: 300;
     &:hover {
       color: rgba(255, 255, 255, 0.5);
     }
@@ -151,9 +152,11 @@ body {
   display: none;
   position: absolute;
   min-width: 25rem;
+  font-weight: 300;
   padding: 1rem 0rem;
 
   & a {
+    font-weight: 300;
     display: flex;
     &:hover {
       color: rgba(255, 255, 255, 0.5);
@@ -772,11 +775,14 @@ body {
   .header-section {
     width: 100%;
     position: relative;
-    margin-bottom: -20rem;
+    margin-bottom: -40rem;
   }
   .nav-container .logo-section img {
     height: 8rem;
     width: 8rem;
+  }
+  .header-section .nav-container .nav-bars ul li a{
+    font-size: 1.2rem;
   }
   .header-section .nav-container {
     background-color: #1b1f25;
@@ -792,16 +798,16 @@ body {
     width: 100%;
     z-index: -2;
   }
-  .nav-container .nav-bars {
+  .header-section .nav-container .nav-bars {
     width: 100%;
     font-size: 1.2rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
-  .nav-container .nav-bars .hover-effectors {
+ .header-section .nav-container .nav-bars .hover-effectors {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     margin: 0;
     padding: 0rem;
   }
