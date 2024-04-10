@@ -435,8 +435,7 @@ body {
   }
   .header-section .nav-container .nav-bars {
     display: flex;
-    /* gap: 1rem; */
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .header-section .nav-container .nav-bars .hover-effectors {

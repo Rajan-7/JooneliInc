@@ -1,8 +1,8 @@
 import "./userlogin.css";
 import React, { useState } from "react";
 import axios from "axios";
-// import { useAuth } from "../store/auth";
 import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../store/auth";
 
 const URL = "http://localhost:5005/api/auth/login";
 
@@ -23,46 +23,20 @@ const UserLogin = () => {
   };
 
   const navigate = useNavigate();
-  // const { storeTokenInLs } = useAuth();
-
-  // Handling login submit
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   // console.log("Login data :", login);
-  //   try {
-  //     const response = await fetch(URL, {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(login),
-  //     });
-  //     const res_data = await response.json();
-  //     // console.log(res_data.message);
-  //     if (response.ok) {
-  //       // Storing The Token In LocalStorage
-  //       storeTokenInLs(res_data.token);
-  //       alert("Login Successfull");
-  //       setLogin({ email: "", password: "" });
-  //       navigate("/");
-  //     } else {
-  //       alert(res_data.moreDetails ? res_data.moreDetails : res_data.message);
-  //     }
-  //   } catch (error) {
-  //     console.error("Invalid Credentials");
-  //   }
-  // };
+  const {storeTokenInLs}=useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const result = axios.post(URL, {
+      const response = await axios.post(URL, {
         email: login.email,
         password: login.password,
       });
-      if (result) {
-        // storeTokenInLs(result.data.token);
 
+      // console.log(response.data.token);
+      if (response) {
+        const token = response.data.token;
+        storeTokenInLs(token);
         alert("Login successful");
         setLogin({
           email: "",

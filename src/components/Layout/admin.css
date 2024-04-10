@@ -10,6 +10,10 @@ html {
   color: #000;
 }
 
+.container{
+  margin: 0 19rem;
+}
+
 .admin-section .container {
   margin: 0 19.4rem;
 }
@@ -27,11 +31,10 @@ html {
 .admin-section .nav-container .nav-bars ul li a {
   color: #000;
   font-weight: 300;
+  font-size: 1.8rem;
 }
 
-/* .admin-header{
-  padding: 0 2.71rem;
-} */
+
 
 .admin-section .nav-container .nav-bars ul li a:hover {
   color: #ec180d;

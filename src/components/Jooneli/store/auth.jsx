@@ -1,9 +1,14 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
+
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem("joonToken"));
+  // const [user, setUser] = useState([]);
+
+  const authorizationToken = `Bearer ${token}`;
+  // console.log(token);
 
   // Storing Token in LocalStorage
   const storeTokenInLs = (serverToken) => {
@@ -15,15 +20,23 @@ export const AuthProvider = ({ children }) => {
   const isLoggedIn = !!token;
 
   // Tackling the Logout Functionality
-  const LogutUser = () => {
+  const LogoutUser = () => {
     setToken("");
-    return localStorage.removeItem("token");
+    return localStorage.removeItem("joonToken");
   };
 
   useEffect(() => {});
 
   return (
-    <AuthContext.Provider value={{ storeTokenInLs, LogutUser, isLoggedIn }}>
+    <AuthContext.Provider
+      value={{
+        storeTokenInLs,
+        LogoutUser,
+        isLoggedIn,
+        // user,
+        authorizationToken,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );

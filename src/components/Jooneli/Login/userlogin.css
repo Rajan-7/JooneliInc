@@ -79,7 +79,7 @@ body {
         border: none;
         width: 100%;
         height: 4rem;
-        background-color: var(--bg-color);
+        background-color: var(--joon-main-color);
         border-radius: 1.5rem;
         -webkit-border-radius: 1.5rem;
         -moz-border-radius: 1.5rem;

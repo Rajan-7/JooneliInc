@@ -1,8 +1,124 @@
-.mt{
-    margin-top: 4rem;
+.mt {
+  margin-top: 4rem;
 }
 
-.container{
-    margin: 0 19.4rem;
+.container {
+  margin: 0 19rem;
 }
 
+.heading {
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3.4rem;
+}
+
+.contact-section input,
+.contact-section label {
+  font-size: 1.8rem;
+  line-height: 1.56;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.06rem;
+}
+
+.grid {
+  display: grid;
+  gap: 5.4rem;
+}
+
+.grid-two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+table {
+  background: #fff;
+  box-shadow: rgba(255, 255, 255, 0.2) 0rem 0.7rem 2.9rem 0rem;
+  border-collapse: collapse;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+tr th {
+  padding: 2.5rem;
+  font-size: 1.8rem;
+}
+
+button {
+  text-transform: capitalize;
+  padding: 1rem 1.7rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  background-color: #646cff;
+}
+
+tbody tr td a {
+  color: #09522f;
+  text-decoration: none;
+}
+td {
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(10rem, 1fr));
+  align-items: center;
+  box-shadow: 0 0.3rem 0 grey;
+  margin-bottom: 1rem;
+  border-bottom: 1rem solid transparent;
+  color: var(--dark-color);
+  &:last-child {
+    box-shadow: none;
+  }
+}
+
+table {
+  background-color: rgb(217, 152, 152);
+}
+
+/* Update */
+
+.contact-section {
+  & .contact-content {
+    padding: 0;
+  }
+  & .main-heading {
+    font-size: 3.4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.form-section {
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  & label {
+    display: block;
+    margin-bottom: 0.8rem;
+    text-transform: capitalize;
+  }
+
+  & input,
+  textarea {
+    width: 60%;
+    padding: 0.4rem 0.6rem;
+  }
+}

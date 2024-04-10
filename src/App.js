@@ -13,14 +13,15 @@ import Banking from "./components/Jooneli/Banking/Banking";
 import Trading from "./components/Jooneli/Trading/Trading";
 import Talk from "./components/Jooneli/LetsTalk/Talk";
 import UserLogin from "./components/Jooneli/Login/UserLogin";
-import ForgetPass from "./components/Jooneli/Login/ForgetPass";
+// import ForgetPass from "./components/Jooneli/Login/ForgetPass";
 import SignIn from "./components/Jooneli/Login/SignIn";
 import Logout from "./components/Jooneli/logout/Logout";
-import Software from "./components/Jooneli/jobs/Software";
+// import Software from "./components/Jooneli/jobs/Software";
 import PageNotFound from "./components/Jooneli/PageNotFound/PageNotFound";
 import AdminLayout from "./components/Layout/AdminLayout";
 import AdminUser from "./components/Jooneli/Admin/AdminUser";
 import AdminContact from "./components/Jooneli/Admin/AdminContact";
+import AdminUpdate from "./components/Jooneli/Admin/AdminUpdate";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/admin" element={<AdminLayout />}>
             <Route path="users" element={<AdminUser />} />
             <Route path="contact" element={<AdminContact />} />
+            <Route path="users/:id/edit" element={<AdminUpdate />} />
           </Route>
         </Routes>
       </BrowserRouter>

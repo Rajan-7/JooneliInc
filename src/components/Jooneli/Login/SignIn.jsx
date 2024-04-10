@@ -87,7 +87,7 @@ const SignIn = () => {
           </div>
           <div className="register-container">
             <input
-              type="text"
+              type="number"
               placeholder="Contact number"
               autoComplete="off"
               id="contact"
