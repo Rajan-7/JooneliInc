@@ -21,14 +21,13 @@ const AdminUpdate = () => {
   };
 
   const params = useParams();
-  console.log(params.id);
   const authorizationToken = useAuth();
-  console.log(authorizationToken);
 
   // Fetching Single User Data
   const getSingleUserData = async () => {
+    console.log("Hello user data");
     try {
-      const response = await axios.get(
+      const response =await axios.get(
         `http://localhost:5005/api/admin/users/${params.id}`,
         {
           headers: {
