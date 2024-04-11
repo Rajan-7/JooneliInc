@@ -22,6 +22,7 @@ import AdminLayout from "./components/Layout/AdminLayout";
 import AdminUser from "./components/Jooneli/Admin/AdminUser";
 import AdminContact from "./components/Jooneli/Admin/AdminContact";
 import AdminUpdate from "./components/Jooneli/Admin/AdminUpdate";
+import AdminBlogs from "./components/Jooneli/Admin/AdminBlogs";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="/admin" element={<AdminLayout />}>
             <Route path="users" element={<AdminUser />} />
             <Route path="contact" element={<AdminContact />} />
+            <Route path="blogs" element={<AdminBlogs />} />
             <Route path="users/:id/edit" element={<AdminUpdate />} />
           </Route>
         </Routes>

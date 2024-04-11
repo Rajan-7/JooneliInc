@@ -21,7 +21,7 @@ const AdminNav = () => {
         </li>
         <li>
           <FaBlogger />
-          <NavLink to="/admin/users">Blogs</NavLink>
+          <NavLink to="/admin/blogs">Blogs</NavLink>
         </li>
         <li>
           <LuNewspaper />
