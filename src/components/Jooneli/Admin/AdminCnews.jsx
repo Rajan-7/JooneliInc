@@ -1,6 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import "./Admin.css";
+import { useAuth } from "../store/auth";
+
+const IURL = "http://localhost:5005/api/image/images";
+const CURL = "http://localhost:5005/api/admin/cnews";
 
 const AdminCnews = () => {
+  const [news, setNews] = useState({
+    image: "",
+    description: "",
+    date: "",
+  });
+
+  const [img, setImg] = useState([]);
+  const { authorizationToken } = useAuth();
+
+  const handleChange = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+    setNews({
+      ...news,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const formdata = new FormData();
+      formdata.append("image", img);
+
+      const imgResponse = await axios({
+        method: "post",
+        data: formdata,
+        url: IURL,
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+
+      const response = await axios.post(
+        CURL,
+        {
+          description: news.description,
+          date: news.date,
+          image: imgResponse.data.url,
+        },
+        {
+          headers: {
+            Authorization: authorizationToken,
+          },
+        }
+      );
+      // setImg([]);
+      if (response) {
+        setNews({ image: "", description: "", name: "", type: "" });
+      }
+    } catch (error) {
+      console.log(`From FrontEnd Cnews:`, error);
+    }
+  };
   return (
     <section className="admin-user-section b-section">
       <section className="admin-user-section">
@@ -10,9 +70,9 @@ const AdminCnews = () => {
         <div className="container grid grid-two-cols">
           {/* Update form */}
           <section className="form-section  blog-form">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div>
-                <label htmlFor="image">Image</label>
+                <label htmlFor="image">Corporate Image</label>
                 <input
                   type="file"
                   name="image"
@@ -21,6 +81,7 @@ const AdminCnews = () => {
                   accept="image"
                   autoComplete="off"
                   placeholder="Choose your image"
+                  onChange={(e) => setImg(e.target.files[0])}
                 />
               </div>
               <div>
@@ -31,6 +92,8 @@ const AdminCnews = () => {
                   placeholder="Description..."
                   cols="25"
                   rows="5"
+                  value={news.description}
+                  onChange={handleChange}
                 ></textarea>
               </div>
               <div>
@@ -41,6 +104,8 @@ const AdminCnews = () => {
                   id="date"
                   required
                   autoComplete="off"
+                  value={news.date}
+                  onChange={handleChange}
                 />
               </div>
               <div className="b_btn">
