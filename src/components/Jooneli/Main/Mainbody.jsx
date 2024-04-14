@@ -117,7 +117,7 @@ const Mainbody = () => {
               <div className="name">Jooneli</div>
               <div className="info">IT company</div>
               <div className="action">
-                <button>Read More</button>
+                <button className="btn">Read More</button>
               </div>
               <div className="forward-backward">
                 <i className="fa-solid fa-less-than"></i>

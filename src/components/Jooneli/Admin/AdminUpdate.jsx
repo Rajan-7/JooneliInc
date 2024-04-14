@@ -21,13 +21,12 @@ const AdminUpdate = () => {
   };
 
   const params = useParams();
-  const authorizationToken = useAuth();
+  const { authorizationToken } = useAuth();
 
   // Fetching Single User Data
   const getSingleUserData = async () => {
-    console.log("Hello user data");
     try {
-      const response =await axios.get(
+      const response = await axios.get(
         `http://localhost:5005/api/admin/users/${params.id}`,
         {
           headers: {
@@ -35,20 +34,35 @@ const AdminUpdate = () => {
           },
         }
       );
-      console.log(response);
+      setData(response.data);
     } catch (error) {
       console.log(`From Frontend:${error}`);
     }
   };
 
   // Handling update function
-  const handleSubmit = async(e)=>{
+  const handleSubmit = async (e) => {
     e.preventDefault();
-  }
+    try {
+      const response = await axios.patch(
+        `http://localhost:5005/api/admin/users/update/${params.id}`,
+        {
+          headers: {
+            "Content-Type":'application/json',
+            Authorization: authorizationToken,
+          },
+        }
+      );
+      console.log("Inside update");
+      console.log(response);
+    } catch (error) {
+      console.log("From update frontend", error);
+    }
+  };
 
   useEffect(() => {
     getSingleUserData();
-  },[]);
+  }, []);
 
   return (
     <>

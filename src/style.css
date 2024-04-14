@@ -407,7 +407,8 @@ body {
           margin-top: 3rem;
           display: flex;
           justify-content: flex-end;
-          gap: 4.5rem;
+          gap: 5.5rem;
+          padding-right: 1.7rem;
           & i {
             cursor: pointer;
             font-size: 2.4rem;
@@ -429,8 +430,8 @@ body {
           border: 0.1rem solid #fff;
           color: var(--text-color);
           background: transparent;
-          height: 3.3rem;
-          width: 8.7rem;
+          width: 11.7rem;
+          padding: 1rem;
           border-radius: 0.5rem;
           -webkit-border-radius: 0.5rem;
           -moz-border-radius: 0.5rem;

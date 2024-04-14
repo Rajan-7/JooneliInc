@@ -25,11 +25,11 @@ const AdminNav = () => {
         </li>
         <li>
           <LuNewspaper />
-          <NavLink to="/admin/users">Corporate News</NavLink>
+          <NavLink to="/admin/cnews">Corporate News</NavLink>
         </li>
         <li>
           <TiNews />
-          <NavLink to="/admin/users">Photo News</NavLink>
+          <NavLink to="/admin/inews">Photo News</NavLink>
         </li>
       </ul>
     </nav>
