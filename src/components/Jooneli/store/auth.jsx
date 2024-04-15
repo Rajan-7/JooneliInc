@@ -1,10 +1,13 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import axios from 'axios'
 
+const URL = "http://localhost:5005/api/admin/cnews";
 
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem("joonToken"));
+  const [cnews,setCnews]=useState([]);
   // const [user, setUser] = useState([]);
 
   const authorizationToken = `Bearer ${token}`;
@@ -25,7 +28,24 @@ export const AuthProvider = ({ children }) => {
     return localStorage.removeItem("joonToken");
   };
 
-  useEffect(() => {});
+  // To fetch Inews
+  const getAllCnews = async()=>{
+    try {
+      const response = await axios.get(URL,{
+        headers:{
+          Authorization:authorizationToken
+        }
+      });
+      console.log(response.data);
+      setCnews(response.data);
+    } catch (error) {
+      console.log(`From Cnews frontend: ${error}`);
+    }
+  }
+
+  useEffect(() => {
+    getAllCnews();
+  });
 
   return (
     <AuthContext.Provider
@@ -33,7 +53,7 @@ export const AuthProvider = ({ children }) => {
         storeTokenInLs,
         LogoutUser,
         isLoggedIn,
-        // user,
+        cnews,
         authorizationToken,
       }}
     >

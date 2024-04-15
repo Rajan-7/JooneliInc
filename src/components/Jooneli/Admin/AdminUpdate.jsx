@@ -46,6 +46,7 @@ const AdminUpdate = () => {
     try {
       const response = await axios.patch(
         `http://localhost:5005/api/admin/users/update/${params.id}`,
+        data,
         {
           headers: {
             "Content-Type":'application/json',

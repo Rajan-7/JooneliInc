@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../store/auth";
 
 const Mainbody = () => {
+  const { cnews } = useAuth();
   return (
     <>
       <main className="main">
@@ -128,19 +130,26 @@ const Mainbody = () => {
         </div>
         <div className="news">
           <h1 className="news-heading">Corporate News</h1>
-          <div className="news-div--1">
-            <div className="image-section">
-              <img src="/image/coding.jpeg" alt="" />
-            </div>
-            <div className="news-section">
-              <div className="news-section--heading">
-                Jooneli introduces core values and cultures pillars: Coding as
-                Main
-              </div>
-              <div className="news-date">Nov 23, 2023</div>
-            </div>
-          </div>
-          <div className="news-div--1 mb-t">
+          {/* <div className="news-div--1"> */}
+            {cnews.map((curC, ind) => {
+              return (
+                
+                <div className="news-div--1 mb-t">
+                  <div className="image-section" key={ind}>
+                    <img src={curC.image} alt="" />
+                  </div>
+                  <div className="news-section">
+                    <div className="news-section--heading">
+                      {curC.description}
+                    </div>
+                    <div className="news-date">{curC.date}</div>
+                  </div>
+                  </div>
+                
+              );
+            })}
+          {/* </div> */}
+          {/* <div className="news-div--1 mb-t">
             <div className="image-section">
               <img src="/image/meeting.jpeg" alt="" />
             </div>
@@ -151,8 +160,8 @@ const Mainbody = () => {
               </div>
               <div className="news-date">Sep 18, 2023</div>
             </div>
-          </div>
-          <div className="news-div--1 mb-t">
+          </div> */}
+          {/* <div className="news-div--1 mb-t">
             <div className="image-section">
               <img src="/image/gathering.jpeg" alt="" />
             </div>
@@ -163,8 +172,8 @@ const Mainbody = () => {
               </div>
               <div className="news-date">Sep 07, 2023</div>
             </div>
-          </div>
-          <div className="news-div--1 mb-t">
+          </div> */}
+          {/* <div className="news-div--1 mb-t">
             <div className="image-section">
               <img src="/image/esewa.jpeg" alt="" />
             </div>
@@ -175,7 +184,7 @@ const Mainbody = () => {
               </div>
               <div className="news-date">Aug 22, 2023</div>
             </div>
-          </div>
+          </div> */}
           <div className="news-button">
             <button>Read all news</button>
           </div>
