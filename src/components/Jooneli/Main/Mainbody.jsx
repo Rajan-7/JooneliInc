@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import { useAuth } from "../store/auth";
 
 const Mainbody = () => {
   const { cnews } = useAuth();
+  // console.log(cnews[0].image);
   return (
     <>
       <main className="main">
@@ -131,23 +132,28 @@ const Mainbody = () => {
         <div className="news">
           <h1 className="news-heading">Corporate News</h1>
           {/* <div className="news-div--1"> */}
-            {cnews.map((curC, ind) => {
-              return (
-                
-                <div className="news-div--1 mb-t">
-                  <div className="image-section" key={ind}>
-                    <img src={curC.image} alt="" />
+          {cnews.map((curC, ind) => {
+            {/* console.log(curC.image); */}
+            console.log(`http://localhost:5005/image/${curC.image}`)
+            return (
+              <div className="news-div--1 mb-t" key={ind}>
+                <div className="image-section">
+                  <img
+                    src={`http://localhost:5005/image/${curC.image}`}
+                    alt="Cnews Images"
+                    height="200"
+                    width="200"
+                  />
+                </div>
+                <div className="news-section">
+                  <div className="news-section--heading">
+                    {curC.description}
                   </div>
-                  <div className="news-section">
-                    <div className="news-section--heading">
-                      {curC.description}
-                    </div>
-                    <div className="news-date">{curC.date}</div>
-                  </div>
-                  </div>
-                
-              );
-            })}
+                  <div className="news-date">{curC.date}</div>
+                </div>
+              </div>
+            );
+          })}
           {/* </div> */}
           {/* <div className="news-div--1 mb-t">
             <div className="image-section">

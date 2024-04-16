@@ -31,12 +31,9 @@ export const AuthProvider = ({ children }) => {
   // To fetch Inews
   const getAllCnews = async()=>{
     try {
-      const response = await axios.get(URL,{
-        headers:{
-          Authorization:authorizationToken
-        }
-      });
+      const response = await axios.get(URL);
       console.log(response.data);
+      console.log(response.data[0].image);
       setCnews(response.data);
     } catch (error) {
       console.log(`From Cnews frontend: ${error}`);
@@ -45,7 +42,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     getAllCnews();
-  });
+  },[]);
 
   return (
     <AuthContext.Provider
