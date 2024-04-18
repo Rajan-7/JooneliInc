@@ -1,9 +1,9 @@
 import React from "react";
-import { Link,NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../store/auth";
 
 const Mainbody = () => {
-  const { cnews } = useAuth();
+  const { cnews, inews } = useAuth();
   // console.log(cnews[0].image);
   return (
     <>
@@ -106,7 +106,34 @@ const Mainbody = () => {
         </div>
       </div>
       <div className="photo-news">
-        <div className="photo-info">
+        {inews.map((cur, ind) => {
+          return (
+            <div className="photo-info" key={ind}>
+              <div className="img-container">
+                <Link>
+                  <img
+                    src={`http://localhost:5005/image/${cur.image}`}
+                    alt="Company/Individual
+                    Information"
+                  />
+                </Link>
+                <div className="overlay">
+                  {cur.description}
+                  <div className="name">{cur.name}</div>
+                  <div className="info">{cur.type}</div>
+                  <div className="action">
+                    <button className="btn">Read More</button>
+                  </div>
+                  <div className="forward-backward">
+                    <i className="fa-solid fa-less-than"></i>
+                    <i className="fa-solid fa-greater-than"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+        {/* <div className="photo-info">
           <div className="img-container">
             <Link>
               <img src="/image/water.jpeg" alt="" />
@@ -128,19 +155,18 @@ const Mainbody = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="news">
           <h1 className="news-heading">Corporate News</h1>
           {/* <div className="news-div--1"> */}
           {cnews.map((curC, ind) => {
-            {/* console.log(curC.image); */}
-            console.log(`http://localhost:5005/image/${curC.image}`)
+            console.log(`http://localhost:5005/image/${curC.image}`);
             return (
               <div className="news-div--1 mb-t" key={ind}>
                 <div className="image-section">
                   <img
                     src={`http://localhost:5005/image/${curC.image}`}
-                    alt="Cnews Images"
+                    alt="Cnews Information"
                     height="200"
                     width="200"
                   />
@@ -192,7 +218,9 @@ const Mainbody = () => {
             </div>
           </div> */}
           <div className="news-button">
-            <button>Read all news</button>
+            <button>
+              <NavLink>Read all news</NavLink>
+            </button>
           </div>
         </div>
       </div>

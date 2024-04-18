@@ -50,7 +50,7 @@ body {
       gap: 2rem;
       & .blog-1 {
         cursor: pointer;
-        height: 40rem;
+        height: 42rem;
         width: 40rem;
         border-radius: 1rem;
         background-color: var(--blog-background--color);
@@ -62,19 +62,7 @@ body {
         &:hover {
           border: 0.1rem solid #ec180d;
         }
-        &:hover .image-class-cc {
-          filter: grayscale(0%);
-          -webkit-filter: grayscale(0%);
-        }
-        &:hover .image-class-rsk {
-          filter: grayscale(0%);
-          -webkit-filter: grayscale(0%);
-        }
-        &:hover .image-class-cwc {
-          filter: grayscale(0%);
-          -webkit-filter: grayscale(0%);
-        }
-        & .image-class-cc {
+        /* & .image-class {
           height: 45%;
           width: 50%;
           margin: auto;
@@ -83,8 +71,8 @@ body {
           background-size: cover;
           filter: grayscale(100%);
           -webkit-filter: grayscale(100%);
-        }
-        & .image-class-cwc {
+        } */
+        /* & .image-class-cwc {
           height: 45%;
           width: 50%;
           margin: auto;
@@ -98,8 +86,8 @@ body {
           background-size: cover;
           filter: grayscale(100%);
           -webkit-filter: grayscale(100%);
-        }
-        & .image-class-rsk {
+        } */
+        /* & .image-class-rsk {
           height: 45%;
           width: 50%;
           margin: auto;
@@ -113,7 +101,7 @@ body {
           background-size: cover;
           filter: grayscale(100%);
           -webkit-filter: grayscale(100%);
-        }
+        } */
         & .content-heading {
           padding: 1rem 0rem 0rem 3rem;
           font-size: 2rem;
@@ -145,6 +133,13 @@ body {
     }
   }
 }
+
+.blog-contents .blog-1 .image img{
+  border-top-left-radius:1rem ;
+  border-top-right-radius: 1rem;
+}
+
+
 /* ? Blog section end here */
 /* * Media Queries */
 

@@ -2,8 +2,10 @@ import React from "react";
 import BlogHeader from "./BlogHeader";
 import Footer from "../Footer/Footer";
 import "./blog.css";
+import { useAuth } from "../store/auth";
 
 const Blog = () => {
+  const { blogs } = useAuth();
   return (
     <>
       <BlogHeader />
@@ -13,8 +15,26 @@ const Blog = () => {
             <span className="color-1">Latest blog</span> of our website
           </div>
           <div className="blog-contents">
-            <div className="blog-1">
-              <div className="image-class-rsk"></div>
+            {blogs.map((cur, ind) => {
+              return (
+                <div className="blog-1" key={ind}>
+                  <div className="image">
+                    <img
+                      src={`http://localhost:5005/image/${cur.image}`}
+                      alt="BLogs Information"
+                      height="250"
+                      width="100%"
+                    />
+                  </div>
+                  <div className="content-heading">{cur.name}</div>
+                  <p>{cur.description}</p>
+                </div>
+              );
+            })}
+            {/* <div className="blog-1">
+              <div className="image-class">
+                <img src="" alt="" />
+              </div>
               <div className="content-heading">Overcoming Risk</div>
               <p>
                 By implementing robust cybersecurity measures, regular
@@ -41,7 +61,7 @@ const Blog = () => {
                 establishing clear workflows that facilitate seamless
                 collaboration among team members
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="blog-action">
             <div className="action">
