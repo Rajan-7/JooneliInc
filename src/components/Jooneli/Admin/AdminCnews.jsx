@@ -9,6 +9,7 @@ const CURL = "http://localhost:5005/api/admin/cnews";
 const AdminCnews = () => {
   const [news, setNews] = useState({
     image: "",
+    heading: "",
     description: "",
     date: "",
   });
@@ -44,6 +45,7 @@ const AdminCnews = () => {
         CURL,
         {
           description: news.description,
+          heading:news.heading,
           date: news.date,
           image: imgResponse.data.url,
         },
@@ -82,6 +84,19 @@ const AdminCnews = () => {
                   autoComplete="off"
                   placeholder="Choose your image"
                   onChange={(e) => setImg(e.target.files[0])}
+                />
+              </div>
+              <div>
+                <label htmlFor="heading">heading</label>
+                <input
+                  type="text"
+                  name="heading"
+                  id="heading"
+                  required
+                  autoComplete="off"
+                  placeholder="Heading of the news..."
+                  value={news.heading}
+                  onChange={handleChange}
                 />
               </div>
               <div>

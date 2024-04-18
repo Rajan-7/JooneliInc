@@ -25,6 +25,7 @@ import AdminUpdate from "./components/Jooneli/Admin/AdminUpdate";
 import AdminBlogs from "./components/Jooneli/Admin/AdminBlogs";
 import AdminCnews from "./components/Jooneli/Admin/AdminCnews";
 import AdminInews from "./components/Jooneli/Admin/AdminInews";
+import Cnews from "./components/Jooneli/Content/Cnews";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/cnews" element={<Cnews/>}/>
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/bod" element={<Bod />} />

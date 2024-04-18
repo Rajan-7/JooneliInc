@@ -219,7 +219,7 @@ const Mainbody = () => {
           </div> */}
           <div className="news-button">
             <button>
-              <NavLink>Read all news</NavLink>
+              <NavLink to="/cnews">Read all news</NavLink>
             </button>
           </div>
         </div>

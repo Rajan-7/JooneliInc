@@ -536,6 +536,7 @@ body {
 
 .footer-section {
   width: 100%;
+  height: 40rem;
   margin-top: 14rem;
   background-color: rgba(0, 0, 0, 0.05);
 
@@ -543,6 +544,8 @@ body {
     display: flex;
     padding: 7rem 12rem 2rem 22rem;
     gap: 7rem;
+    height: 27rem;
+
 
     & .compaines-section {
       display: flex;
