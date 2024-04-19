@@ -173,7 +173,7 @@ const Mainbody = () => {
                 </div>
                 <div className="news-section">
                   <div className="news-section--heading">
-                    {curC.description}
+                    <NavLink>{curC.description}</NavLink>
                   </div>
                   <div className="news-date">{curC.date}</div>
                 </div>
